@@ -25,6 +25,7 @@ const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
 const PYTHON_BIN = path.join(ROOT_DIR, '.venv', 'bin', 'python');
 const PDF_PROCESSOR_PY = path.join(ROOT_DIR, 'scripts', 'pdf_processor.py');
 const SHEET_PARSER_PY = path.join(ROOT_DIR, 'scripts', 'sheet_parser.py');
+const DRIVE_FALLBACK_PY = path.join(ROOT_DIR, 'scripts', 'drive_fallback_downloader.py');
 const WATERMARK_PNG = path.join(ASSETS_DIR, 'watermark.png');
 
 const SCHOOL_PROJECT_DIR = '/Users/quochung/Project/School/school.unizvn';
@@ -697,10 +698,10 @@ async function listOwnDriveFoldersBatch(folderIds) {
   return allItems;
 }
 
-async function downloadDriveFile(fileId, destPath) {
+async function downloadDriveFile(fileId, destPath, kind = 'auto') {
   let lastStatus = 0;
   let lastTxt = '';
-  const attempts = Math.max(3, tokenPool.length + 1);
+  const attempts = Math.max(2, tokenPool.length + 1);
   for (let i = 0; i < attempts; i++) {
     const token = await getToken({ requireWrite: false });
     const res = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&supportsAllDrives=true`, {
@@ -713,7 +714,45 @@ async function downloadDriveFile(fileId, destPath) {
     }
     lastStatus = res.status;
     lastTxt = await res.text().catch(() => '');
+
+    // Thử ngay link tải trực tiếp domain mới drive.usercontent.google.com (&confirm=t)
+    try {
+      const directUrl = `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`;
+      const resDirect = await fetch(directUrl, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const ctype = resDirect.headers.get('content-type') || '';
+      if (resDirect.ok && !ctype.toLowerCase().includes('text/html')) {
+        const abDirect = await resDirect.arrayBuffer();
+        if (abDirect.byteLength > 1024) {
+          fs.writeFileSync(destPath, Buffer.from(abDirect));
+          return fs.statSync(destPath).size;
+        }
+      }
+    } catch {}
+
+    // Nếu bị khóa quyền tải xuống (cannotDownloadFile / viewersCanCopyContent=false) hoặc vượt Quota 24h,
+    // chuyển ngay sang trình tải dự phòng (videoplayback stream + Cookie Chrome / yt-dlp / gdown)
+    if (
+      lastStatus === 403 &&
+      /cannotDownloadFile|cannot be downloaded by the user|downloadQuotaExceeded|quotaExceeded/i.test(lastTxt)
+    ) {
+      break;
+    }
   }
+
+  // Fallback: Trích xuất luồng videoplayback / yt-dlp / gdown bằng Cookie Chrome
+  try {
+    const fbRes = await runPythonJson(DRIVE_FALLBACK_PY, [fileId, destPath, kind]);
+    if (fbRes && fbRes.ok && fs.existsSync(destPath)) {
+      return fs.statSync(destPath).size;
+    }
+  } catch (fbErr) {
+    throw new Error(
+      `Tải file ${fileId} thất bại (API HTTP ${lastStatus}, Fallback: ${fbErr.message.slice(0, 180)})`
+    );
+  }
+
   throw new Error(`Tải file ${fileId} thất bại (HTTP ${lastStatus}): ${lastTxt.slice(0, 200)}`);
 }
 
@@ -1633,7 +1672,7 @@ async function runSyncTargets(targets, options = {}) {
               const outTmp = path.join(TMP_DIR, `uni_${task.sourceFileId}.pdf`);
 
               try {
-                await downloadDriveFile(task.sourceFileId, rawTmp);
+                await downloadDriveFile(task.sourceFileId, rawTmp, 'pdf');
                 const wmRes = await processPdfWithWatermark(rawTmp, outTmp, rules);
                 syncJob.currentAction = `Đang upload PDF lên SCHOOL: ${finalPdfName}`;
                 const uploaded = await uploadLocalFileToDrive(outTmp, finalPdfName, dstFolderId, 'application/pdf');
@@ -1714,7 +1753,7 @@ async function runSyncTargets(targets, options = {}) {
                 const outVidTmp = path.join(TMP_DIR, `vid_out_${task.sourceFileId}.mp4`);
                 try {
                   syncJob.currentAction = `Đang tải Video (${(task.size / 1048576).toFixed(1)} MB): ${task.sourceName}`;
-                  await downloadDriveFile(task.sourceFileId, rawVidTmp);
+                  await downloadDriveFile(task.sourceFileId, rawVidTmp, 'video');
                   syncJob.currentAction = `Đang chuẩn hóa MP4 (+faststart): ${baseVideoName}`;
                   await remuxVideoFaststart(rawVidTmp, outVidTmp);
                   syncJob.currentAction = `Đang upload Video lên SCHOOL: ${baseVideoName}`;

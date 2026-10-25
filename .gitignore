@@ -9,3 +9,5 @@ tmp/
 data/tool-config.json
 data/*.tmp*
 data/batch_test_results.json
+data/.chrome_drive_cookies.txt
+data/*cookies*
