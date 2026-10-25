@@ -707,45 +707,50 @@ async function downloadDriveFile(fileId, destPath, kind = 'auto') {
   let lastTxt = '';
   const attempts = Math.max(2, tokenPool.length + 1);
   for (let i = 0; i < attempts; i++) {
-    const token = await getToken({ requireWrite: false });
-    const res = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&supportsAllDrives=true`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    if (res.ok) {
-      const ab = await res.arrayBuffer();
-      fs.writeFileSync(destPath, Buffer.from(ab));
-      return fs.statSync(destPath).size;
-    }
-    lastStatus = res.status;
-    lastTxt = await res.text().catch(() => '');
-
-    // Thử ngay link tải trực tiếp domain mới drive.usercontent.google.com (&confirm=t)
     try {
-      const directUrl = `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`;
-      const resDirect = await fetch(directUrl, {
+      const token = await getToken({ requireWrite: false });
+      const res = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&supportsAllDrives=true`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      const ctype = resDirect.headers.get('content-type') || '';
-      if (resDirect.ok && !ctype.toLowerCase().includes('text/html')) {
-        const abDirect = await resDirect.arrayBuffer();
-        if (abDirect.byteLength > 1024) {
-          fs.writeFileSync(destPath, Buffer.from(abDirect));
-          return fs.statSync(destPath).size;
-        }
+      if (res.ok) {
+        const ab = await res.arrayBuffer();
+        fs.writeFileSync(destPath, Buffer.from(ab));
+        return fs.statSync(destPath).size;
       }
-    } catch {}
+      lastStatus = res.status;
+      lastTxt = await res.text().catch(() => '');
 
-    // Nếu bị khóa quyền tải xuống (cannotDownloadFile / viewersCanCopyContent=false) hoặc vượt Quota 24h,
-    // chuyển ngay sang trình tải dự phòng (videoplayback stream + Cookie Chrome / yt-dlp / gdown)
-    if (
-      lastStatus === 403 &&
-      /cannotDownloadFile|cannot be downloaded by the user|downloadQuotaExceeded|quotaExceeded/i.test(lastTxt)
-    ) {
-      break;
+      // Thử ngay link tải trực tiếp domain mới drive.usercontent.google.com (&confirm=t)
+      try {
+        const directUrl = `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`;
+        const resDirect = await fetch(directUrl, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        const ctype = resDirect.headers.get('content-type') || '';
+        if (resDirect.ok && !ctype.toLowerCase().includes('text/html')) {
+          const abDirect = await resDirect.arrayBuffer();
+          if (abDirect.byteLength > 1024) {
+            fs.writeFileSync(destPath, Buffer.from(abDirect));
+            return fs.statSync(destPath).size;
+          }
+        }
+      } catch {}
+
+      // Nếu bị khóa quyền tải xuống (cannotDownloadFile / viewersCanCopyContent=false) hoặc vượt Quota 24h,
+      // chuyển ngay sang trình tải dự phòng (videoplayback stream + Cookie Chrome / yt-dlp / gdown)
+      if (
+        lastStatus === 403 &&
+        /cannotDownloadFile|cannot be downloaded by the user|downloadQuotaExceeded|quotaExceeded/i.test(lastTxt)
+      ) {
+        break;
+      }
+    } catch (netErr) {
+      lastTxt = netErr.message || 'fetch failed';
+      await new Promise((r) => setTimeout(r, 1500));
     }
   }
 
-  // Fallback: Trích xuất luồng videoplayback / yt-dlp / gdown bằng Cookie Chrome
+  // Fallback: Trích xuất luồng videoplayback / viewerng PDF / yt-dlp / gdown bằng Cookie Chrome
   try {
     const fbRes = await runPythonJson(DRIVE_FALLBACK_PY, [fileId, destPath, kind]);
     if (fbRes && fbRes.ok && fs.existsSync(destPath)) {
@@ -932,53 +937,65 @@ async function resolveExistingDestinationFolder(relFolderParts) {
 }
 
 async function uploadLocalFileToDrive(localPath, fileName, parentFolderId, mimeType) {
-  const token = await getToken({ requireWrite: true });
   const fileSize = fs.statSync(localPath).size;
-
-  // Khởi tạo Resumable Upload session (an toàn cho cả PDF và Video lớn hàng GB)
-  const initRes = await fetch(
-    'https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable&supportsAllDrives=true&fields=id,name,size,md5Checksum',
-    {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json; charset=UTF-8',
-        'X-Upload-Content-Type': mimeType,
-        'X-Upload-Content-Length': String(fileSize),
-      },
-      body: JSON.stringify({
-        name: fileName,
-        parents: [parentFolderId],
-      }),
-    }
-  );
-
-  if (!initRes.ok) {
-    const errText = await initRes.text().catch(() => '');
-    throw new Error(`Khởi tạo upload thất bại (${initRes.status}): ${errText.slice(0, 200)}`);
-  }
-
-  const uploadUrl = initRes.headers.get('location');
-  if (!uploadUrl) {
-    throw new Error('Không nhận được Resumable Upload Location từ Google Drive');
-  }
-
   const fileBuffer = fs.readFileSync(localPath);
-  const putRes = await fetch(uploadUrl, {
-    method: 'PUT',
-    headers: {
-      'Content-Length': String(fileSize),
-      'Content-Type': mimeType,
-    },
-    body: fileBuffer,
-  });
+  let lastErr = null;
 
-  if (!putRes.ok) {
-    const errText = await putRes.text().catch(() => '');
-    throw new Error(`Upload dữ liệu thất bại (${putRes.status}): ${errText.slice(0, 200)}`);
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const token = await getToken({ requireWrite: true });
+
+      // Khởi tạo Resumable Upload session (an toàn cho cả PDF và Video lớn hàng GB)
+      const initRes = await fetch(
+        'https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable&supportsAllDrives=true&fields=id,name,size,md5Checksum',
+        {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json; charset=UTF-8',
+            'X-Upload-Content-Type': mimeType,
+            'X-Upload-Content-Length': String(fileSize),
+          },
+          body: JSON.stringify({
+            name: fileName,
+            parents: [parentFolderId],
+          }),
+        }
+      );
+
+      if (!initRes.ok) {
+        const errText = await initRes.text().catch(() => '');
+        throw new Error(`Khởi tạo upload thất bại (${initRes.status}): ${errText.slice(0, 200)}`);
+      }
+
+      const uploadUrl = initRes.headers.get('location');
+      if (!uploadUrl) {
+        throw new Error('Không nhận được Resumable Upload Location từ Google Drive');
+      }
+
+      const putRes = await fetch(uploadUrl, {
+        method: 'PUT',
+        headers: {
+          'Content-Length': String(fileSize),
+          'Content-Type': mimeType,
+        },
+        body: fileBuffer,
+      });
+
+      if (!putRes.ok) {
+        const errText = await putRes.text().catch(() => '');
+        throw new Error(`Upload dữ liệu thất bại (${putRes.status}): ${errText.slice(0, 200)}`);
+      }
+
+      return await putRes.json();
+    } catch (err) {
+      lastErr = err;
+      if (attempt < 2) {
+        await new Promise((r) => setTimeout(r, 2500 * (attempt + 1)));
+      }
+    }
   }
-
-  return await putRes.json();
+  throw lastErr;
 }
 
 async function copyDriveFileServerSide(sourceFileId, targetFileName, parentFolderId) {
