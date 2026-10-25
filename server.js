@@ -390,6 +390,10 @@ function classifyDriveItem(item, parentRelParts, rules = toolConfig.rules) {
     if (inInfoFolder && rules.skipInfoFolderForVideo) {
       return { kind: 'skip', reason: 'Bỏ qua Video trong 0. INFO' };
     }
+    const fSize = Number(file.size || 0);
+    if (fSize > 0 && fSize < 65536) {
+      return { kind: 'skip', reason: `Bỏ qua Video rỗng/lỗi trên Drive gốc (${fSize} bytes < 64KB)` };
+    }
     return { kind: 'video', cleanName: clean };
   }
 

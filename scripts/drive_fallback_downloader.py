@@ -288,6 +288,94 @@ def try_gdown_fuzzy(file_id, dest_path):
     }
 
 
+def try_pdf_viewerng_pages(file_id, dest_path, force_refresh_cookies=False):
+    """
+    Cách 5 (Dành riêng cho PDF / Tài liệu bị khóa nút Tải xuống - Chế độ Chỉ xem):
+    Trích xuất token `viewer/upload?ds=...` từ trang xem trước của Google Drive,
+    gọi `viewerng/meta` để lấy tổng số trang và tải song song toàn bộ ảnh trang `viewerng/img`
+    độ phân giải cao (w=1600), sau đó đóng gói thành file PDF chuẩn bằng PyMuPDF.
+    """
+    import fitz
+
+    jar = get_chrome_cookie_jar(force_refresh=force_refresh_cookies)
+    opener = build_opener(jar)
+
+    view_url = f"https://drive.google.com/file/d/{file_id}/view"
+    with opener.open(view_url, timeout=25) as resp:
+        html = resp.read().decode("utf-8", "ignore")
+
+    unesc = (
+        html.replace("\\u003d", "=")
+        .replace("\\u0026", "&")
+        .replace("\\u002f", "/")
+        .replace("\\/", "/")
+    )
+    m = re.search(r"https://drive\.google\.com/viewer/upload\?ds=([^\"'\s\\<>]+)", unesc)
+    if not m:
+        raise RuntimeError("Không tìm thấy endpoint viewer/upload?ds=... trong trang xem trước PDF")
+
+    upload_url = m.group(0)
+    with opener.open(upload_url, timeout=25) as resp:
+        raw_upload = resp.read().decode("utf-8", "ignore")
+
+    upload_json = json.loads(raw_upload.split("\n", 1)[1] if "\n" in raw_upload else raw_upload)
+    meta_rel = upload_json.get("meta")
+    img_rel = upload_json.get("img") or upload_json.get("page")
+    if not meta_rel or not img_rel:
+        raise RuntimeError("viewer/upload JSON thiếu trường meta hoặc img")
+
+    meta_url = f"https://drive.google.com/viewerng/{meta_rel}"
+    with opener.open(meta_url, timeout=25) as resp:
+        raw_meta = resp.read().decode("utf-8", "ignore")
+    meta_json = json.loads(raw_meta.split("\n", 1)[1] if "\n" in raw_meta else raw_meta)
+    num_pages = int(meta_json.get("pages") or 0)
+    if num_pages <= 0:
+        raise RuntimeError(f"Số trang viewerng/meta không hợp lệ: {meta_json}")
+
+    def fetch_page_img(page_idx):
+        img_url = f"https://drive.google.com/viewerng/{img_rel}&page={page_idx}&w=1600"
+        for attempt in range(3):
+            try:
+                with opener.open(img_url, timeout=30) as r:
+                    data = r.read()
+                if len(data) < 500:
+                    raise RuntimeError(f"Ảnh trang {page_idx} quá nhỏ ({len(data)} bytes)")
+                return page_idx, data
+            except Exception as exc:
+                if attempt == 2:
+                    raise exc
+                time.sleep(0.8 * (attempt + 1))
+
+    page_images = [None] * num_pages
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        futures = [pool.submit(fetch_page_img, i) for i in range(num_pages)]
+        for fut in concurrent.futures.as_completed(futures):
+            idx, img_bytes = fut.result()
+            page_images[idx] = img_bytes
+
+    doc = fitz.open()
+    for img_bytes in page_images:
+        pix = fitz.Pixmap(img_bytes)
+        # Chuẩn hóa kích thước trang về chiều rộng chuẩn A4 (595.28 pt) giữ nguyên tỷ lệ khung hình
+        page_w = 595.28
+        page_h = round(page_w * (pix.height / max(1, pix.width)), 2)
+        page = doc.new_page(width=page_w, height=page_h)
+        page.insert_image(page.rect, stream=img_bytes)
+
+    doc.save(dest_path, garbage=3, deflate=True)
+    doc.close()
+
+    size = os.path.getsize(dest_path)
+    if size < 1024:
+        raise RuntimeError("File PDF ghép từ viewerng/img quá nhỏ")
+    return {
+        "ok": True,
+        "method": "viewerng_img_pdf_reconstruct",
+        "pages": num_pages,
+        "size": size,
+    }
+
+
 def main():
     if len(sys.argv) < 3:
         print(json.dumps({"ok": False, "error": "Thiếu tham số: <file_id> <dest_path> [kind]"}))
@@ -301,7 +389,14 @@ def main():
 
     # Nếu là video (hoặc auto), ưu tiên luồng videoplayback cho các file bị chặn tải (Chế độ Chỉ xem)
     methods = []
-    if kind in ("video", "auto"):
+    if kind == "pdf":
+        methods.extend([
+            ("viewerng_pdf", lambda: try_pdf_viewerng_pages(file_id, dest_path, False)),
+            ("viewerng_pdf_fresh_cookie", lambda: try_pdf_viewerng_pages(file_id, dest_path, True)),
+            ("drive_usercontent", lambda: try_usercontent_direct(file_id, dest_path)),
+            ("gdown_fuzzy", lambda: try_gdown_fuzzy(file_id, dest_path)),
+        ])
+    elif kind == "video":
         methods.extend([
             ("videoplayback_stream", lambda: try_videoplayback_stream(file_id, dest_path, False)),
             ("videoplayback_stream_fresh_cookie", lambda: try_videoplayback_stream(file_id, dest_path, True)),
@@ -312,8 +407,9 @@ def main():
     else:
         methods.extend([
             ("drive_usercontent", lambda: try_usercontent_direct(file_id, dest_path)),
-            ("gdown_fuzzy", lambda: try_gdown_fuzzy(file_id, dest_path)),
             ("videoplayback_stream", lambda: try_videoplayback_stream(file_id, dest_path, False)),
+            ("viewerng_pdf", lambda: try_pdf_viewerng_pages(file_id, dest_path, False)),
+            ("gdown_fuzzy", lambda: try_gdown_fuzzy(file_id, dest_path)),
         ])
 
     for name, fn in methods:
