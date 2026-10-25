@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNI Sheet → Drive Sync & Watermark Tool</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111827;
+      --panel-2: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --success: #10b981;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --purple: #8b5cf6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      background: rgba(17, 24, 39, 0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 16px;
+      color: #fff;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .brand p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .container {
+      max-width: 1480px;
+      margin: 0 auto;
+      padding: 20px 24px 60px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .stat-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+    .stat-label {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .stat-value {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .stat-sub {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+    .tab-btn {
+      background: transparent;
+      color: var(--muted);
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active {
+      color: #60a5fa;
+      border-bottom-color: #3b82f6;
+    }
+
+    .tab-pane { display: none; }
+    .tab-pane.active { display: block; }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 18px;
+    }
+    @media (max-width: 1100px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .card-title {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.15s;
+      color: #fff;
+      background: var(--panel-2);
+      border-color: var(--border);
+    }
+    .btn:hover { filter: brightness(1.1); }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn-primary { background: var(--primary); border-color: var(--primary); }
+    .btn-success { background: var(--success); border-color: var(--success); }
+    .btn-warn { background: var(--warn); border-color: var(--warn); color: #111827; }
+    .btn-danger { background: var(--danger); border-color: var(--danger); }
+    .btn-purple { background: var(--purple); border-color: var(--purple); }
+    .btn-sm { padding: 5px 10px; font-size: 12px; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .badge-green { background: rgba(16, 185, 129, 0.18); color: #34d399; }
+    .badge-yellow { background: rgba(245, 158, 11, 0.18); color: #fbbf24; }
+    .badge-blue { background: rgba(59, 130, 246, 0.18); color: #60a5fa; }
+    .badge-red { background: rgba(239, 68, 68, 0.18); color: #f87171; }
+
+    .subject-pills {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .pill {
+      padding: 5px 11px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .pill.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    input[type="text"], input[type="number"], select {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      width: 100%;
+    }
+    .teacher-list {
+      max-height: 460px;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .teacher-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 9px 12px;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    }
+    .teacher-row:last-child { border-bottom: none; }
+    .teacher-row:hover { background: rgba(30, 41, 59, 0.5); }
+    .teacher-main {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      min-width: 0;
+      flex: 1;
+    }
+    .teacher-title {
+      font-weight: 600;
+      font-size: 13px;
+      word-break: break-word;
+    }
+    .teacher-meta {
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+
+    .rules-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    @media (max-width: 640px) {
+      .rules-list { grid-template-columns: 1fr; }
+    }
+    .rule-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #0f172a;
+      border: 1px solid var(--border);
+      padding: 8px 10px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      cursor: pointer;
+    }
+
+    .log-box {
+      background: #050811;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      height: 290px;
+      overflow-y: auto;
+      padding: 10px 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+    }
+    .log-line { margin-bottom: 4px; word-break: break-word; }
+    .log-info { color: #cbd5e1; }
+    .log-success { color: #34d399; }
+    .log-warn { color: #fbbf24; }
+    .log-error { color: #f87171; }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .pdf-frame {
+      width: 100%;
+      height: 620px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #0f172a;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+    }
+    th { color: var(--muted); font-weight: 600; background: rgba(15, 23, 42, 0.6); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-logo">UNI</div>
+      <div>
+        <h1>UNI Sheet → Drive Sync & Watermark Tool (macOS)</h1>
+        <p>Đồng bộ khóa học từ Sheet · Xóa Watermark cũ & Đóng dấu <b>school.unizvn.com</b> · Lọc trùng đa tầng</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="writeAuthBadge" class="badge badge-yellow">Đang kiểm tra quyền Drive...</span>
+      <button class="btn btn-warn btn-sm" onclick="startOAuthWrite()">🔑 Cấp quyền Ghi Google Drive (1-Click)</button>
+      <button class="btn btn-purple btn-sm" onclick="triggerSchoolWebSync()">🔄 Cập nhật Web school.unizvn</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">DB Lọc Trùng PDF (_pdf_sync_db.json)</div>
+        <div class="stat-value" id="statPdfDbPaths">0</div>
+        <div class="stat-sub">Đã có <code>UNI</code>: <b style="color:#34d399;" id="statPdfUniCount">0</b> · Chưa có <code>UNI</code>: <b style="color:#fbbf24;" id="statPdfLegacyCount">0</b> · Folder: <b id="statFolderCache">0</b></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Dữ liệu trên Web school.unizvn</div>
+        <div class="stat-value"><span id="statWebVideos">0</span> Video</div>
+        <div class="stat-sub">PDF trên web: <b id="statWebPdfs">0</b> · Tổng bài học: <b id="statWebLessons">0</b></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Master Sheet 2027 (2K9 XPS)</div>
+        <div class="stat-value"><span id="statTeachersCount">0</span> Giáo viên</div>
+        <div class="stat-sub">Đã hoàn tất PDF kỳ trước: <b id="statCompletedTeachers">0</b> GV</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Tài khoản Google Drive kết nối</div>
+        <div class="stat-value" id="statAccountsCount">0</div>
+        <div class="stat-sub" id="statAccountsList">Đang tải...</div>
+      </div>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab-btn active" onclick="switchTab('sync', this)">📋 1. Đồng bộ từ Sheet & Khóa học</button>
+      <button class="tab-btn" onclick="switchTab('dedup', this)">🧹 2. Quét & Dọn File Trùng trên Drive SCHOOL</button>
+      <button class="tab-btn" onclick="switchTab('pdfpreview', this)">🎨 3. Test Xóa Watermark Cũ & Đóng Dấu UNI</button>
+      <button class="tab-btn" onclick="switchTab('settings', this)">⚙️ 4. Tài khoản Drive, DB & Hẹn giờ Tự động</button>
+    </nav>
+
+    <!-- TAB 1: SYNC -->
+    <section id="tab-sync" class="tab-pane active">
+      <div class="grid-2">
+        <!-- Cột trái: Danh sách Giáo viên / Khóa học từ Sheet -->
+        <div>
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Danh sách Giáo viên / Khóa học trong Master Sheet</h2>
+              <div style="display:flex; gap:6px;">
+                <button class="btn btn-sm" onclick="selectAllVisibleTeachers(true)">Chọn tất cả</button>
+                <button class="btn btn-sm" onclick="selectAllVisibleTeachers(false)">Bỏ chọn</button>
+                <button class="btn btn-sm" onclick="refreshMasterSheet()">🔄 Tải lại Sheet gốc</button>
+              </div>
+            </div>
+
+            <div class="subject-pills" id="subjectPills"></div>
+
+            <div style="display:flex; gap:8px; margin-bottom:10px;">
+              <input type="text" id="teacherSearchInput" placeholder="Tìm tên giáo viên, môn học, mã khóa học (VD: Đỗ Văn Đức, Vũ Ngọc Anh, TDM...)" oninput="renderTeacherList()" />
+            </div>
+
+            <div class="teacher-list" id="teacherListContainer"></div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">➕ Quét thêm Google Sheet hoặc Drive Folder bất kỳ</h2>
+            </div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <div style="flex:2; min-width:240px;">
+                <input type="text" id="customUrlInput" placeholder="Dán link Google Sheet hoặc link Drive Folder nguồn cần đồng bộ..." />
+              </div>
+              <div style="flex:1; min-width:140px;">
+                <select id="customSubjectSelect">
+                  <option value="TOÁN">Môn: TOÁN</option>
+                  <option value="VẬT LÝ">Môn: VẬT LÝ</option>
+                  <option value="HÓA HỌC">Môn: HÓA HỌC</option>
+                  <option value="SINH HỌC">Môn: SINH HỌC</option>
+                  <option value="TIẾNG ANH">Môn: TIẾNG ANH</option>
+                  <option value="NGỮ VĂN">Môn: NGỮ VĂN</option>
+                  <option value="LỊCH SỬ">Môn: LỊCH SỬ</option>
+                  <option value="ĐỊA LÝ">Môn: ĐỊA LÝ</option>
+                  <option value="ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)">Môn: ĐGNL - ĐGTD</option>
+                </select>
+              </div>
+              <div style="flex:1; min-width:180px;">
+                <input type="text" id="customTeacherNameInput" placeholder="Tên thư mục GV (tùy chọn)" />
+              </div>
+              <button class="btn btn-primary" onclick="parseAndRunCustomUrl()">Phân tích & Thêm</button>
+            </div>
+            <div id="customParseResult" style="margin-top:10px; font-size:12.5px; color:var(--muted);"></div>
+          </div>
+        </div>
+
+        <!-- Cột phải: Luật lọc, Nút điều khiển & Console tiến trình -->
+        <div>
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">⚖️ Luật lọc (Exclusion Rules) & Xử lý File</h2>
+              <button class="btn btn-sm" onclick="saveRulesConfig()">💾 Lưu cấu hình</button>
+            </div>
+
+            <div class="rules-list">
+              <label class="rule-item">
+                <input type="checkbox" id="ruleSkipSheets" checked />
+                <span>Không lấy file <b>.sheet</b> / Google Docs</span>
+              </label>
+              <label class="rule-item">
+                <input type="checkbox" id="ruleSkipEbook" checked />
+                <span>Không lấy <b>Z. EBOOK</b> kèm khóa học</span>
+              </label>
+              <label class="rule-item">
+                <input type="checkbox" id="ruleSkipBonus" checked />
+                <span>Không lấy <b>🎁BONUS / Hướng dẫn học</b></span>
+              </label>
+              <label class="rule-item">
+                <input type="checkbox" id="ruleSkipInfoVideo" checked />
+                <span>Bỏ qua Video trong <b>0. INFO</b></span>
+              </label>
+              <label class="rule-item">
+                <input type="checkbox" id="rulePdfRemoveOldWm" checked />
+                <span>Xóa Watermark cũ (QuickPDF / TaiLieuOnThi)</span>
+              </label>
+              <label class="rule-item">
+                <input type="checkbox" id="rulePdfStampUni" checked />
+                <span>Đóng dấu <b>school.unizvn.com</b> góc phải</span>
+              </label>
+              <label class="rule-item">
+                <input type="checkbox" id="rulePdfAddPrefix" checked />
+                <span>Gắn tiền tố <b>"UNI "</b> trước tên file PDF</span>
+              </label>
+              <label class="rule-item">
+                <input type="checkbox" id="ruleAutoSchoolSync" />
+                <span>Tự chạy <code>sync-drive.js</code> sau khi xong</span>
+              </label>
+              <label class="rule-item" style="border-color:#10b981; background:rgba(16,185,129,0.08);">
+                <input type="checkbox" id="ruleCleanCoexistingLegacyPdf" checked />
+                <span>🧹 Tự xóa file PDF cũ nếu thư mục đã có bản <b>"UNI "</b></span>
+              </label>
+              <label class="rule-item" style="border-color:#f59e0b; background:rgba(245,158,11,0.08);">
+                <input type="checkbox" id="ruleReplaceLegacyNonUniPdf" />
+                <span>♻️ Thay thế PDF cũ chưa có <b>"UNI "</b> (Đóng dấu + Xóa cũ)</span>
+              </label>
+            </div>
+
+            <div style="margin-bottom:14px;">
+              <label style="font-size:12px; color:var(--muted); display:block; margin-bottom:4px;">Chế độ đồng bộ Video (.mp4 / .ts):</label>
+              <select id="ruleVideoMode">
+                <option value="remux_or_copy">Ưu tiên Copy nhanh trên Drive (nếu .ts hoặc lỗi thì tải về Remux +faststart bằng FFmpeg)</option>
+                <option value="remux_upload">Luôn tải về máy → FFmpeg chuẩn hóa MP4 (+faststart) → Upload lên SCHOOL</option>
+                <option value="server_copy">Chỉ Copy trực tiếp Server-side trên Google Drive (Tốc độ tức thì)</option>
+              </select>
+            </div>
+
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <button class="btn btn-primary" onclick="startSyncJob('dry_run')">🔍 Quét Kiểm Tra Bài Mới & Lọc Trùng (Dry-Run)</button>
+              <button class="btn btn-success" onclick="startSyncJob('pdf_only')">📄 Tải, Đóng dấu & Up PDF Mới</button>
+              <button class="btn btn-purple" onclick="startSyncJob('video_only')">🎬 Đồng bộ Video Mới</button>
+              <button class="btn btn-warn" onclick="startSyncJob('both')">🚀 Đồng bộ Cả Video & PDF Mới</button>
+              <button class="btn btn-danger" onclick="stopSyncJob()" id="btnStopJob" disabled>⏹ Dừng</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">📊 Tiến trình & Nhật ký Thời gian thực</h2>
+              <span id="jobStatusBadge" class="badge badge-blue">Sẵn sàng</span>
+            </div>
+
+            <div style="font-size:12.5px; margin-bottom:10px; color:var(--muted);">
+              <div>Đang xử lý: <b style="color:var(--text);" id="jobCurrentTeacher">-</b></div>
+              <div>Trạng thái: <span id="jobCurrentAction">Chưa chạy</span></div>
+            </div>
+
+            <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; margin-bottom:12px; text-align:center;">
+              <div style="background:#0f172a; padding:8px; border-radius:8px; border:1px solid var(--border);">
+                <div style="font-size:11px; color:var(--muted);">Đã quét</div>
+                <div style="font-weight:700; font-size:15px;" id="progScanned">0 file</div>
+              </div>
+              <div style="background:#0f172a; padding:8px; border-radius:8px; border:1px solid var(--border);">
+                <div style="font-size:11px; color:var(--muted);">Đã lọc trùng</div>
+                <div style="font-weight:700; font-size:15px; color:#60a5fa;" id="progDup">0</div>
+              </div>
+              <div style="background:#0f172a; padding:8px; border-radius:8px; border:1px solid var(--border);">
+                <div style="font-size:11px; color:var(--muted);">Phát hiện mới</div>
+                <div style="font-weight:700; font-size:15px; color:#fbbf24;" id="progNew">0</div>
+              </div>
+              <div style="background:#0f172a; padding:8px; border-radius:8px; border:1px solid var(--border);">
+                <div style="font-size:11px; color:var(--muted);">Đã Upload</div>
+                <div style="font-weight:700; font-size:15px; color:#34d399;" id="progSynced">0</div>
+              </div>
+            </div>
+
+            <div class="log-box" id="jobLogBox"></div>
+          </div>
+
+          <div class="card" id="newItemsCard" style="display:none;">
+            <div class="card-header">
+              <h2 class="card-title">✨ Danh sách File Mới phát hiện (Chưa có trên SCHOOL)</h2>
+              <span class="badge badge-yellow" id="newItemsCountBadge">0 mục</span>
+            </div>
+            <div style="max-height:280px; overflow-y:auto;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Loại</th>
+                    <th>Tên file</th>
+                    <th>Đường dẫn khóa học</th>
+                    <th>Dung lượng</th>
+                  </tr>
+                </thead>
+                <tbody id="newItemsTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: DEDUP CLEANER ON DRIVE -->
+    <section id="tab-dedup" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">🧹 Quét & Dọn File Bị Nhân Đôi Trực Tiếp Trên Drive SCHOOL</h2>
+        </div>
+        <p style="color:var(--muted); margin-top:0;">
+          Công cụ sẽ quét các thư mục bài học trong <b>SCHOOL</b>, tìm các Video hoặc PDF bị upload trùng nhiều lần trong cùng 1 bài học.
+          <b>Đặc biệt an toàn:</b> Tự động đối chiếu với <code>school.unizvn/data/lessons.json</code> để <b>LUÔN GIỮ LẠI</b> đúng File ID đang hiển thị trên website, chỉ chuyển các bản thừa vào Thùng rác Drive.
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:14px;">
+          <select id="dedupPresetSelect" style="max-width:340px;" onchange="onDedupPresetChange()">
+            <option value="1OTcXbv8XQhxmzH4SdGOMfTB7QrBGRKfv|Môn TOÁN">Môn: TOÁN (1OTcXbv8XQhxmzH4SdGOMfTB7QrBGRKfv)</option>
+            <option value="1TfZ3TSwYBoFbMt017Hdf_b9CpuEqYfnd|Môn VẬT LÝ">Môn: VẬT LÝ (1TfZ3TSwYBoFbMt017Hdf_b9CpuEqYfnd)</option>
+            <option value="18FvxWlgkNTGKL9JDu_e9pVzf3UUFZsXz|Môn HÓA HỌC">Môn: HÓA HỌC (18FvxWlgkNTGKL9JDu_e9pVzf3UUFZsXz)</option>
+            <option value="1dinJrXT7p7gm9azZQPtnqWxnEPGxegz8|Môn SINH HỌC">Môn: SINH HỌC (1dinJrXT7p7gm9azZQPtnqWxnEPGxegz8)</option>
+            <option value="133bqJOVcH8CbiFthleGmiK9Xl3cNbBVF|Môn TIẾNG ANH">Môn: TIẾNG ANH (133bqJOVcH8CbiFthleGmiK9Xl3cNbBVF)</option>
+            <option value="1fVL76Gun8lhkVVuJGKsZPq5PhjFs8icg|Môn NGỮ VĂN">Môn: NGỮ VĂN (1fVL76Gun8lhkVVuJGKsZPq5PhjFs8icg)</option>
+            <option value="1vFJf7gojOvG6cNGOOwtwwqR2R6DFQW6v|Môn LỊCH SỬ">Môn: LỊCH SỬ (1vFJf7gojOvG6cNGOOwtwwqR2R6DFQW6v)</option>
+            <option value="1JMAooyuSFP0RudkN0yQNmxwmVahdLs0e|Môn ĐỊA LÝ">Môn: ĐỊA LÝ (1JMAooyuSFP0RudkN0yQNmxwmVahdLs0e)</option>
+            <option value="1Qv-8rSivXCiWwe-T9R8e9e8hUisLAObs|Môn ĐGNL - ĐGTD">Môn: ĐGNL - ĐGTD (1Qv-8rSivXCiWwe-T9R8e9e8hUisLAObs)</option>
+            <option value="1TowkhJhSklX2qoqBc5r7aiYaQCYFJggp|TOÁN THẦY NGUYỄN QUỐC CHÍ">Giáo viên: TOÁN THẦY NGUYỄN QUỐC CHÍ (Ví dụ nhanh)</option>
+          </select>
+          <input type="text" id="dedupCustomFolderId" style="max-width:340px;" value="1TowkhJhSklX2qoqBc5r7aiYaQCYFJggp" placeholder="Hoặc dán Folder ID bất kỳ trên Drive SCHOOL..." />
+          <button class="btn btn-primary" onclick="scanDriveDuplicates()" id="btnDedupScan">🔍 Quét tìm File Trùng</button>
+          <button class="btn btn-danger" onclick="cleanSelectedDuplicates()" id="btnDedupClean" disabled>🗑 Chuyển các bản thừa vào Thùng rác</button>
+        </div>
+
+        <div id="dedupSummaryBox" style="margin-bottom:12px; font-size:13px; color:var(--muted);"></div>
+        <div style="max-height:500px; overflow-y:auto;">
+          <table>
+            <thead>
+              <tr>
+                <th><input type="checkbox" checked onchange="toggleAllDedupChecks(this.checked)" /></th>
+                <th>Thư mục bài học</th>
+                <th>Bản GIỮ LẠI (An toàn trên Web)</th>
+                <th>Bản THỪA (Sẽ chuyển vào thùng rác)</th>
+                <th>Dung lượng tiết kiệm</th>
+              </tr>
+            </thead>
+            <tbody id="dedupTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: PDF WATERMARK TEST & PREVIEW -->
+    <section id="tab-pdfpreview" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">🎨 Kiểm tra & Xem trước Xóa Watermark Cũ + Đóng Dấu <code>school.unizvn.com</code></h2>
+        </div>
+        <p style="color:var(--muted); margin-top:0;">
+          Dán ID hoặc Link một file PDF nguồn bất kỳ trên Google Drive (hoặc tải file từ máy Mac của bạn) để xem trực tiếp kết quả:
+          Mở khóa <code>/Encrypt</code> → Xóa sạch 3 lớp watermark <code>QuickPDF / TaiLieuOnThi.Net</code> & link <code>tlot.cc</code> → Đóng dấu <code>school.unizvn.com</code> góc dưới bên phải → Thêm tiền tố <code>UNI </code>.
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <input type="text" id="testPdfDriveInput" style="max-width:460px;" value="1m5LOKz-YoRHP7p2AJGRS0eQ39VAVTAyf" placeholder="Nhập Drive File ID hoặc URL file PDF..." />
+          <button class="btn btn-primary" onclick="testPdfFromDrive()" id="btnTestDrivePdf">⚡ Xử lý & So sánh từ Drive</button>
+          <label class="btn" style="cursor:pointer;">
+            📂 Hoặc Chọn file PDF từ máy Mac...
+            <input type="file" accept="application/pdf" style="display:none;" onchange="testPdfFromUpload(this)" />
+          </label>
+        </div>
+        <div id="pdfTestReport" style="margin-top:12px; font-size:13px;"></div>
+        <div class="preview-grid" id="pdfPreviewGrid" style="display:none;">
+          <div>
+            <div style="font-weight:700; margin-bottom:6px; color:#f87171;">❌ TRƯỚC KHI XỬ LÝ (File gốc có Watermark bên cũ)</div>
+            <iframe id="iframePdfBefore" class="pdf-frame"></iframe>
+          </div>
+          <div>
+            <div style="font-weight:700; margin-bottom:6px; color:#34d399;">✅ SAU KHI XỬ LÝ (<span id="afterFileNameLabel">UNI ...pdf</span>)</div>
+            <iframe id="iframePdfAfter" class="pdf-frame"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: ACCOUNTS, DB & AUTO-SYNC -->
+    <section id="tab-settings" class="tab-pane">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">🔑 Danh sách Tài khoản Google Drive & Quyền Ghi</h2>
+            <button class="btn btn-warn btn-sm" onclick="startOAuthWrite()">+ Cấp quyền Ghi (1-Click OAuth)</button>
+          </div>
+          <p style="font-size:12.5px; color:var(--muted); margin-top:0;">
+            Các token trong <code>school.unizvn/.env</code> mặc định chỉ có quyền đọc (<code>drive.readonly</code>). Khi bạn bấm nút <b>Cấp quyền Ghi (1-Click OAuth)</b>, trình duyệt sẽ mở trang xác nhận của Google trên cổng <code>127.0.0.1:53682</code> và lưu Refresh Token có quyền Ghi (<code>https://www.googleapis.com/auth/drive</code>) để tạo thư mục & upload file lên <code>SCHOOL</code>.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Tài khoản Gmail</th>
+                <th>Quyền hạn</th>
+                <th>Scopes</th>
+              </tr>
+            </thead>
+            <tbody id="accountsTableBody"></tbody>
+          </table>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">🗄 Đồng bộ Cơ sở dữ liệu <code>_pdf_sync_db.json</code> với Google Drive</h2>
+            </div>
+            <p style="font-size:12.5px; color:var(--muted); margin-top:0;">
+              File <code>_pdf_sync_db.json</code> (ID trên Drive: <code>1dL004WRVkYE3y-vp_yQGsRB-6xWVGKvh</code>) đã được khôi phục về máy Mac của bạn với đầy đủ <b>18,775</b> đường dẫn PDF đã xử lý từ máy Windows cũ.
+            </p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn btn-primary" onclick="pullDbFromDrive()">⬇️ Tải _pdf_sync_db.json mới nhất từ Drive về máy</button>
+              <button class="btn btn-success" onclick="pushDbToDrive()">⬆️ Đẩy _pdf_sync_db.json từ máy lên Drive lưu trữ</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">⏰ Hẹn giờ Tự động Quét & Đồng bộ Bài mới (Auto-Sync)</h2>
+            </div>
+            <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:12px;">
+              <label class="rule-item">
+                <input type="checkbox" id="autoSyncEnabledCheck" />
+                <span>Bật tự động quét Master Sheet định kỳ</span>
+              </label>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <span>Chu kỳ (phút):</span>
+                <input type="number" id="autoSyncIntervalInput" value="180" style="width:90px;" min="15" />
+              </div>
+              <button class="btn btn-primary" onclick="saveRulesConfig()">Lưu hẹn giờ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let appState = null;
+    let activeSubject = 'ALL';
+    let selectedTeacherIds = new Set();
+    let pollTimer = null;
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-pane').forEach((el) => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach((el) => el.classList.remove('active'));
+      document.getElementById('tab-' + tabId).classList.add('active');
+      if (btn) btn.classList.add('active');
+    }
+
+    async function loadState() {
+      const res = await fetch('/api/state');
+      const data = await res.json();
+      if (!data.ok) return;
+      appState = data;
+
+      document.getElementById('statPdfDbPaths').textContent = (data.dbStats.pdfSyncedNormPaths || 0).toLocaleString('vi-VN');
+      document.getElementById('statPdfUniCount').textContent = (data.dbStats.uniPdfPathsCount || 0).toLocaleString('vi-VN');
+      document.getElementById('statPdfLegacyCount').textContent = (data.dbStats.legacyPdfPathsCount || 0).toLocaleString('vi-VN');
+      document.getElementById('statFolderCache').textContent = (data.dbStats.dstFolderCacheCount || 0).toLocaleString('vi-VN');
+
+      document.getElementById('statWebVideos').textContent = (data.schoolWebStats.uniqueVideos || 0).toLocaleString('vi-VN');
+      document.getElementById('statWebPdfs').textContent = (data.schoolWebStats.uniquePdfs || 0).toLocaleString('vi-VN');
+      document.getElementById('statWebLessons').textContent = (data.schoolWebStats.lessonsCount || 0).toLocaleString('vi-VN');
+
+      const teachers = data.masterSheet?.teachers || [];
+      document.getElementById('statTeachersCount').textContent = teachers.length;
+      document.getElementById('statCompletedTeachers').textContent = data.dbStats.completedTeachersCount || 0;
+
+      document.getElementById('statAccountsCount').textContent = (data.accounts || []).length;
+      document.getElementById('statAccountsList').textContent =
+        (data.accounts || []).map((a) => `${a.email} (${a.canWrite ? 'Ghi' : 'Đọc'})`).join(' · ') || 'Chưa có';
+
+      const writeBadge = document.getElementById('writeAuthBadge');
+      if (data.hasWriteAccess) {
+        writeBadge.className = 'badge badge-green';
+        writeBadge.textContent = '✅ Đã có quyền Ghi Google Drive';
+      } else {
+        writeBadge.className = 'badge badge-yellow';
+        writeBadge.textContent = '⚠️ Chế độ Đọc (Bấm nút bên cạnh để cấp quyền Upload)';
+      }
+
+      // Nạp cấu hình rules
+      const r = data.config?.rules || {};
+      document.getElementById('ruleSkipSheets').checked = r.skipGoogleSheetsAndDocs !== false;
+      document.getElementById('ruleSkipEbook').checked = r.skipEbookFolders !== false;
+      document.getElementById('ruleSkipBonus').checked = r.skipBonusAndGuide !== false;
+      document.getElementById('ruleSkipInfoVideo').checked = r.skipInfoFolderForVideo !== false;
+      document.getElementById('rulePdfRemoveOldWm').checked = r.pdfRemoveOldWatermark !== false;
+      document.getElementById('rulePdfStampUni').checked = r.pdfStampUniWatermark !== false;
+      document.getElementById('rulePdfAddPrefix').checked = r.pdfAddUniPrefix !== false;
+      document.getElementById('ruleAutoSchoolSync').checked = !!r.autoTriggerSchoolSync;
+      document.getElementById('ruleCleanCoexistingLegacyPdf').checked = r.cleanCoexistingLegacyPdf !== false;
+      document.getElementById('ruleReplaceLegacyNonUniPdf').checked = !!r.replaceLegacyNonUniPdf;
+      if (r.videoMode) document.getElementById('ruleVideoMode').value = r.videoMode;
+
+      document.getElementById('autoSyncEnabledCheck').checked = !!data.config?.autoSync?.enabled;
+      document.getElementById('autoSyncIntervalInput').value = data.config?.autoSync?.intervalMinutes || 180;
+
+      // Mặc định chọn giáo viên đầu tiên nếu chưa chọn gì
+      if (selectedTeacherIds.size === 0 && teachers.length > 0) {
+        selectedTeacherIds.add(teachers[0].sourceFolderId);
+      }
+
+      renderSubjectPills();
+      renderTeacherList();
+      renderAccountsTable();
+
+      if (data.syncJob?.running) {
+        startPollingStatus();
+      }
+    }
+
+    function renderSubjectPills() {
+      const teachers = appState?.masterSheet?.teachers || [];
+      const counts = { ALL: teachers.length };
+      for (const t of teachers) {
+        counts[t.subject] = (counts[t.subject] || 0) + 1;
+      }
+      const subjects = ['ALL', ...Object.keys(counts).filter((k) => k !== 'ALL')];
+      const container = document.getElementById('subjectPills');
+      container.innerHTML = subjects
+        .map((s) => {
+          const label = s === 'ALL' ? `Tất cả (${counts.ALL})` : `${s} (${counts[s]})`;
+          const cls = s === activeSubject ? 'pill active' : 'pill';
+          return `<button class="${cls}" onclick="setSubjectFilter('${s.replace(/'/g, "\\'")}')">${label}</button>`;
+        })
+        .join('');
+    }
+
+    function setSubjectFilter(subj) {
+      activeSubject = subj;
+      renderSubjectPills();
+      renderTeacherList();
+    }
+
+    function getFilteredTeachers() {
+      const teachers = appState?.masterSheet?.teachers || [];
+      const q = (document.getElementById('teacherSearchInput').value || '').trim().toLowerCase();
+      return teachers.filter((t) => {
+        if (activeSubject !== 'ALL' && t.subject !== activeSubject) return false;
+        if (q) {
+          const hay = `${t.subject} ${t.teacherFolder} ${t.rawTitle}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+    }
+
+    function renderTeacherList() {
+      const list = getFilteredTeachers();
+      const container = document.getElementById('teacherListContainer');
+      if (!list.length) {
+        container.innerHTML = `<div style="padding:20px; text-align:center; color:var(--muted);">Không tìm thấy giáo viên/khóa học phù hợp.</div>`;
+        return;
+      }
+      container.innerHTML = list
+        .map((t) => {
+          const checked = selectedTeacherIds.has(t.sourceFolderId) ? 'checked' : '';
+          const comp = t.completedInfo;
+          const badgeHtml = comp
+            ? `<span class="badge badge-green" title="Đã đồng bộ ${comp.totalPdfs} PDF">✔ ${comp.totalPdfs} PDF</span>`
+            : `<span class="badge badge-blue">Mới / Chưa lưu mốc</span>`;
+          const dstLink = t.dstFolderId
+            ? `<a href="https://drive.google.com/drive/folders/${t.dstFolderId}" target="_blank">Folder SCHOOL ↗</a>`
+            : '';
+          const subSheetLink = t.subSheetUrl
+            ? `<a href="${t.subSheetUrl}" target="_blank">Sub-Sheet ↗</a>`
+            : '';
+          return `
+            <div class="teacher-row">
+              <label class="teacher-main" style="cursor:pointer;">
+                <input type="checkbox" ${checked} onchange="toggleTeacherSelect('${t.sourceFolderId}', this.checked)" style="margin-top:3px;" />
+                <div>
+                  <div class="teacher-title">[${t.subject}] ${t.teacherFolder}</div>
+                  <div class="teacher-meta">
+                    <span>Dòng #${t.row}</span>
+                    <a href="https://drive.google.com/drive/folders/${t.sourceFolderId}" target="_blank">Folder Nguồn ↗</a>
+                    ${subSheetLink}
+                    ${dstLink}
+                  </div>
+                </div>
+              </label>
+              <div>${badgeHtml}</div>
+            </div>
+          `;
+        })
+        .join('');
+    }
+
+    function toggleTeacherSelect(id, checked) {
+      if (checked) selectedTeacherIds.add(id);
+      else selectedTeacherIds.delete(id);
+    }
+
+    function selectAllVisibleTeachers(select) {
+      for (const t of getFilteredTeachers()) {
+        if (select) selectedTeacherIds.add(t.sourceFolderId);
+        else selectedTeacherIds.delete(t.sourceFolderId);
+      }
+      renderTeacherList();
+    }
+
+    function collectCurrentRules() {
+      return {
+        skipGoogleSheetsAndDocs: document.getElementById('ruleSkipSheets').checked,
+        skipEbookFolders: document.getElementById('ruleSkipEbook').checked,
+        skipBonusAndGuide: document.getElementById('ruleSkipBonus').checked,
+        skipInfoFolderForVideo: document.getElementById('ruleSkipInfoVideo').checked,
+        pdfRemoveOldWatermark: document.getElementById('rulePdfRemoveOldWm').checked,
+        pdfStampUniWatermark: document.getElementById('rulePdfStampUni').checked,
+        pdfAddUniPrefix: document.getElementById('rulePdfAddPrefix').checked,
+        cleanCoexistingLegacyPdf: document.getElementById('ruleCleanCoexistingLegacyPdf').checked,
+        replaceLegacyNonUniPdf: document.getElementById('ruleReplaceLegacyNonUniPdf').checked,
+        videoMode: document.getElementById('ruleVideoMode').value,
+        autoTriggerSchoolSync: document.getElementById('ruleAutoSchoolSync').checked,
+      };
+    }
+
+    async function saveRulesConfig() {
+      const rules = collectCurrentRules();
+      const autoSync = {
+        enabled: document.getElementById('autoSyncEnabledCheck').checked,
+        intervalMinutes: Number(document.getElementById('autoSyncIntervalInput').value || 180),
+      };
+      const res = await fetch('/api/settings/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ rules, autoSync }),
+      });
+      const data = await res.json();
+      if (data.ok) alert('Đã lưu cấu hình Luật lọc & Hẹn giờ tự động!');
+    }
+
+    async function startSyncJob(mode, customTargets = null) {
+      const teacherFolderIds = Array.from(selectedTeacherIds);
+      if (!customTargets && teacherFolderIds.length === 0) {
+        alert('Vui lòng tích chọn ít nhất 1 Giáo viên / Khóa học ở danh sách bên trái!');
+        return;
+      }
+      const rules = collectCurrentRules();
+      const res = await fetch('/api/sync/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ teacherFolderIds, customTargets, mode, rules }),
+      });
+      const data = await res.json();
+      if (!data.ok) {
+        if (data.needWriteAuth) {
+          if (confirm(data.error + '\n\nBạn có muốn mở cửa sổ Cấp quyền Ghi ngay bây giờ không?')) {
+            startOAuthWrite();
+          }
+          return;
+        }
+        alert('Lỗi: ' + data.error);
+        return;
+      }
+      startPollingStatus();
+    }
+
+    async function stopSyncJob() {
+      await fetch('/api/sync/stop', { method: 'POST' });
+    }
+
+    function startPollingStatus() {
+      if (pollTimer) clearInterval(pollTimer);
+      pollSyncStatus();
+      pollTimer = setInterval(pollSyncStatus, 1200);
+    }
+
+    async function pollSyncStatus() {
+      try {
+        const res = await fetch('/api/sync/status');
+        const job = await res.json();
+        if (!job.ok) return;
+
+        document.getElementById('btnStopJob').disabled = !job.running;
+        const badge = document.getElementById('jobStatusBadge');
+        if (job.running) {
+          badge.className = 'badge badge-yellow';
+          badge.textContent = job.mode === 'dry_run' ? 'Đang quét Dry-Run...' : 'Đang đồng bộ & Upload...';
+        } else {
+          badge.className = 'badge badge-green';
+          badge.textContent = 'Hoàn tất / Sẵn sàng';
+        }
+
+        document.getElementById('jobCurrentTeacher').textContent = job.currentTeacher || '-';
+        document.getElementById('jobCurrentAction').textContent = job.currentAction || '-';
+
+        const p = job.progress || {};
+        document.getElementById('progScanned').textContent = `${(p.scannedFiles || 0).toLocaleString('vi-VN')} (${p.scannedFolders || 0} dir)`;
+        document.getElementById('progDup').textContent = `${(p.duplicatePdf || 0) + (p.duplicateVideo || 0)} (${p.duplicatePdf || 0}P/${p.duplicateVideo || 0}V)`;
+        document.getElementById('progNew').textContent = `${p.newPdfFound || 0} PDF · ${p.newVideoFound || 0} Vid`;
+        document.getElementById('progSynced').textContent = `${p.syncedPdf || 0} PDF · ${p.syncedVideo || 0} Vid`;
+
+        const logBox = document.getElementById('jobLogBox');
+        logBox.innerHTML = (job.logs || [])
+          .map((l) => `<div class="log-line log-${l.level}">[${l.time}] ${escapeHtml(l.msg)}</div>`)
+          .join('');
+        logBox.scrollTop = logBox.scrollHeight;
+
+        const preview = job.newItemsPreview || [];
+        const newCard = document.getElementById('newItemsCard');
+        if (preview.length > 0) {
+          newCard.style.display = 'block';
+          document.getElementById('newItemsCountBadge').textContent = `${preview.length} mục mới`;
+          document.getElementById('newItemsTableBody').innerHTML = preview
+            .slice(0, 150)
+            .map(
+              (item) => `
+              <tr>
+                <td><span class="badge ${item.kind === 'pdf' ? 'badge-blue' : 'badge-yellow'}">${item.kind.toUpperCase()}</span></td>
+                <td><a href="https://drive.google.com/file/d/${item.sourceFileId}/view" target="_blank">${escapeHtml(item.name)} ↗</a></td>
+                <td style="color:var(--muted); font-size:11.5px;">${escapeHtml(item.relPath)}</td>
+                <td>${item.size ? (item.size / 1048576).toFixed(1) + ' MB' : '-'}</td>
+              </tr>
+            `
+            )
+            .join('');
+        } else {
+          newCard.style.display = 'none';
+        }
+
+        if (!job.running && pollTimer) {
+          clearInterval(pollTimer);
+          pollTimer = null;
+          loadState();
+        }
+      } catch {}
+    }
+
+    async function parseAndRunCustomUrl() {
+      const url = document.getElementById('customUrlInput').value.trim();
+      const subj = document.getElementById('customSubjectSelect').value;
+      const customTeacher = document.getElementById('customTeacherNameInput').value.trim();
+      const out = document.getElementById('customParseResult');
+      if (!url) return alert('Vui lòng dán link Google Sheet hoặc Drive Folder!');
+
+      out.textContent = '⏳ Đang phân tích đường dẫn...';
+      const res = await fetch('/api/sheet/parse-url', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url }),
+      });
+      const data = await res.json();
+      if (!data.ok) {
+        out.innerHTML = `<span style="color:#f87171;">❌ Lỗi: ${escapeHtml(data.error)}</span>`;
+        return;
+      }
+
+      if (data.kind === 'folder') {
+        const teacherFolder = customTeacher || data.folder.name;
+        out.innerHTML = `✅ Nhận diện Folder: <b>${escapeHtml(teacherFolder)}</b> (ID: <code>${data.folder.id}</code>) — Đang bắt đầu quét Dry-Run...`;
+        startSyncJob('dry_run', [
+          {
+            subject: subj,
+            teacherFolder,
+            sourceFolderId: data.folder.id,
+          },
+        ]);
+      } else if (data.kind === 'sheet') {
+        const p = data.parsed;
+        if (p.teachers && p.teachers.length > 0) {
+          out.innerHTML = `✅ Sheet chứa <b>${p.teachers.length}</b> khóa học/giáo viên — Đang bắt đầu quét Dry-Run...`;
+          startSyncJob('dry_run', p.teachers);
+        } else {
+          // Gom các folder link từ các tab không bị skip
+          const folderLinks = [];
+          for (const tb of p.tabs || []) {
+            if (tb.skippedByRule) continue;
+            for (const r of tb.rows || []) {
+              for (const dl of r.driveLinks || []) {
+                if (dl.kind === 'folder') {
+                  folderLinks.push({
+                    subject: subj,
+                    teacherFolder: customTeacher || tb.name,
+                    sourceFolderId: dl.id,
+                  });
+                }
+              }
+            }
+          }
+          if (!folderLinks.length) {
+            out.innerHTML = `<span style="color:#fbbf24;">⚠ Đã đọc Sheet (${(p.tabs || []).length} tabs) nhưng không tìm thấy link Drive Folder nào.</span>`;
+            return;
+          }
+          out.innerHTML = `✅ Tìm thấy <b>${folderLinks.length}</b> thư mục bài học trong Sheet — Đang bắt đầu quét Dry-Run...`;
+          startSyncJob('dry_run', folderLinks.slice(0, 30));
+        }
+      }
+    }
+
+    async function refreshMasterSheet() {
+      const res = await fetch('/api/sheet/refresh-master', { method: 'POST' });
+      const data = await res.json();
+      if (data.ok) {
+        await loadState();
+        alert('Đã tải lại và cập nhật Master Sheet thành công!');
+      } else {
+        alert('Lỗi tải Master Sheet: ' + data.error);
+      }
+    }
+
+    async function startOAuthWrite() {
+      const res = await fetch('/api/oauth/start', { method: 'POST' });
+      const data = await res.json();
+      if (!data.ok) return alert('Lỗi: ' + data.error);
+      window.open(data.authUrl, '_blank');
+      setTimeout(loadState, 6000);
+      setTimeout(loadState, 14000);
+    }
+
+    async function triggerSchoolWebSync() {
+      if (!confirm('Chạy scripts/sync-drive.js để cập nhật danh sách bài học mới vào school.unizvn?')) return;
+      const res = await fetch('/api/school/sync', { method: 'POST' });
+      const data = await res.json();
+      if (data.ok) {
+        alert('✅ Đã đồng bộ dữ liệu sang school.unizvn thành công!\n\n' + (data.output || '').slice(-600));
+        loadState();
+      } else {
+        alert('Lỗi chạy sync-drive.js: ' + (data.error || data.output));
+      }
+    }
+
+    // TAB 2: DEDUP
+    function onDedupPresetChange() {
+      const val = document.getElementById('dedupPresetSelect').value;
+      const [id] = val.split('|');
+      document.getElementById('dedupCustomFolderId').value = id;
+    }
+
+    async function scanDriveDuplicates() {
+      const folderId = document.getElementById('dedupCustomFolderId').value.trim();
+      const preset = document.getElementById('dedupPresetSelect');
+      const label = preset.options[preset.selectedIndex]?.text || 'SCHOOL';
+      if (!folderId) return alert('Vui lòng nhập Folder ID cần quét trùng!');
+
+      const btn = document.getElementById('btnDedupScan');
+      const summary = document.getElementById('dedupSummaryBox');
+      btn.disabled = true;
+      summary.textContent = '⏳ Đang quét cây thư mục trên Drive SCHOOL để tìm các file bị nhân đôi...';
+
+      try {
+        const res = await fetch('/api/dedup/scan', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ folderId, label }),
+        });
+        const data = await res.json();
+        if (!data.ok) throw new Error(data.error);
+
+        const r = data.result;
+        summary.innerHTML = `✅ Đã quét <b>${r.scannedFolders}</b> thư mục (<b>${r.totalFiles}</b> files) — Phát hiện <b>${r.duplicateGroups.length}</b> nhóm trùng (<b>${r.redundantFilesCount}</b> file thừa, chiếm <b>${(r.redundantBytes / 1048576).toFixed(1)} MB</b>).`;
+
+        const tbody = document.getElementById('dedupTableBody');
+        document.getElementById('btnDedupClean').disabled = r.redundantFilesCount === 0;
+
+        tbody.innerHTML = r.duplicateGroups
+          .map((g) => {
+            const redPairs = g.redundant.map((x) => `${x.id}|${x.keepId || g.keep.id}`).join(',');
+            const redNames = g.redundant
+              .map(
+                (x) => `
+                  <div>
+                    <a href="https://drive.google.com/file/d/${x.id}/view" target="_blank">${escapeHtml(x.name)}</a>
+                    <code>(${x.id.slice(0, 8)}...)</code>
+                    ${x.inWebLessons ? '<span class="badge badge-yellow" title="Tự động trỏ lessons.json sang bản UNI giữ lại">Sẽ chuyển link Web sang bản UNI</span>' : ''}
+                  </div>
+                `
+              )
+              .join('');
+            const bytes = g.redundant.reduce((s, x) => s + (x.size || 0), 0);
+            return `
+              <tr>
+                <td><input type="checkbox" class="dedup-check" value="${redPairs}" checked /></td>
+                <td style="font-size:11.5px; color:var(--muted);">${escapeHtml(g.folderPath)}</td>
+                <td>
+                  <a href="https://drive.google.com/file/d/${g.keep.id}/view" target="_blank"><b>${escapeHtml(g.keep.name)}</b></a>
+                  ${g.keep.isUni ? '<span class="badge badge-green">Bản UNI chuẩn</span>' : ''}
+                  ${g.keep.inWebLessons ? '<span class="badge badge-blue">Đang dùng trên Web</span>' : ''}
+                </td>
+                <td>${redNames}</td>
+                <td>${(bytes / 1048576).toFixed(1)} MB</td>
+              </tr>
+            `;
+          })
+          .join('');
+      } catch (e) {
+        summary.innerHTML = `<span style="color:#f87171;">❌ Lỗi quét trùng: ${escapeHtml(e.message)}</span>`;
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    function toggleAllDedupChecks(checked) {
+      document.querySelectorAll('.dedup-check').forEach((el) => {
+        el.checked = checked;
+      });
+    }
+
+    async function cleanSelectedDuplicates() {
+      const pairs = [];
+      document.querySelectorAll('.dedup-check:checked').forEach((el) => {
+        for (const token of el.value.split(',').filter(Boolean)) pairs.push(token);
+      });
+      if (!pairs.length) return alert('Chưa chọn nhóm file trùng nào!');
+      if (!confirm(`Chuyển ${pairs.length} bản sao/file cũ bị trùng vào Thùng rác Google Drive? (Tự động giữ bản UNI chuẩn và cập nhật link trên web nếu cần)`)) return;
+
+      const res = await fetch('/api/dedup/clean', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ fileIds: pairs }),
+      });
+      const data = await res.json();
+      if (!data.ok) return alert('Lỗi: ' + data.error);
+      alert(`✅ Đã dọn ${data.trashed} file trùng vào thùng rác!${data.updatedWebLinks ? `\n🔄 Đã tự động cập nhật ${data.updatedWebLinks} link trong lessons.json sang bản UNI chuẩn.` : ''}`);
+      scanDriveDuplicates();
+    }
+
+    // TAB 3: PDF PREVIEW
+    async function testPdfFromDrive() {
+      const val = document.getElementById('testPdfDriveInput').value.trim();
+      if (!val) return alert('Vui lòng nhập ID hoặc Link file PDF trên Drive!');
+      const rep = document.getElementById('pdfTestReport');
+      rep.textContent = '⏳ Đang tải file PDF từ Drive, xóa watermark cũ và đóng dấu school.unizvn.com...';
+
+      const res = await fetch('/api/pdf/test-drive', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ fileIdOrUrl: val }),
+      });
+      const data = await res.json();
+      if (!data.ok) {
+        rep.innerHTML = `<span style="color:#f87171;">❌ Lỗi: ${escapeHtml(data.error)}</span>`;
+        return;
+      }
+      showPdfComparison(data);
+    }
+
+    async function testPdfFromUpload(input) {
+      if (!input.files || !input.files[0]) return;
+      const rep = document.getElementById('pdfTestReport');
+      rep.textContent = '⏳ Đang xử lý file PDF tải lên...';
+      const fd = new FormData();
+      fd.append('pdf', input.files[0]);
+      const res = await fetch('/api/pdf/test-upload', {
+        method: 'POST',
+        body: fd,
+      });
+      const data = await res.json();
+      if (!data.ok) {
+        rep.innerHTML = `<span style="color:#f87171;">❌ Lỗi: ${escapeHtml(data.error)}</span>`;
+        return;
+      }
+      showPdfComparison(data);
+    }
+
+    function showPdfComparison(data) {
+      const r = data.report;
+      document.getElementById('pdfTestReport').innerHTML = `
+        <span class="badge badge-green">✔ Thành công</span>
+        Đã xử lý <b>${r.pages}</b> trang · Xóa <b>${r.removedStreams}</b> lớp Watermark cũ & <b>${r.removedLinks}</b> link quảng cáo ẩn ·
+        Tên file xuất: <b>${escapeHtml(data.uniFileName)}</b> (${(r.outputSize / 1024).toFixed(0)} KB)
+      `;
+      document.getElementById('afterFileNameLabel').textContent = data.uniFileName;
+      document.getElementById('pdfPreviewGrid').style.display = 'grid';
+      document.getElementById('iframePdfBefore').src = data.beforeUrl + '?t=' + Date.now();
+      document.getElementById('iframePdfAfter').src = data.afterUrl + '?t=' + Date.now();
+    }
+
+    // TAB 4: ACCOUNTS & DB
+    function renderAccountsTable() {
+      const tbody = document.getElementById('accountsTableBody');
+      const accs = appState?.accounts || [];
+      tbody.innerHTML = accs
+        .map(
+          (a) => `
+          <tr>
+            <td><b>${escapeHtml(a.email)}</b></td>
+            <td>${a.canWrite ? '<span class="badge badge-green">Đầy đủ Đọc + Ghi (Upload)</span>' : '<span class="badge badge-yellow">Chỉ Đọc (drive.readonly)</span>'}</td>
+            <td style="font-size:11px; color:var(--muted);">${escapeHtml((a.scopes || []).join(', '))}</td>
+          </tr>
+        `
+        )
+        .join('');
+    }
+
+    async function pullDbFromDrive() {
+      const res = await fetch('/api/db/pull-from-drive', { method: 'POST' });
+      const data = await res.json();
+      if (data.ok) {
+        alert(`✅ Đã tải _pdf_sync_db.json từ Drive thành công (${data.syncedNormPaths} đường dẫn)!`);
+        loadState();
+      } else {
+        alert('Lỗi: ' + data.error);
+      }
+    }
+
+    async function pushDbToDrive() {
+      const res = await fetch('/api/db/push-to-drive', { method: 'POST' });
+      const data = await res.json();
+      if (data.ok) {
+        alert(`✅ Đã đẩy _pdf_sync_db.json lên Google Drive thành công (${data.updatedAt})!`);
+      } else {
+        alert('Lỗi: ' + data.error);
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    loadState();
+  </script>
+</body>
+</html>

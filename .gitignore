@@ -1,0 +1,11 @@
+node_modules/
+.venv/
+venv/
+__pycache__/
+tmp/
+*.log
+.DS_Store
+.env
+data/tool-config.json
+data/*.tmp*
+data/batch_test_results.json

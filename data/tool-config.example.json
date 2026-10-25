@@ -1,0 +1,27 @@
+{
+  "masterSheetId": "18_CKgfmrRhBB32cxIOEfrZLukjwJJ7kES2X-IK3NsHc",
+  "schoolRootFolderId": "1KBiUmgMtLOxlK7oJRStIP63sL_WAC1AP",
+  "remotePdfSyncDbFileId": "1dL004WRVkYE3y-vp_yQGsRB-6xWVGKvh",
+  "rules": {
+    "skipGoogleSheetsAndDocs": true,
+    "skipEbookFolders": true,
+    "skipBonusAndGuide": true,
+    "skipInfoFolderForVideo": true,
+    "skipInfoFolderForPdf": false,
+    "cleanFolderNames": true,
+    "pdfRemoveOldWatermark": true,
+    "pdfStampUniWatermark": true,
+    "pdfAddUniPrefix": true,
+    "replaceLegacyNonUniPdf": false,
+    "cleanCoexistingLegacyPdf": true,
+    "videoMode": "remux_or_copy",
+    "autoTriggerSchoolSync": false
+  },
+  "autoSync": {
+    "enabled": false,
+    "intervalMinutes": 180,
+    "lastRunAt": null
+  },
+  "customSheets": [],
+  "writeRefreshTokens": []
+}
