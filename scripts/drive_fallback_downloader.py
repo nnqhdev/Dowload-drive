@@ -216,6 +216,8 @@ def try_usercontent_direct(file_id, dest_path):
     """
     Cách 2: Tải qua cấu trúc link trực tiếp mới của Google:
     https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t
+    Hỗ trợ bóc tách đầy đủ các trường ẩn (id, export, confirm, uuid, at, authuser)
+    từ form cảnh báo quét virus cho các file > 100 MB.
     """
     jar = get_chrome_cookie_jar(force_refresh=False)
     opener = build_opener(jar)
@@ -225,12 +227,17 @@ def try_usercontent_direct(file_id, dest_path):
         ctype = resp.headers.get("Content-Type", "")
         if "text/html" in ctype.lower():
             html = resp.read(65536).decode("utf-8", "ignore")
-            # Tìm form confirm / uuid nếu có
-            uuid_m = re.search(r'name="uuid"\s+value="([^"]+)"', html)
-            if uuid_m:
-                confirm_url = f"{direct_url}&uuid={uuid_m.group(1)}"
+            inputs = dict(re.findall(r'<input[^>]+name="([^"]+)"[^>]+value="([^"]*)"', html))
+            if inputs.get("uuid") or inputs.get("at"):
+                inputs.setdefault("id", file_id)
+                inputs.setdefault("export", "download")
+                inputs.setdefault("confirm", "t")
+                confirm_url = "https://drive.usercontent.google.com/download?" + urllib.parse.urlencode(inputs)
                 with opener.open(confirm_url, timeout=60) as resp2:
                     if "text/html" in (resp2.headers.get("Content-Type") or "").lower():
+                        html2 = resp2.read(8192).decode("utf-8", "ignore")
+                        if "uc-error-caption" in html2 or "vượt quá hạn mức" in html2.lower() or "quota" in html2.lower():
+                            raise RuntimeError("drive.usercontent.google.com báo vượt quá hạn mức tải 24h (Quota Exceeded)")
                         raise RuntimeError("drive.usercontent.google.com vẫn trả về trang HTML (bị chặn tải trực tiếp)")
                     with open(dest_path, "wb") as f:
                         while True:
@@ -254,6 +261,124 @@ def try_usercontent_direct(file_id, dest_path):
     return {
         "ok": True,
         "method": "drive_usercontent_confirm_t",
+        "size": size,
+    }
+
+
+def try_drive_api_make_copy(file_id, dest_path):
+    """
+    Cách 3b (Giải pháp nhân bản file vượt lỗi Vượt quá giới hạn tải xuống 24h - Quota Exceeded):
+    Tương đương DriveApp.getFileById(FILE_ID).makeCopy() trong Google Apps Script:
+    Tạo bản sao tạm thời về Drive cá nhân (hung264656@gmail.com), tải bản sao xuống, rồi xóa bản sao tạm.
+    """
+    school_env_path = "/Users/quochung/Project/School/school.unizvn/.env"
+    tool_cfg_path = os.path.join(ROOT_DIR, "data", "tool-config.json")
+    env = {}
+    if os.path.exists(school_env_path):
+        with open(school_env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                env[k.strip()] = v.strip().strip("'\"")
+    client_id = env.get("GDRIVE_CLIENT_ID", "")
+    client_secret = env.get("GDRIVE_CLIENT_SECRET", "")
+    if not client_id or not client_secret:
+        raise RuntimeError("Thiếu GDRIVE_CLIENT_ID / GDRIVE_CLIENT_SECRET")
+
+    rts = []
+    if os.path.exists(tool_cfg_path):
+        try:
+            with open(tool_cfg_path, "r", encoding="utf-8") as f:
+                cfg = json.load(f)
+                rts.extend(cfg.get("writeRefreshTokens") or [])
+        except Exception:
+            pass
+    rts.extend([s.strip() for s in (env.get("GDRIVE_REFRESH_TOKENS") or "").split(",") if s.strip()])
+
+    access_token = None
+    for rt in rts:
+        body = urllib.parse.urlencode({
+            "client_id": client_id,
+            "client_secret": client_secret,
+            "refresh_token": rt,
+            "grant_type": "refresh_token",
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            "https://oauth2.googleapis.com/token",
+            data=body,
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=15) as r:
+                tdata = json.loads(r.read().decode("utf-8", "ignore"))
+            tok = tdata.get("access_token")
+            scope = tdata.get("scope", "")
+            if not tok or "https://www.googleapis.com/auth/drive" not in scope.split():
+                continue
+            about_req = urllib.request.Request(
+                "https://www.googleapis.com/drive/v3/about?fields=user(emailAddress)",
+                headers={"Authorization": f"Bearer {tok}"},
+            )
+            with urllib.request.urlopen(about_req, timeout=15) as r2:
+                adata = json.loads(r2.read().decode("utf-8", "ignore"))
+            if (adata.get("user", {}).get("emailAddress") or "").lower() == "hung264656@gmail.com":
+                access_token = tok
+                break
+        except Exception:
+            continue
+
+    if not access_token:
+        raise RuntimeError("Không tìm thấy OAuth write token của hung264656@gmail.com")
+
+    copy_id = None
+    try:
+        copy_req = urllib.request.Request(
+            f"https://www.googleapis.com/drive/v3/files/{file_id}/copy?supportsAllDrives=true&fields=id,name,size",
+            data=json.dumps({"name": f"_tmp_quota_bypass_{file_id}"}).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/json",
+            },
+            method="POST",
+        )
+        with urllib.request.urlopen(copy_req, timeout=30) as r:
+            cdata = json.loads(r.read().decode("utf-8", "ignore"))
+        copy_id = cdata.get("id")
+        if not copy_id:
+            raise RuntimeError("files.copy không trả về id")
+
+        dl_req = urllib.request.Request(
+            f"https://www.googleapis.com/drive/v3/files/{copy_id}?alt=media&supportsAllDrives=true",
+            headers={"Authorization": f"Bearer {access_token}"},
+        )
+        with urllib.request.urlopen(dl_req, timeout=120) as r_dl:
+            with open(dest_path, "wb") as f_out:
+                while True:
+                    chunk = r_dl.read(1024 * 1024)
+                    if not chunk:
+                        break
+                    f_out.write(chunk)
+    finally:
+        if copy_id:
+            try:
+                del_req = urllib.request.Request(
+                    f"https://www.googleapis.com/drive/v3/files/{copy_id}?supportsAllDrives=true",
+                    headers={"Authorization": f"Bearer {access_token}"},
+                    method="DELETE",
+                )
+                urllib.request.urlopen(del_req, timeout=15).close()
+            except Exception:
+                pass
+
+    size = os.path.getsize(dest_path)
+    if size < 1024:
+        raise RuntimeError(f"File tải từ bản sao makeCopy quá nhỏ ({size} bytes)")
+    return {
+        "ok": True,
+        "method": "drive_api_make_copy_bypass",
         "size": size,
     }
 
@@ -413,9 +538,10 @@ def main():
     methods = []
     if kind == "pdf":
         methods.extend([
+            ("drive_usercontent", lambda: try_usercontent_direct(file_id, dest_path)),
+            ("drive_make_copy", lambda: try_drive_api_make_copy(file_id, dest_path)),
             ("viewerng_pdf", lambda: try_pdf_viewerng_pages(file_id, dest_path, False)),
             ("viewerng_pdf_fresh_cookie", lambda: try_pdf_viewerng_pages(file_id, dest_path, True)),
-            ("drive_usercontent", lambda: try_usercontent_direct(file_id, dest_path)),
             ("gdown_fuzzy", lambda: try_gdown_fuzzy(file_id, dest_path)),
         ])
     elif kind == "video":
@@ -423,12 +549,14 @@ def main():
             ("videoplayback_stream", lambda: try_videoplayback_stream(file_id, dest_path, False)),
             ("videoplayback_stream_fresh_cookie", lambda: try_videoplayback_stream(file_id, dest_path, True)),
             ("drive_usercontent", lambda: try_usercontent_direct(file_id, dest_path)),
+            ("drive_make_copy", lambda: try_drive_api_make_copy(file_id, dest_path)),
             ("yt_dlp", lambda: try_yt_dlp_cli(file_id, dest_path)),
             ("gdown_fuzzy", lambda: try_gdown_fuzzy(file_id, dest_path)),
         ])
     else:
         methods.extend([
             ("drive_usercontent", lambda: try_usercontent_direct(file_id, dest_path)),
+            ("drive_make_copy", lambda: try_drive_api_make_copy(file_id, dest_path)),
             ("videoplayback_stream", lambda: try_videoplayback_stream(file_id, dest_path, False)),
             ("viewerng_pdf", lambda: try_pdf_viewerng_pages(file_id, dest_path, False)),
             ("gdown_fuzzy", lambda: try_gdown_fuzzy(file_id, dest_path)),
