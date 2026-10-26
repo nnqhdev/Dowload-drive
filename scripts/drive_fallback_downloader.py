@@ -163,8 +163,17 @@ def try_videoplayback_stream(file_id, dest_path, force_refresh_cookies=False):
     opener = build_opener(jar)
 
     info_url = f"https://drive.google.com/get_video_info?docid={file_id}&drive_originator_app=303"
-    with opener.open(info_url, timeout=20) as resp:
-        body = resp.read().decode("utf-8", "ignore")
+    body = ""
+    for attempt in range(3):
+        try:
+            with opener.open(info_url, timeout=30) as resp:
+                body = resp.read().decode("utf-8", "ignore")
+            if body:
+                break
+        except Exception as exc:
+            if attempt == 2:
+                raise exc
+            time.sleep(2.0 * (attempt + 1))
 
     qs = urllib.parse.parse_qs(body)
     fmt_stream_map = (qs.get("fmt_stream_map") or [""])[0]
