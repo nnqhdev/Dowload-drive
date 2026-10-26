@@ -476,25 +476,38 @@ async function initTokenPool() {
     console.warn('Chưa tìm thấy GDRIVE_CLIENT_ID / GDRIVE_CLIENT_SECRET trong .env');
     return [];
   }
-  const refreshed = [];
   const byEmail = new Map();
   for (const rt of allRefreshTokens) {
     try {
       const info = await refreshSingleToken(rt, clientId, clientSecret);
-      if (String(info.email || '').toLowerCase() !== ALLOWED_GDRIVE_EMAIL) {
+      const emailKey = String(info.email || '').toLowerCase();
+      // Chỉ giữ tài khoản đọc chính hung264656@gmail.com hoặc tài khoản có quyền ghi (canWrite) để dự phòng khi vượt hạn mức upload 750GB/ngày
+      if (emailKey !== ALLOWED_GDRIVE_EMAIL && !info.canWrite) {
         continue;
       }
-      const existing = byEmail.get(info.email);
+      const existing = byEmail.get(emailKey);
       if (!existing || (!existing.canWrite && info.canWrite)) {
-        byEmail.set(info.email, info);
+        byEmail.set(emailKey, info);
       }
-      refreshed.push(info);
     } catch (e) {
       console.warn('Refresh token lỗi:', e.message);
     }
   }
-  tokenPool = Array.from(byEmail.values());
+  // Đưa tài khoản chính hung264656@gmail.com lên vị trí đầu tiên
+  tokenPool = Array.from(byEmail.values()).sort((a, b) => {
+    const aIsPrimary = String(a.email || '').toLowerCase() === ALLOWED_GDRIVE_EMAIL ? 0 : 1;
+    const bIsPrimary = String(b.email || '').toLowerCase() === ALLOWED_GDRIVE_EMAIL ? 0 : 1;
+    return aIsPrimary - bIsPrimary;
+  });
   return tokenPool;
+}
+
+function markTokenUploadQuotaExhausted(accessToken) {
+  const entry = tokenPool.find((t) => t.accessToken === accessToken);
+  if (entry) {
+    entry.uploadQuotaExhaustedUntil = Date.now() + 60 * 60 * 1000;
+    console.warn(`[QUOTA] Tài khoản ${entry.email} chạm hạn mức upload 750GB/24h của Google Drive, tự động chuyển lượt upload sang tài khoản ghi dự phòng.`);
+  }
 }
 
 let preferredReadIdx = 0;
@@ -509,7 +522,10 @@ async function ensureFreshTokens() {
   for (let i = 0; i < tokenPool.length; i++) {
     if (tokenPool[i].expiresAt - now < 120_000) {
       try {
-        tokenPool[i] = await refreshSingleToken(tokenPool[i].refreshToken, clientId, clientSecret);
+        const prevExhausted = tokenPool[i].uploadQuotaExhaustedUntil || 0;
+        const refreshed = await refreshSingleToken(tokenPool[i].refreshToken, clientId, clientSecret);
+        refreshed.uploadQuotaExhaustedUntil = prevExhausted;
+        tokenPool[i] = refreshed;
       } catch {}
     }
   }
@@ -518,21 +534,28 @@ async function ensureFreshTokens() {
 async function getToken({ requireWrite = false } = {}) {
   await ensureFreshTokens();
   if (requireWrite) {
-    const writers = tokenPool.filter((t) => t.canWrite);
-    if (!writers.length) {
+    const now = Date.now();
+    const allWriters = tokenPool.filter((t) => t.canWrite);
+    if (!allWriters.length) {
       throw new Error(
         'Các tài khoản hiện tại trong .env mới chỉ có quyền ĐỌC (drive.readonly). Vui lòng bấm nút "Cấp quyền Ghi Google Drive (1-Click)" ở thanh trên cùng hoặc tab Tài khoản để upload/tạo thư mục.'
       );
     }
-    const chosen = writers[writeIdx % writers.length];
+    const activeWriters = allWriters.filter((t) => !t.uploadQuotaExhaustedUntil || now > t.uploadQuotaExhaustedUntil);
+    const pool = activeWriters.length > 0 ? activeWriters : allWriters;
+    // Ưu tiên tài khoản chính hung264656@gmail.com nếu chưa hết hạn mức upload 750GB/ngày
+    const primaryWriter = pool.find((t) => String(t.email || '').toLowerCase() === ALLOWED_GDRIVE_EMAIL);
+    if (primaryWriter) return primaryWriter.accessToken;
+    const chosen = pool[writeIdx % pool.length];
     writeIdx++;
     return chosen.accessToken;
   }
   if (!tokenPool.length) {
     throw new Error('Không có token Google Drive nào hoạt động.');
   }
-  const chosen = tokenPool[preferredReadIdx % tokenPool.length];
-  return chosen.accessToken;
+  // Mọi thao tác ĐỌC/QUÉT thư mục nguồn đều khóa cứng vào hung264656@gmail.com
+  const primaryReader = tokenPool.find((t) => String(t.email || '').toLowerCase() === ALLOWED_GDRIVE_EMAIL) || tokenPool[0];
+  return primaryReader.accessToken;
 }
 
 // ---------------------------------------------------------------------------
@@ -557,7 +580,12 @@ async function driveJson(url, options = {}, requireWrite = false, retries = 8) {
       }
       const data = await res.json();
       if (data.error) {
-        lastErr = new Error(data.error.message || JSON.stringify(data.error));
+        const errMsg = data.error.message || JSON.stringify(data.error);
+        lastErr = new Error(errMsg);
+        if (requireWrite && /userRateLimitExceeded|User rate limit exceeded/i.test(errMsg)) {
+          markTokenUploadQuotaExhausted(token);
+          if (attempt < maxAttempts - 1) continue;
+        }
         // Nếu 404/403 do tài khoản hiện tại chưa được share file nguồn, thử sang tài khoản tiếp theo trong pool
         if ((data.error.code === 404 || data.error.code === 403 || data.error.code === 429) && attempt < maxAttempts - 1) {
           continue;
@@ -631,34 +659,8 @@ async function listSingleFolderWithToken(folderId, accessToken) {
 }
 
 async function listSingleFolderChildren(folderId) {
-  await ensureFreshTokens();
-  if (!tokenPool.length) throw new Error('Không có token Google Drive nào hoạt động.');
-
-  // Nếu đã xác định được tài khoản chính đọc được kho khóa học (hung264656@gmail.com), dùng trực tiếp để tránh gọi lặp vào thư mục lá rỗng
-  if (preferredReadIdxConfirmed && tokenPool[preferredReadIdx]) {
-    return listSingleFolderWithToken(folderId, tokenPool[preferredReadIdx].accessToken);
-  }
-
-  const order = [];
-  for (let i = 0; i < tokenPool.length; i++) {
-    order.push((preferredReadIdx + i) % tokenPool.length);
-  }
-
-  let lastErr = null;
-  for (const idx of order) {
-    try {
-      const items = await listSingleFolderWithToken(folderId, tokenPool[idx].accessToken);
-      if (items.length > 0) {
-        preferredReadIdx = idx;
-        preferredReadIdxConfirmed = true;
-        return items;
-      }
-    } catch (err) {
-      lastErr = err;
-    }
-  }
-  if (lastErr) throw lastErr;
-  return [];
+  const token = await getToken({ requireWrite: false });
+  return listSingleFolderWithToken(folderId, token);
 }
 
 async function listFolderChildrenBatch(folderIds) {
@@ -964,6 +966,10 @@ async function uploadLocalFileToDrive(localPath, fileName, parentFolderId, mimeT
 
       if (!initRes.ok) {
         const errText = await initRes.text().catch(() => '');
+        if (/userRateLimitExceeded|User rate limit exceeded/i.test(errText)) {
+          markTokenUploadQuotaExhausted(token);
+          if (attempt < 2) continue;
+        }
         throw new Error(`Khởi tạo upload thất bại (${initRes.status}): ${errText.slice(0, 200)}`);
       }
 
@@ -985,6 +991,10 @@ async function uploadLocalFileToDrive(localPath, fileName, parentFolderId, mimeT
 
       if (!putRes.ok) {
         const errText = await putRes.text().catch(() => '');
+        if (/userRateLimitExceeded|User rate limit exceeded/i.test(errText)) {
+          markTokenUploadQuotaExhausted(token);
+          if (attempt < 2) continue;
+        }
         throw new Error(`Upload dữ liệu thất bại (${putRes.status}): ${errText.slice(0, 200)}`);
       }
 
