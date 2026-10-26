@@ -23,6 +23,7 @@ import http.cookiejar
 import json
 import os
 import re
+import socket
 import subprocess
 import sys
 import time
@@ -31,6 +32,18 @@ import urllib.request
 import warnings
 
 warnings.filterwarnings("ignore")
+
+
+def wait_for_network(max_wait=120):
+    """Nếu Wi-Fi/DNS bị rớt tạm thời (Errno 8), tự động chờ tới khi kết nối mạng khôi phục."""
+    deadline = time.time() + max_wait
+    while time.time() < deadline:
+        try:
+            socket.getaddrinfo("drive.google.com", 443)
+            return True
+        except Exception:
+            time.sleep(3.0)
+    return False
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -414,6 +427,7 @@ def main():
 
     for name, fn in methods:
         try:
+            wait_for_network(120)
             res = fn()
             if res and res.get("ok"):
                 print(json.dumps(res, ensure_ascii=False))
