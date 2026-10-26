@@ -538,7 +538,7 @@ async function getToken({ requireWrite = false } = {}) {
 // ---------------------------------------------------------------------------
 // 4. Các hàm gọi Google Drive API (Quét BFS tốc độ cao, Tải file, Tạo folder, Upload)
 // ---------------------------------------------------------------------------
-async function driveJson(url, options = {}, requireWrite = false, retries = 4) {
+async function driveJson(url, options = {}, requireWrite = false, retries = 8) {
   let lastErr = null;
   const maxAttempts = Math.max(retries, tokenPool.length + 1);
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
@@ -552,7 +552,7 @@ async function driveJson(url, options = {}, requireWrite = false, retries = 4) {
         },
       });
       if (res.status === 429 || res.status >= 500) {
-        await new Promise((r) => setTimeout(r, 600 * (attempt + 1)));
+        await new Promise((r) => setTimeout(r, 800 * (attempt + 1)));
         continue;
       }
       const data = await res.json();
@@ -568,7 +568,8 @@ async function driveJson(url, options = {}, requireWrite = false, retries = 4) {
     } catch (err) {
       lastErr = err;
       if (attempt === maxAttempts - 1) throw err;
-      await new Promise((r) => setTimeout(r, 300));
+      const isNetErr = /fetch failed|ECONNRESET|ETIMEDOUT|ENOTFOUND/i.test(String(err.message || ''));
+      await new Promise((r) => setTimeout(r, isNetErr ? 3000 * (attempt + 1) : 400));
     }
   }
   throw lastErr || new Error('Drive API request failed');
