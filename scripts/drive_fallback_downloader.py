@@ -272,7 +272,7 @@ def try_drive_api_make_copy(file_id, dest_path):
     Tạo bản sao tạm thời về Drive cá nhân (hung264656@gmail.com), tải bản sao xuống, rồi xóa bản sao tạm.
     """
     school_env_path = "/Users/quochung/Project/School/school.unizvn/.env"
-    tool_cfg_path = os.path.join(ROOT_DIR, "data", "tool-config.json")
+    tool_cfg_path = os.path.join(BASE_DIR, "data", "tool-config.json")
     env = {}
     if os.path.exists(school_env_path):
         with open(school_env_path, "r", encoding="utf-8") as f:
@@ -466,6 +466,26 @@ def try_pdf_viewerng_pages(file_id, dest_path, force_refresh_cookies=False):
         raw_upload = resp.read().decode("utf-8", "ignore")
 
     upload_json = json.loads(raw_upload.split("\n", 1)[1] if "\n" in raw_upload else raw_upload)
+    pdf_direct_url = upload_json.get("pdf")
+    if pdf_direct_url:
+        try:
+            with opener.open(pdf_direct_url, timeout=45) as r_pdf:
+                pdf_bytes = r_pdf.read()
+            if len(pdf_bytes) > 1024 and b"%PDF" in pdf_bytes[:1024]:
+                with open(dest_path, "wb") as f_out:
+                    f_out.write(pdf_bytes)
+                return {
+                    "ok": True,
+                    "method": "viewerng_secure_pdf_direct",
+                    "size": len(pdf_bytes),
+                }
+            elif len(pdf_bytes) > 0 and b"%PDF" not in pdf_bytes[:1024]:
+                raise RuntimeError("File PDF gốc trên Drive bị hỏng định dạng (không có header %PDF)")
+        except RuntimeError:
+            raise
+        except Exception:
+            pass
+
     meta_rel = upload_json.get("meta")
     img_rel = upload_json.get("img") or upload_json.get("page")
     if not meta_rel or not img_rel:
