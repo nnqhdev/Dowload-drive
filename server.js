@@ -9,6 +9,8 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
+const { Readable } = require('stream');
+const { pipeline } = require('stream/promises');
 const { spawn, execFile } = require('child_process');
 const multer = require('multer');
 const ffmpegPath = require('ffmpeg-static');
@@ -712,9 +714,8 @@ async function downloadDriveFile(fileId, destPath, kind = 'auto') {
       const res = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&supportsAllDrives=true`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      if (res.ok) {
-        const ab = await res.arrayBuffer();
-        fs.writeFileSync(destPath, Buffer.from(ab));
+      if (res.ok && res.body) {
+        await pipeline(Readable.fromWeb(res.body), fs.createWriteStream(destPath));
         return fs.statSync(destPath).size;
       }
       lastStatus = res.status;
@@ -727,12 +728,10 @@ async function downloadDriveFile(fileId, destPath, kind = 'auto') {
           headers: { Authorization: `Bearer ${token}` },
         });
         const ctype = resDirect.headers.get('content-type') || '';
-        if (resDirect.ok && !ctype.toLowerCase().includes('text/html')) {
-          const abDirect = await resDirect.arrayBuffer();
-          if (abDirect.byteLength > 1024) {
-            fs.writeFileSync(destPath, Buffer.from(abDirect));
-            return fs.statSync(destPath).size;
-          }
+        if (resDirect.ok && resDirect.body && !ctype.toLowerCase().includes('text/html')) {
+          await pipeline(Readable.fromWeb(resDirect.body), fs.createWriteStream(destPath));
+          const sz = fs.statSync(destPath).size;
+          if (sz > 1024) return sz;
         }
       } catch {}
 
@@ -938,14 +937,13 @@ async function resolveExistingDestinationFolder(relFolderParts) {
 
 async function uploadLocalFileToDrive(localPath, fileName, parentFolderId, mimeType) {
   const fileSize = fs.statSync(localPath).size;
-  const fileBuffer = fs.readFileSync(localPath);
   let lastErr = null;
 
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const token = await getToken({ requireWrite: true });
 
-      // Khởi tạo Resumable Upload session (an toàn cho cả PDF và Video lớn hàng GB)
+      // Khởi tạo Resumable Upload session (an toàn cho cả PDF và Video lớn > 2 GiB)
       const initRes = await fetch(
         'https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable&supportsAllDrives=true&fields=id,name,size,md5Checksum',
         {
@@ -973,13 +971,15 @@ async function uploadLocalFileToDrive(localPath, fileName, parentFolderId, mimeT
         throw new Error('Không nhận được Resumable Upload Location từ Google Drive');
       }
 
+      const readStream = fs.createReadStream(localPath, { highWaterMark: 4 * 1024 * 1024 });
       const putRes = await fetch(uploadUrl, {
         method: 'PUT',
         headers: {
           'Content-Length': String(fileSize),
           'Content-Type': mimeType,
         },
-        body: fileBuffer,
+        body: Readable.toWeb(readStream),
+        duplex: 'half',
       });
 
       if (!putRes.ok) {
