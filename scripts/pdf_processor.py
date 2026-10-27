@@ -23,6 +23,12 @@ import json
 import fitz  # PyMuPDF
 
 try:
+    fitz.TOOLS.mupdf_display_errors(False)
+    fitz.TOOLS.mupdf_display_warnings(False)
+except Exception:
+    pass
+
+try:
     import numpy as np
     from PIL import Image
     HAS_IMAGE_LIBS = True

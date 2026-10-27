@@ -382,6 +382,9 @@ function classifyDriveItem(item, parentRelParts, rules = toolConfig.rules) {
     if (inInfoFolder && rules.skipInfoFolderForPdf) {
       return { kind: 'skip', reason: 'Bỏ qua PDF trong 0. INFO' };
     }
+    if (item.size !== undefined && Number(item.size) < 100) {
+      return { kind: 'skip', reason: `Bỏ qua PDF rỗng trên Drive gốc (${item.size} bytes)` };
+    }
     return { kind: 'pdf', cleanName: clean };
   }
 
@@ -392,9 +395,8 @@ function classifyDriveItem(item, parentRelParts, rules = toolConfig.rules) {
     if (inInfoFolder && rules.skipInfoFolderForVideo) {
       return { kind: 'skip', reason: 'Bỏ qua Video trong 0. INFO' };
     }
-    const fSize = Number(item.size || 0);
-    if (fSize > 0 && fSize < 65536) {
-      return { kind: 'skip', reason: `Bỏ qua Video rỗng/lỗi trên Drive gốc (${fSize} bytes < 64KB)` };
+    if (item.size !== undefined && Number(item.size) < 65536) {
+      return { kind: 'skip', reason: `Bỏ qua Video rỗng/lỗi trên Drive gốc (${item.size} bytes < 64KB)` };
     }
     return { kind: 'video', cleanName: clean };
   }
@@ -1034,7 +1036,18 @@ function runPythonJson(scriptPath, args = []) {
         return reject(new Error(stderr || stdout || err.message));
       }
       try {
-        const parsed = JSON.parse(stdout.trim());
+        const trimmed = stdout.trim();
+        let parsed;
+        try {
+          parsed = JSON.parse(trimmed);
+        } catch {
+          const lastLineIdx = trimmed.lastIndexOf('\n{');
+          if (lastLineIdx !== -1) {
+            parsed = JSON.parse(trimmed.slice(lastLineIdx + 1));
+          } else {
+            throw new Error('Invalid JSON');
+          }
+        }
         if (!parsed.ok) return reject(new Error(parsed.error || 'Python script error'));
         resolve(parsed);
       } catch (e) {
