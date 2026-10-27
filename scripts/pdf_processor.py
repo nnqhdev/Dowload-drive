@@ -404,7 +404,10 @@ def process_pdf(
                 y0 = cy - h_pt / 2.0
                 target_rect = fitz.Rect(x0, y0, x0 + w_pt, y0 + h_pt)
                 if wm_xref:
-                    page.insert_image(target_rect, xref=wm_xref, overlay=True)
+                    try:
+                        page.insert_image(target_rect, xref=wm_xref, overlay=True)
+                    except Exception:
+                        wm_xref = page.insert_image(target_rect, pixmap=wm_pix, overlay=True)
                 else:
                     wm_xref = page.insert_image(target_rect, pixmap=wm_pix, overlay=True)
             stamped_pages += 1
