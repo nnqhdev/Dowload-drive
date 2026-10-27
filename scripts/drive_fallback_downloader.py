@@ -136,7 +136,7 @@ def download_stream_parallel(opener, url, dest_path, num_threads=12):
 
     def fetch_range(byte_range):
         b_start, b_end = byte_range
-        for attempt in range(3):
+        for attempt in range(5):
             try:
                 req = urllib.request.Request(url, headers={"Range": f"bytes={b_start}-{b_end}"})
                 with opener.open(req, timeout=60) as r:
@@ -150,11 +150,11 @@ def download_stream_parallel(opener, url, dest_path, num_threads=12):
                             out_f.write(buf)
                 return True
             except Exception as exc:
-                if attempt == 2:
+                if attempt == 4:
                     raise exc
-                time.sleep(1.0 * (attempt + 1))
+                time.sleep(1.5 * (attempt + 1))
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         futures = [pool.submit(fetch_range, rg) for rg in ranges]
         for fut in concurrent.futures.as_completed(futures):
             fut.result()
