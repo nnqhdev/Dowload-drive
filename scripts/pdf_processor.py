@@ -317,6 +317,7 @@ def process_pdf(
     removed_links = 0
     stamped_pages = 0
     cleaned_xrefs = set()
+    wm_xref = 0
 
     for page in doc:
         if remove_old_wm:
@@ -402,7 +403,10 @@ def process_pdf(
                 x0 = cx - w_pt / 2.0
                 y0 = cy - h_pt / 2.0
                 target_rect = fitz.Rect(x0, y0, x0 + w_pt, y0 + h_pt)
-                page.insert_image(target_rect, pixmap=wm_pix, overlay=True)
+                if wm_xref:
+                    page.insert_image(target_rect, xref=wm_xref, overlay=True)
+                else:
+                    wm_xref = page.insert_image(target_rect, pixmap=wm_pix, overlay=True)
             stamped_pages += 1
 
     try:
@@ -419,7 +423,10 @@ def process_pdf(
 
     total_pages = len(doc)
     tmp_out = output_path + ".tmp.pdf"
-    doc.save(tmp_out, garbage=3, deflate=True)
+    if doc.xref_length() > 4000:
+        doc.save(tmp_out, garbage=1, deflate=False)
+    else:
+        doc.save(tmp_out, garbage=2, deflate=True)
     doc.close()
     os.replace(tmp_out, output_path)
 
