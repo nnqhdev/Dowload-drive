@@ -94,14 +94,22 @@ def build_opener(jar):
 
 def download_stream_parallel(opener, url, dest_path, num_threads=12):
     """Tải luồng videoplayback bằng các đoạn Range 8MB song song để luôn nằm trong vùng burst tốc độ cao của Google CDN."""
-    probe_req = urllib.request.Request(url, headers={"Range": "bytes=0-0"})
-    with opener.open(probe_req, timeout=20) as resp:
-        content_range = resp.headers.get("Content-Range", "")
-        content_type = resp.headers.get("Content-Type", "")
-        if "text/html" in content_type.lower():
-            raise RuntimeError("Luồng trả về HTML thay vì dữ liệu nhị phân")
-        m = re.search(r"/(\d+)$", content_range)
-        total_size = int(m.group(1)) if m else int(resp.headers.get("Content-Length", "0") or 0)
+    total_size = 0
+    for probe_attempt in range(3):
+        try:
+            probe_req = urllib.request.Request(url, headers={"Range": "bytes=0-0"})
+            with opener.open(probe_req, timeout=20) as resp:
+                content_range = resp.headers.get("Content-Range", "")
+                content_type = resp.headers.get("Content-Type", "")
+                if "text/html" in content_type.lower():
+                    raise RuntimeError("Luồng trả về HTML thay vì dữ liệu nhị phân")
+                m = re.search(r"/(\d+)$", content_range)
+                total_size = int(m.group(1)) if m else int(resp.headers.get("Content-Length", "0") or 0)
+            break
+        except Exception as exc:
+            if probe_attempt == 2:
+                raise exc
+            time.sleep(1.5 * (probe_attempt + 1))
 
     if total_size <= 0:
         # Tải tuần tự nếu server không báo tổng dung lượng
@@ -190,26 +198,29 @@ def try_videoplayback_stream(file_id, dest_path, force_refresh_cookies=False):
     if not streams:
         raise RuntimeError("Không phân tích được luồng videoplayback từ fmt_stream_map")
 
-    chosen_itag = None
-    chosen_url = None
-    for itag in PREFERRED_ITAGS:
-        if itag in streams:
-            chosen_itag = itag
-            chosen_url = streams[itag]
-            break
+    candidate_itags = [it for it in PREFERRED_ITAGS if it in streams]
+    for it in streams:
+        if it not in candidate_itags:
+            candidate_itags.append(it)
 
-    if not chosen_url:
-        chosen_itag, chosen_url = next(iter(streams.items()))
+    last_err = None
+    for chosen_itag in candidate_itags:
+        chosen_url = streams[chosen_itag]
+        try:
+            size = download_stream_parallel(opener, chosen_url, dest_path, num_threads=12)
+            if size < 1024:
+                raise RuntimeError(f"File tải về quá nhỏ ({size} bytes)")
+            return {
+                "ok": True,
+                "method": f"videoplayback_stream_itag_{chosen_itag}",
+                "itag": chosen_itag,
+                "size": size,
+            }
+        except Exception as exc:
+            last_err = exc
+            continue
 
-    size = download_stream_parallel(opener, chosen_url, dest_path, num_threads=12)
-    if size < 1024:
-        raise RuntimeError(f"File tải về quá nhỏ ({size} bytes)")
-    return {
-        "ok": True,
-        "method": f"videoplayback_stream_itag_{chosen_itag}",
-        "itag": chosen_itag,
-        "size": size,
-    }
+    raise last_err or RuntimeError("Tất cả các luồng itag trong fmt_stream_map đều thất bại")
 
 
 def try_usercontent_direct(file_id, dest_path):
