@@ -1339,8 +1339,8 @@ async function prefetchDstFoldersFiles(dstFolderIds) {
 
 async function runSyncTargets(targets, options = {}) {
   const dryRun = options.mode === 'dry_run';
-  const wantPdf = options.mode === 'dry_run' || options.mode === 'pdf_only' || options.mode === 'both';
-  const wantVideo = options.mode === 'dry_run' || options.mode === 'video_only' || options.mode === 'both';
+  const wantPdf = options.mode === 'dry_run' || options.mode === 'pdf_only' || options.mode === 'both' || options.mode === 'sync';
+  const wantVideo = options.mode === 'dry_run' || options.mode === 'video_only' || options.mode === 'both' || options.mode === 'sync';
   const rules = { ...toolConfig.rules, ...(options.rules || {}) };
 
   syncJob.running = true;
