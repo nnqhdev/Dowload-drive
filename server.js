@@ -296,7 +296,7 @@ function replaceDriveIdsInSchoolLessons(replacementsMap) {
 // ---------------------------------------------------------------------------
 function cleanDisplayName(raw) {
   let s = String(raw || '').normalize('NFC').replace(/[\t\r\n]+/g, ' ').trim();
-  s = s.replace(/\s*-\s*TaiLieuOnThi\s*\.?\s*NET\s*✅?\s*$/i, '').trim();
+  s = s.replace(/\s*-\s*TaiLieuOnThi\s*\.?\s*NET\s*✅?(?=\.[a-z0-9]{2,5}$|$)/gi, '').trim();
   s = s.replace(/\s+/g, ' ').trim();
   return s;
 }
@@ -365,9 +365,10 @@ function classifyDriveItem(item, parentRelParts, rules = toolConfig.rules) {
     lower.endsWith('.gdoc') ||
     lower.endsWith('.xlsx') ||
     lower.endsWith('.xls') ||
-    lower.endsWith('.csv')
+    lower.endsWith('.csv') ||
+    /\.(ffs_tmp|part|tmp)$/i.test(lower)
   ) {
-    return { kind: 'skip', reason: 'Luật bỏ qua file bảng tính (.sheet / .xlsx)' };
+    return { kind: 'skip', reason: 'Luật bỏ qua file bảng tính / file tạm (.sheet / .xlsx / .ffs_tmp)' };
   }
 
   // Kiểm tra nếu nằm trong mục Z.EBOOK mà lọt xuống file
@@ -618,22 +619,45 @@ async function listSingleFolderWithToken(folderId, accessToken) {
       includeItemsFromAllDrives: 'true',
     });
     if (pageToken) params.set('pageToken', pageToken);
-    const res = await fetch(`https://www.googleapis.com/drive/v3/files?${params}`, {
-      headers: { Authorization: `Bearer ${accessToken}` },
-    });
-    if (res.status === 429 || res.status >= 500) {
-      await new Promise((r) => setTimeout(r, 500));
-      const retryRes = await fetch(`https://www.googleapis.com/drive/v3/files?${params}`, {
-        headers: { Authorization: `Bearer ${accessToken}` },
-      });
-      const retryData = await retryRes.json().catch(() => ({}));
-      if (retryData.files) items.push(...retryData.files);
-      pageToken = retryData.nextPageToken || '';
-      continue;
+
+    let data = null;
+    let lastErr = null;
+    for (let attempt = 0; attempt < 8; attempt++) {
+      try {
+        const tokenToUse = attempt === 0 ? accessToken : await getToken({ requireWrite: false });
+        const res = await fetch(`https://www.googleapis.com/drive/v3/files?${params}`, {
+          headers: { Authorization: `Bearer ${tokenToUse}` },
+        });
+        const parsed = await res.json().catch(() => ({}));
+        const errMsg = parsed?.error?.message || '';
+        const isRateLimit =
+          res.status === 429 ||
+          res.status >= 500 ||
+          (res.status === 403 && /rateLimit|userRateLimit|quota/i.test(errMsg));
+        if (isRateLimit) {
+          lastErr = new Error(errMsg || `HTTP ${res.status}`);
+          const delayMs = 600 * Math.pow(1.8, attempt) + Math.floor(Math.random() * 400);
+          await new Promise((r) => setTimeout(r, delayMs));
+          continue;
+        }
+        if (parsed.error) {
+          throw new Error(errMsg || JSON.stringify(parsed.error));
+        }
+        data = parsed;
+        break;
+      } catch (err) {
+        lastErr = err;
+        const isNetErr = /fetch failed|ECONNRESET|ETIMEDOUT|ENOTFOUND/i.test(String(err.message || ''));
+        if (isNetErr && attempt < 7) {
+          await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
+          continue;
+        }
+        if (attempt === 7) throw lastErr;
+        throw err;
+      }
     }
-    const data = await res.json().catch(() => ({}));
-    if (data.error) {
-      throw new Error(data.error.message || JSON.stringify(data.error));
+    if (!data) {
+      throw lastErr || new Error(`Không thể quét thư mục ${folderId}`);
     }
     if (data.files) items.push(...data.files);
     pageToken = data.nextPageToken || '';
@@ -669,12 +693,21 @@ async function listFolderChildrenBatch(folderIds) {
   if (!folderIds.length) return [];
   // Lưu ý quan trọng với Google Drive API:
   // Các thư mục khóa học nguồn được share qua link (Anyone with link) sẽ trả về 0 kết quả nếu gộp nhiều ID bằng toán tử OR.
-  // Do đó cần truy vấn từng folderId đơn lẻ song song (concurrency = 25) để lấy đủ 100% thư mục con & bài học với tốc độ cao nhất.
+  // Do đó cần truy vấn từng folderId đơn lẻ song song (concurrency = 12) kèm cơ chế retry độc lập từng folder để không bao giờ bị rớt nhánh khi gặp 429 hoặc lỗi 1 shortcut.
   const allItems = [];
-  const concurrency = 25;
+  const concurrency = 12;
   for (let i = 0; i < folderIds.length; i += concurrency) {
     const slice = folderIds.slice(i, i + concurrency);
-    const results = await Promise.all(slice.map((fid) => listSingleFolderChildren(fid)));
+    const results = await Promise.all(
+      slice.map(async (fid) => {
+        try {
+          return await listSingleFolderChildren(fid);
+        } catch (err) {
+          addJobLog(`  ⚠ Không đọc được thư mục con (${fid}): ${err.message}`, 'warn');
+          return [];
+        }
+      })
+    );
     for (const arr of results) {
       allItems.push(...arr);
     }
@@ -1269,9 +1302,12 @@ function isPdfAlreadySynced(sourceFileId, relPathParts, rules = toolConfig.rules
   const { v2, v1 } = buildNormPaths(relPathParts);
   const byId = pdfSyncDb.syncedFileIds[sourceFileId];
   const byNorm = pdfSyncDb.syncedNormPaths[v2] || pdfSyncDb.syncedNormPaths[v1];
+  const byIdSamePath = Boolean(byId && (byId.normRelPath === v2 || byId.normRelPath === v1));
+  const existingSchoolDstFileId =
+    byId && byId.dstFileId && isEntryUniPdf(byId) ? byId.dstFileId : null;
 
-  if (byId || byNorm) {
-    const alreadyUni = isEntryUniPdf(byId) || isEntryUniPdf(byNorm);
+  if (byIdSamePath || byNorm) {
+    const alreadyUni = (byIdSamePath && isEntryUniPdf(byId)) || isEntryUniPdf(byNorm);
     if (!rules.replaceLegacyNonUniPdf || alreadyUni) {
       return { dup: true, reason: alreadyUni ? 'Đã có bản UNI trong _pdf_sync_db' : 'Trùng trong _pdf_sync_db' };
     }
@@ -1279,30 +1315,37 @@ function isPdfAlreadySynced(sourceFileId, relPathParts, rules = toolConfig.rules
     return {
       dup: false,
       isUpgradeFromLegacy: true,
-      legacyDstFileId: byId?.dstFileId || null,
+      legacyDstFileId: (byIdSamePath ? byId?.dstFileId : byNorm?.dstFileId) || null,
+      existingSchoolDstFileId,
       normV2: v2,
       normV1: v1,
     };
   }
 
-  if (schoolStats.pdfIds.has(sourceFileId) || schoolStats.webLessonDriveIds.has(sourceFileId)) {
-    return { dup: true, reason: 'Đã tồn tại trong lessons.json của web' };
-  }
-  return { dup: false, normV2: v2, normV1: v1 };
+  return {
+    dup: false,
+    existingSchoolDstFileId,
+    normV2: v2,
+    normV1: v1,
+  };
 }
 
 function isVideoAlreadySynced(sourceFileId, relPathParts) {
-  if (videoSyncDb.syncedFileIds[sourceFileId]) {
-    return { dup: true, reason: 'Trùng sourceFileId trong _video_sync_db' };
-  }
   const { v2, v1 } = buildNormPaths(relPathParts);
-  if (videoSyncDb.syncedNormPaths[v2] || videoSyncDb.syncedNormPaths[v1]) {
+  const byId = videoSyncDb.syncedFileIds[sourceFileId];
+  const byNorm = videoSyncDb.syncedNormPaths[v2] || videoSyncDb.syncedNormPaths[v1];
+  const byIdSamePath = Boolean(byId && (byId.normRelPath === v2 || byId.normRelPath === v1));
+  const existingSchoolDstFileId = byId && byId.dstFileId ? byId.dstFileId : null;
+
+  if (byIdSamePath || byNorm) {
     return { dup: true, reason: 'Trùng đường dẫn trong _video_sync_db' };
   }
-  if (schoolStats.videoIds.has(sourceFileId) || schoolStats.webLessonDriveIds.has(sourceFileId)) {
-    return { dup: true, reason: 'Đã có trong lessons.json' };
-  }
-  return { dup: false, normV2: v2, normV1: v1 };
+  return {
+    dup: false,
+    existingSchoolDstFileId,
+    normV2: v2,
+    normV1: v1,
+  };
 }
 
 // Cache danh sách file con của từng thư mục đích trên Drive SCHOOL để kiểm tra trùng trực tiếp
@@ -1397,10 +1440,15 @@ async function runSyncTargets(targets, options = {}) {
         syncJob.progress.scannedFolders += batch.length;
         syncJob.currentAction = `Đang quét cây thư mục (${syncJob.progress.scannedFolders} folders)...`;
 
-        const parentMap = new Map(batch.map((b) => [b.id, b]));
+        const parentListMap = new Map();
+        for (const b of batch) {
+          if (!parentListMap.has(b.id)) parentListMap.set(b.id, []);
+          parentListMap.get(b.id).push(b);
+        }
+        const uniqueBatchIds = Array.from(parentListMap.keys());
         let children = [];
         try {
-          children = await listFolderChildrenBatch(batch.map((b) => b.id));
+          children = await listFolderChildrenBatch(uniqueBatchIds);
         } catch (err) {
           syncJob.progress.errors++;
           addJobLog(`Lỗi quét nhánh thư mục của ${teacherFolder}: ${err.message}`, 'error');
@@ -1412,74 +1460,78 @@ async function runSyncTargets(targets, options = {}) {
 
         for (const item of children) {
           const pId = item.parents && item.parents[0];
-          const pNode = parentMap.get(pId);
-          if (!pNode) continue;
+          const pNodes = parentListMap.get(pId);
+          if (!pNodes || !pNodes.length) continue;
 
-          if (item.mimeType === 'application/vnd.google-apps.folder') {
-            const folderCheck = shouldSkipFolder(item.name, rules);
-            if (folderCheck.skip) {
+          for (const pNode of pNodes) {
+            if (item.mimeType === 'application/vnd.google-apps.folder') {
+              const folderCheck = shouldSkipFolder(item.name, rules);
+              if (folderCheck.skip) {
+                syncJob.progress.skippedByRule++;
+                addJobLog(`  ⏭ Bỏ qua thư mục [${cleanDisplayName(item.name)}] (${folderCheck.reason})`);
+                continue;
+              }
+              queue.push({
+                id: item.id,
+                relParts: [...pNode.relParts, folderCheck.cleanName],
+              });
+              continue;
+            }
+
+            syncJob.progress.scannedFiles++;
+            const cls = classifyDriveItem(item, pNode.relParts, rules);
+            if (cls.kind === 'skip') {
               syncJob.progress.skippedByRule++;
-              addJobLog(`  ⏭ Bỏ qua thư mục [${cleanDisplayName(item.name)}] (${folderCheck.reason})`);
               continue;
             }
-            queue.push({
-              id: item.id,
-              relParts: [...pNode.relParts, folderCheck.cleanName],
-            });
-            continue;
-          }
 
-          syncJob.progress.scannedFiles++;
-          const cls = classifyDriveItem(item, pNode.relParts, rules);
-          if (cls.kind === 'skip') {
-            syncJob.progress.skippedByRule++;
-            continue;
-          }
+            const fileRelParts = [...pNode.relParts, cls.cleanName];
+            const relPathStr = fileRelParts.join('/');
 
-          const fileRelParts = [...pNode.relParts, cls.cleanName];
-          const relPathStr = fileRelParts.join('/');
-
-          if (cls.kind === 'pdf') {
-            if (!wantPdf) continue;
-            const dupCheck = isPdfAlreadySynced(item.id, fileRelParts, rules);
-            if (dupCheck.dup) {
-              syncJob.progress.duplicatePdf++;
-              continue;
+            if (cls.kind === 'pdf') {
+              if (!wantPdf) continue;
+              const dupCheck = isPdfAlreadySynced(item.id, fileRelParts, rules);
+              if (dupCheck.dup) {
+                syncJob.progress.duplicatePdf++;
+                continue;
+              }
+              pendingTasks.push({
+                kind: 'pdf',
+                sourceFileId: item.id,
+                sourceName: cls.cleanName,
+                size: Number(item.size || 0),
+                md5: item.md5Checksum || '',
+                folderRelParts: pNode.relParts,
+                fileRelParts,
+                relPath: relPathStr,
+                normV2: dupCheck.normV2,
+                normV1: dupCheck.normV1,
+                isUpgradeFromLegacy: !!dupCheck.isUpgradeFromLegacy,
+                legacyDstFileId: dupCheck.legacyDstFileId || null,
+                existingSchoolDstFileId: dupCheck.existingSchoolDstFileId || null,
+                legacyFilesToReplace: [],
+              });
+            } else if (cls.kind === 'video') {
+              if (!wantVideo) continue;
+              const dupCheck = isVideoAlreadySynced(item.id, fileRelParts);
+              if (dupCheck.dup) {
+                syncJob.progress.duplicateVideo++;
+                continue;
+              }
+              pendingTasks.push({
+                kind: 'video',
+                sourceFileId: item.id,
+                sourceName: cls.cleanName,
+                size: Number(item.size || 0),
+                md5: item.md5Checksum || '',
+                folderRelParts: pNode.relParts,
+                fileRelParts,
+                relPath: relPathStr,
+                normV2: dupCheck.normV2,
+                normV1: dupCheck.normV1,
+                existingSchoolDstFileId: dupCheck.existingSchoolDstFileId || null,
+              });
             }
-            pendingTasks.push({
-              kind: 'pdf',
-              sourceFileId: item.id,
-              sourceName: cls.cleanName,
-              size: Number(item.size || 0),
-              md5: item.md5Checksum || '',
-              folderRelParts: pNode.relParts,
-              fileRelParts,
-              relPath: relPathStr,
-              normV2: dupCheck.normV2,
-              normV1: dupCheck.normV1,
-              isUpgradeFromLegacy: !!dupCheck.isUpgradeFromLegacy,
-              legacyDstFileId: dupCheck.legacyDstFileId || null,
-              legacyFilesToReplace: [],
-            });
-          } else if (cls.kind === 'video') {
-            if (!wantVideo) continue;
-            const dupCheck = isVideoAlreadySynced(item.id, fileRelParts);
-            if (dupCheck.dup) {
-              syncJob.progress.duplicateVideo++;
-              continue;
-            }
-            pendingTasks.push({
-              kind: 'video',
-              sourceFileId: item.id,
-              sourceName: cls.cleanName,
-              size: Number(item.size || 0),
-              md5: item.md5Checksum || '',
-              folderRelParts: pNode.relParts,
-              fileRelParts,
-              relPath: relPathStr,
-              normV2: dupCheck.normV2,
-              normV1: dupCheck.normV1,
-            });
           }
         }
       }
@@ -1514,12 +1566,18 @@ async function runSyncTargets(targets, options = {}) {
           try {
             const existingFiles = await getDstFolderExistingFiles(cachedDstFolderId);
             const targetNorm = normSegV2(task.sourceName, true);
+            const targetVidMp4Norm =
+              task.kind === 'video'
+                ? normSegV2(
+                    /\.(mp4|mov|mkv|webm|ts|m4v|avi|flv)$/i.test(task.sourceName)
+                      ? task.sourceName.replace(/\.(ts|mkv|mov|avi|flv|webm|m4v)$/i, '.mp4')
+                      : `${task.sourceName}.mp4`,
+                    true
+                  )
+                : targetNorm;
             const matchesOnDrive = existingFiles.filter((ef) => {
               const efNorm = normSegV2(ef.name, true);
-              if (efNorm === targetNorm) return true;
-              if (task.kind === 'video' && task.size > 0 && Number(ef.size || 0) === task.size && efNorm === targetNorm) {
-                return true;
-              }
+              if (efNorm === targetNorm || efNorm === targetVidMp4Norm) return true;
               return false;
             });
 
@@ -1712,15 +1770,27 @@ async function runSyncTargets(targets, options = {}) {
                   ? `UNI ${task.sourceName}`
                   : task.sourceName;
 
-              syncJob.currentAction = `Đang tải & đóng dấu PDF: ${task.sourceName}`;
               const rawTmp = path.join(TMP_DIR, `raw_${task.sourceFileId}.pdf`);
               const outTmp = path.join(TMP_DIR, `uni_${task.sourceFileId}.pdf`);
 
               try {
-                await downloadDriveFile(task.sourceFileId, rawTmp, 'pdf');
-                const wmRes = await processPdfWithWatermark(rawTmp, outTmp, rules);
-                syncJob.currentAction = `Đang upload PDF lên SCHOOL: ${finalPdfName}`;
-                const uploaded = await uploadLocalFileToDrive(outTmp, finalPdfName, dstFolderId, 'application/pdf');
+                let uploaded = null;
+                let wmRes = { pages: 'clone', removedStreams: 0, outputSize: task.size || 0 };
+
+                if (task.existingSchoolDstFileId) {
+                  try {
+                    syncJob.currentAction = `Đang nhân bản nhanh PDF chuẩn UNI có sẵn trên SCHOOL: ${finalPdfName}`;
+                    uploaded = await copyDriveFileServerSide(task.existingSchoolDstFileId, finalPdfName, dstFolderId);
+                  } catch {}
+                }
+
+                if (!uploaded) {
+                  syncJob.currentAction = `Đang tải & đóng dấu PDF: ${task.sourceName}`;
+                  await downloadDriveFile(task.sourceFileId, rawTmp, 'pdf');
+                  wmRes = await processPdfWithWatermark(rawTmp, outTmp, rules);
+                  syncJob.currentAction = `Đang upload PDF lên SCHOOL: ${finalPdfName}`;
+                  uploaded = await uploadLocalFileToDrive(outTmp, finalPdfName, dstFolderId, 'application/pdf');
+                }
 
                 // Xóa các bản PDF cũ chưa có chữ UNI của cùng bài học này trong thư mục đích (nếu có)
                 const oldIdsToTrash = new Set();
@@ -1770,7 +1840,7 @@ async function runSyncTargets(targets, options = {}) {
                 savePdfSyncDb();
                 syncJob.progress.syncedPdf++;
                 addJobLog(
-                  `  ✅ [PDF] Đã xử lý (${wmRes.pages} trang, xóa ${wmRes.removedStreams} WM cũ) & upload: ${finalPdfName} -> ${uploaded.id}${oldIdsToTrash.size > 0 ? ` (Đã thay thế & xóa ${oldIdsToTrash.size} bản cũ chưa có UNI)` : ''}`,
+                  `  ✅ [PDF] Đã ${wmRes.pages === 'clone' ? 'nhân bản nhanh bản UNI có sẵn' : `xử lý (${wmRes.pages} trang, xóa ${wmRes.removedStreams} WM cũ) & upload`}: ${finalPdfName} -> ${uploaded.id}${oldIdsToTrash.size > 0 ? ` (Đã thay thế & xóa ${oldIdsToTrash.size} bản cũ chưa có UNI)` : ''}`,
                   'success'
                 );
               } finally {
@@ -1778,13 +1848,55 @@ async function runSyncTargets(targets, options = {}) {
                 if (fs.existsSync(outTmp)) fs.unlinkSync(outTmp);
               }
             } else if (task.kind === 'video') {
-              const baseVideoName = task.sourceName.replace(/\.(ts|mkv|mov|avi|flv)$/i, '.mp4');
+              const hasVidExt = /\.(mp4|mov|mkv|webm|ts|m4v|avi|flv)$/i.test(task.sourceName);
+              const baseVideoName = hasVidExt
+                ? task.sourceName.replace(/\.(ts|mkv|mov|avi|flv|webm|m4v)$/i, '.mp4')
+                : `${task.sourceName}.mp4`;
+              const vidExtMatch = task.sourceName.match(/\.(mp4|mov|mkv|webm|ts|m4v|avi|flv)$/i);
+              const safeVidExt = vidExtMatch ? vidExtMatch[0].toLowerCase() : '.mp4';
+
+              let existingInDst = [];
+              try {
+                existingInDst = await getDstFolderExistingFiles(dstFolderId);
+              } catch {}
+              const targetNorm = normSegV2(task.sourceName, true);
+              const targetVidMp4Norm = normSegV2(baseVideoName, true);
+              const existingVid = existingInDst.find((ef) => {
+                const efNorm = normSegV2(ef.name, true);
+                return efNorm === targetNorm || efNorm === targetVidMp4Norm;
+              });
+              if (existingVid) {
+                videoSyncDb.syncedFileIds[task.sourceFileId] = {
+                  relPath: task.relPath,
+                  normRelPath: task.normV2,
+                  title: existingVid.name,
+                  size: Number(existingVid.size || task.size || 0),
+                  dstFileId: existingVid.id,
+                  syncedAt: new Date().toISOString(),
+                };
+                videoSyncDb.syncedNormPaths[task.normV2] = {
+                  relPath: task.relPath,
+                  sourceFileId: task.sourceFileId,
+                  dstFileId: existingVid.id,
+                  size: Number(existingVid.size || task.size || 0),
+                  syncedAt: new Date().toISOString(),
+                };
+                saveVideoSyncDb();
+                continue;
+              }
+
               const needRemux =
                 rules.videoMode === 'remux_upload' ||
-                /\.(ts|mkv|flv)$/i.test(task.sourceName);
+                /\.(ts|mkv|flv)$/i.test(safeVidExt);
 
               let uploaded = null;
-              if (!needRemux && (rules.videoMode === 'server_copy' || rules.videoMode === 'remux_or_copy')) {
+              if (task.existingSchoolDstFileId) {
+                try {
+                  syncJob.currentAction = `Đang nhân bản nhanh Video có sẵn trên SCHOOL: ${baseVideoName}`;
+                  uploaded = await copyDriveFileServerSide(task.existingSchoolDstFileId, baseVideoName, dstFolderId);
+                } catch {}
+              }
+              if (!uploaded && !needRemux && (rules.videoMode === 'server_copy' || rules.videoMode === 'remux_or_copy')) {
                 try {
                   syncJob.currentAction = `Đang copy trực tiếp Video trên Drive: ${baseVideoName}`;
                   uploaded = await copyDriveFileServerSide(task.sourceFileId, baseVideoName, dstFolderId);
@@ -1794,7 +1906,7 @@ async function runSyncTargets(targets, options = {}) {
               }
 
               if (!uploaded) {
-                const rawVidTmp = path.join(TMP_DIR, `vid_in_${task.sourceFileId}${path.extname(task.sourceName) || '.mp4'}`);
+                const rawVidTmp = path.join(TMP_DIR, `vid_in_${task.sourceFileId}${safeVidExt}`);
                 const outVidTmp = path.join(TMP_DIR, `vid_out_${task.sourceFileId}.mp4`);
                 try {
                   syncJob.currentAction = `Đang tải Video (${(task.size / 1048576).toFixed(1)} MB): ${task.sourceName}`;
