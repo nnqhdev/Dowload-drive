@@ -15,7 +15,7 @@ const { spawn, execFile } = require('child_process');
 const multer = require('multer');
 const ffmpegPath = require('ffmpeg-static');
 
-const PORT = Number(process.env.PORT || 4000);
+const PORT = Number(process.env.PORT || 4040);
 const OAUTH_CALLBACK_PORT = 53682;
 const OAUTH_REDIRECT_URI = `http://127.0.0.1:${OAUTH_CALLBACK_PORT}/callback`;
 

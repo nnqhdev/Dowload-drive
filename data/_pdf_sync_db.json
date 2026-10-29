@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-28T15:04:27.500Z",
+  "updatedAt": "2026-10-29T12:45:02.701Z",
   "syncedFileIds": {
     "1bXVJtFUX7qV3X09VsFRzwumQ80aobQsK": {
       "relPath": "TOÁN/TOÁN THẦY NGUYỄN ĐĂNG ÁI TDM 2K9/0. INFO THÔNG TIN VÀ HƯỚNG DẪN KHOÁ HỌC/THÔNG TIN XPS TOÁN 2K9_A1.pdf",
@@ -141972,6 +141972,87 @@
       "dstFileId": "17OskkcxwaVfViZp4lSCe-TwpYsjOpe4N",
       "isUni": true,
       "syncedAt": "2026-10-28T15:03:45.307Z"
+    },
+    "1MfaESSNfpeWy818m2_w01JJPRenmbkxJ": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/1. Đề 1/Đề 1.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/1. đề 1/đề 1.pdf",
+      "title": "UNI Đề 1.pdf",
+      "size": 10855925,
+      "dstFileId": "1s4s37bHhlobSVSE5WiOvSFnvwPTr3Gki",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:36:55.399Z"
+    },
+    "1US7fddL2JVjJuq4M-jKLiDa0PRopggUp": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/4. CHƯƠNG 4: VẬT LÝ HẠT NHÂN VÀ PHÓNG XẠ/4. ĐỀ ÔN TẬP CHƯƠNG 4/1. Đề 1/Đề 1.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/1. đề 1/đề 1.pdf",
+      "title": "UNI Đề 1.pdf",
+      "size": 5631916,
+      "dstFileId": "1gS4QjFt_WO0Qs8Zv9mpkGonH96ClVN0t",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:37:09.169Z"
+    },
+    "1z6L_vgJoLs_zQaQpmc95-gy1P09hzwxG": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/2. Đề 2/Đề 2.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/2. đề 2/đề 2.pdf",
+      "title": "UNI Đề 2.pdf",
+      "size": 10939385,
+      "dstFileId": "1ima4R08pPbM75-POcSc32fOvlegZ0X_r",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:37:24.569Z"
+    },
+    "1_4rzyXKV-jSrPymci3tmCQzXmLoNoifo": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/4. CHƯƠNG 4: VẬT LÝ HẠT NHÂN VÀ PHÓNG XẠ/4. ĐỀ ÔN TẬP CHƯƠNG 4/2. Đề 2/Đề 2.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/2. đề 2/đề 2.pdf",
+      "title": "UNI Đề 2.pdf",
+      "size": 5956346,
+      "dstFileId": "14f417R2gUp8Yz5gpgo3VlfYFROYb7F1_",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:37:36.101Z"
+    },
+    "1MnlaHl_-g8b-hZQtePKJikyIVOudBawr": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/3. Đề 3/Đề 3.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/3. đề 3/đề 3.pdf",
+      "title": "UNI Đề 3.pdf",
+      "size": 10733004,
+      "dstFileId": "1_7GSh_WBT7CtdOdyRFZSCggvSt9O2HE_",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:37:52.334Z"
+    },
+    "1oh4MgfiBg2UGcJdJd7ikmjGoyeufs3Yc": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/4. CHƯƠNG 4: VẬT LÝ HẠT NHÂN VÀ PHÓNG XẠ/4. ĐỀ ÔN TẬP CHƯƠNG 4/3. Đề 3/Đề 3.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/3. đề 3/đề 3.pdf",
+      "title": "UNI Đề 3.pdf",
+      "size": 5384213,
+      "dstFileId": "19zm2cYRi-pYBmpniPelzsJBMIFfgMiA0",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:38:06.589Z"
+    },
+    "108sN0RoYfuHxxrCWk4BW2UIhzkZt_-ax": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/4. Đề 4/Đề 4.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/4. đề 4/đề 4.pdf",
+      "title": "UNI Đề 4.pdf",
+      "size": 12566331,
+      "dstFileId": "1hRcnMvWuTimHcP9zKffHe7rm7qrkEU1r",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:38:22.470Z"
+    },
+    "1JHHxjIvgsLovHYlYmf30XMP2MDRMeNlf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/5. Đề 5/Đề 5.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/5. đề 5/đề 5.pdf",
+      "title": "UNI Đề 5.pdf",
+      "size": 11070963,
+      "dstFileId": "1qsryWvYwEHtzfSFGhOGQySEYc14aZUqm",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:38:37.590Z"
+    },
+    "1h2IUEBSA0xwyJ2BuwqSREj-00ALR5vvH": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/6. Đề 6/Đề 6.pdf",
+      "normRelPath": "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/6. đề 6/đề 6.pdf",
+      "title": "UNI Đề 6.pdf",
+      "size": 8073388,
+      "dstFileId": "1ccQbE6YTZihnTPr4WNbtlUP7NgBd1blO",
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:38:57.791Z"
     }
   },
   "syncedNormPaths": {
@@ -333354,6 +333435,78 @@
       "size": 1215574,
       "isUni": true,
       "syncedAt": "2026-10-28T15:03:45.307Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/1. đề 1/đề 1.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/1. Đề 1/UNI Đề 1.pdf",
+      "sourceFileId": "1MfaESSNfpeWy818m2_w01JJPRenmbkxJ",
+      "dstFileId": "1s4s37bHhlobSVSE5WiOvSFnvwPTr3Gki",
+      "size": 10855925,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:36:55.399Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/1. đề 1/đề 1.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/4. CHƯƠNG 4: VẬT LÝ HẠT NHÂN VÀ PHÓNG XẠ/4. ĐỀ ÔN TẬP CHƯƠNG 4/1. Đề 1/UNI Đề 1.pdf",
+      "sourceFileId": "1US7fddL2JVjJuq4M-jKLiDa0PRopggUp",
+      "dstFileId": "1gS4QjFt_WO0Qs8Zv9mpkGonH96ClVN0t",
+      "size": 5631916,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:37:09.169Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/2. đề 2/đề 2.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/2. Đề 2/UNI Đề 2.pdf",
+      "sourceFileId": "1z6L_vgJoLs_zQaQpmc95-gy1P09hzwxG",
+      "dstFileId": "1ima4R08pPbM75-POcSc32fOvlegZ0X_r",
+      "size": 10939385,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:37:24.569Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/2. đề 2/đề 2.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/4. CHƯƠNG 4: VẬT LÝ HẠT NHÂN VÀ PHÓNG XẠ/4. ĐỀ ÔN TẬP CHƯƠNG 4/2. Đề 2/UNI Đề 2.pdf",
+      "sourceFileId": "1_4rzyXKV-jSrPymci3tmCQzXmLoNoifo",
+      "dstFileId": "14f417R2gUp8Yz5gpgo3VlfYFROYb7F1_",
+      "size": 5956346,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:37:36.101Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/3. đề 3/đề 3.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/3. Đề 3/UNI Đề 3.pdf",
+      "sourceFileId": "1MnlaHl_-g8b-hZQtePKJikyIVOudBawr",
+      "dstFileId": "1_7GSh_WBT7CtdOdyRFZSCggvSt9O2HE_",
+      "size": 10733004,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:37:52.334Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/3. đề 3/đề 3.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/4. CHƯƠNG 4: VẬT LÝ HẠT NHÂN VÀ PHÓNG XẠ/4. ĐỀ ÔN TẬP CHƯƠNG 4/3. Đề 3/UNI Đề 3.pdf",
+      "sourceFileId": "1oh4MgfiBg2UGcJdJd7ikmjGoyeufs3Yc",
+      "dstFileId": "19zm2cYRi-pYBmpniPelzsJBMIFfgMiA0",
+      "size": 5384213,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:38:06.589Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/4. đề 4/đề 4.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/4. Đề 4/UNI Đề 4.pdf",
+      "sourceFileId": "108sN0RoYfuHxxrCWk4BW2UIhzkZt_-ax",
+      "dstFileId": "1hRcnMvWuTimHcP9zKffHe7rm7qrkEU1r",
+      "size": 12566331,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:38:22.470Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/5. đề 5/đề 5.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/5. Đề 5/UNI Đề 5.pdf",
+      "sourceFileId": "1JHHxjIvgsLovHYlYmf30XMP2MDRMeNlf",
+      "dstFileId": "1qsryWvYwEHtzfSFGhOGQySEYc14aZUqm",
+      "size": 11070963,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:38:37.590Z"
+    },
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/6. đề 6/đề 6.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ HOÀNG QUÂN 2K9/1. KHOÁ CHUYÊN ĐỀ - Video + Live/5. Ôn Tập Giữa Học Kì 1/1. Đề Đã Chữa/6. Đề 6/UNI Đề 6.pdf",
+      "sourceFileId": "1h2IUEBSA0xwyJ2BuwqSREj-00ALR5vvH",
+      "dstFileId": "1ccQbE6YTZihnTPr4WNbtlUP7NgBd1blO",
+      "size": 8073388,
+      "isUni": true,
+      "syncedAt": "2026-10-29T12:38:57.791Z"
     }
   },
   "dstFolderCache": {
@@ -344785,7 +344938,23 @@
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act 2k9 empire team luyện thi đgnl tp.hcm 2027/khóa học đgnl v-act 2k9 khóa 1/1. chuyên đề nền tảng/11. kinh tế pháp luật/2. chuyên đề 1 hoạt động của nền kinh tế": "17n8pXUAs9rwxZk9x8doXyXZuI_mGqIVd",
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act 2k9 empire team luyện thi đgnl tp.hcm 2027/khóa học đgnl v-act 2k9 khóa 1/1. chuyên đề nền tảng/11. kinh tế pháp luật/3. chuyên đề 2 hoạt động của kinh tế nhà nước": "1aFr_lsE7yD2oh-o8oyZOPbPq04WXMDxP",
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act 2k9 empire team luyện thi đgnl tp.hcm 2027/khóa học đgnl v-act 2k9 khóa 1/1. chuyên đề nền tảng/11. kinh tế pháp luật/2. chuyên đề 1 hoạt động của nền kinh tế/tài liệu": "1gAWBsUAwngKPGMjYG7gLpVG68JO77Taw",
-    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act 2k9 empire team luyện thi đgnl tp.hcm 2027/khóa học đgnl v-act 2k9 khóa 1/1. chuyên đề nền tảng/11. kinh tế pháp luật/3. chuyên đề 2 hoạt động của kinh tế nhà nước/tài liệu": "1_ZFLJPsWUB15oTiX9GsnGkxhTDoIojhS"
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act 2k9 empire team luyện thi đgnl tp.hcm 2027/khóa học đgnl v-act 2k9 khóa 1/1. chuyên đề nền tảng/11. kinh tế pháp luật/3. chuyên đề 2 hoạt động của kinh tế nhà nước/tài liệu": "1_ZFLJPsWUB15oTiX9GsnGkxhTDoIojhS",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/1. chương 1_ vật lý nhiệt": "1ZiTq5HAiI50Lt8iOQwUacg54hcnVVlM9",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/2. chương 2_ khí lý tưởng": "1Y0BaUK9PdwFvWnMIeJj7XswzkIBGRZ9k",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/3. chương 3_ từ trường": "1vlsz46yXndcie6flSVrnxfIR8hwZyDo5",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4_ vật lý hạt nhân và phóng xạ": "1gbMFKn0CSgB8TSvrk7EUP7N9Gi9iGHBN",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1": "1v7qSwEnHhqr1QDRy2bc18CeYO10YoC7v",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa": "1_aoJYNaqQyE-n7hC_kj483LtmQsAIb8O",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/1. đề 1": "1VojYvYaP5x50ci2is_4EBQ2gJK0YnJ7Z",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4": "1Hpo749SsrFXZWh5CbofHtl3ZK15WsJQH",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/1. đề 1": "1pSxlS3cXhYtTx22w4qY3z1nLPP8XaAYc",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/2. đề 2": "1Rex1lceD2FUyaIFjP16RwRb6H1sgzsgJ",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/2. đề 2": "1QxgUMu8DAxPZyszY7-eOAZX6ZswuxWIT",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/3. đề 3": "1XleRlCvMV1VxmnAhQINUHhnqsVj4Bufa",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/4. chương 4: vật lý hạt nhân và phóng xạ/4. đề ôn tập chương 4/3. đề 3": "1k-yPvItCxHFoLeFJ_3AUlhvX0Ly3Nhda",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/4. đề 4": "1Mluug9FHpFMjd2lE05ZCFTfMbeYNe_sP",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/5. đề 5": "13UDkAh-wXxLNXv9Bjuo5hJekJhntgXSW",
+    "vật lý/lý thầy vũ hoàng quân 2k9/1. khoá chuyên đề - video + live/5. ôn tập giữa học kì 1/1. đề đã chữa/6. đề 6": "15MkLxjpfbqvN_Eoxnm9EHurAqHDFDyHu"
   },
   "completedTeachers": {
     "1XRl6XoX3x69jII4sA4lgMHPKIbcYysiH": {
