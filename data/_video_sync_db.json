@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02T05:21:37.972Z",
+  "updatedAt": "2026-11-02T12:37:27.612Z",
   "syncedFileIds": {
     "1uPSv4e6so8n3mp5YeBt_H8wYfLvIr1xF": {
       "relPath": "TOÁN/TOÁN THẦY NGUYỄN QUỐC CHÍ THAYCHI 2K9/1. KHÓA KIẾN THỨC NỀN TẢNG LỚP 12 - 2009/ÔN TẬP GIỮA HỌC KÌ I/6.ĐỀ THI GIỮA HỌC KÌ 1 - ĐỀ SỐ 6/CHỮA ĐỀ ÔN TẬP GIỮA HK1 SỐ 6.mp4",
@@ -157097,6 +157097,182 @@
       "size": 301721576,
       "dstFileId": "1DzwyLwuCN15zC3E6yOFKxzs2ZEijrL3M",
       "syncedAt": "2026-11-02T05:10:48.470Z"
+    },
+    "1eCNVgFauBoudYS4I_5Md3uTSVtCr812i": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIV2.3.mp4",
+      "normRelPath": "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/liv2.3.mp4",
+      "title": "LIV2.3.mp4",
+      "size": 828345296,
+      "dstFileId": "1lVOkswwF_HZvZzLDsjhQI7XIonDucBAU",
+      "syncedAt": "2026-11-02T06:25:47.663Z"
+    },
+    "1t9OEIcnFGJLvwJeFVGDxX7rZ-JJIpjOQ": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 1.2.mp4",
+      "normRelPath": "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 1.2.mp4",
+      "title": "LIVE 1.2.mp4",
+      "size": 610639228,
+      "dstFileId": "1pAFbPMCXGm8m3hKwN0rnmJFuSbZcAAYK",
+      "syncedAt": "2026-11-02T06:25:49.665Z"
+    },
+    "1ijP_TYC-BDFpSPvkwfhI6ipqtfYHSFMW": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 1.3.mp4",
+      "normRelPath": "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 1.3.mp4",
+      "title": "LIVE 1.3.mp4",
+      "size": 217450952,
+      "dstFileId": "1hv_ZyLJLrf7C84sJuM3CvCVoLpWKLbos",
+      "syncedAt": "2026-11-02T06:25:51.585Z"
+    },
+    "1O2STXPtL5QQlCRtAVUS7MxnQih1HDbs0": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 1.mp4",
+      "normRelPath": "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 1.mp4",
+      "title": "LIVE 1.mp4",
+      "size": 535793044,
+      "dstFileId": "1ihAfQ81hfASFUeqnXdZJEP9pDxmkos2c",
+      "syncedAt": "2026-11-02T06:25:53.476Z"
+    },
+    "1G0rnCA1YA1io8sKiDi6EaInBGNc4ZiuU": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 2.2.mp4",
+      "normRelPath": "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 2.2.mp4",
+      "title": "LIVE 2.2.mp4",
+      "size": 772621720,
+      "dstFileId": "1u0kYzcWRJSulBnD6xL-MilYD5RDBwCnv",
+      "syncedAt": "2026-11-02T06:25:55.441Z"
+    },
+    "1tftPFRR_qHz_-FvEnO_bjk7ZNfA97hg_": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 2.mp4",
+      "normRelPath": "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 2.mp4",
+      "title": "LIVE 2.mp4",
+      "size": 667826196,
+      "dstFileId": "1upGl6PavjrVpI3nh3Jb-CFqiJaWXC6GB",
+      "syncedAt": "2026-11-02T06:25:57.358Z"
+    },
+    "1f0QOavtYT-GJakX1DnNQD08HXLZbXINm": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK1 - Hành trình chinh phục Toán 12 tập 1/Chương 2 - Tọa độ vecto/BOOK1-B2 - HỆ TRỤC TỌA ĐỘ OXYZ - TỌA ĐỘ VECTƠ/1 BOOK1B2 phần 2 câu 5 14.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book1 - hành trình chinh phục toán 12 tập 1/chương 2 - tọa độ vecto/book1-b2 - hệ trục tọa độ oxyz - tọa độ vectơ/1 book1b2 phần 2 câu 5 14.mp4",
+      "title": "1 BOOK1B2 phần 2 câu 5 14.mp4",
+      "size": 492719520,
+      "dstFileId": "1TZbb6zh7iLwvi7vE0F5vA3gsMFDPGRuk",
+      "syncedAt": "2026-11-02T09:20:49.347Z"
+    },
+    "16QOjKIibrnYQRd3HJrbXQiIEdwpV62RY": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D2 – Nguyên hàm của một số hàm số sơ cấp/1 BOOK2D2 phần 1 lý thuyết Nguyên hàm của một số hàm số sơ cấp mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d2 – nguyên hàm của một số hàm số sơ cấp/1 book2d2 phần 1 lý thuyết nguyên hàm của một số hàm số sơ cấp mp4.mp4",
+      "title": "1 BOOK2D2 phần 1 lý thuyết Nguyên hàm của một số hàm số sơ cấp mp4.mp4",
+      "size": 451433576,
+      "dstFileId": "1SZb7pW4u84a2w3j8NKV7rKbDYmoWORQq",
+      "syncedAt": "2026-11-02T09:20:51.368Z"
+    },
+    "1d3BMs8smU9sXxkuA9XAT4wx8MzzYdVXU": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D6 – Ứng dụng tích phân tính diện tích/1 BOOK2D6 phần 1 câu 1 9 ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích/1 book2d6 phần 1 câu 1 9 ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "1 BOOK2D6 phần 1 câu 1 9 ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 554329887,
+      "dstFileId": "1izZizPN9xow2ABtCDaN0nNe6MsbW-K4Y",
+      "syncedAt": "2026-11-02T09:20:56.199Z"
+    },
+    "18zji3lxY-NSZmd2gLWRiELBYbdZe3Th1": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D7 – Bổ trợ ứng dụng tích phân tính diện tích/1 BOOK2D7 phần 1 câu 1 17 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d7 – bổ trợ ứng dụng tích phân tính diện tích/1 book2d7 phần 1 câu 1 17 bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "1 BOOK2D7 phần 1 câu 1 17 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 427760907,
+      "dstFileId": "1LjkuWOmS8iFayAKha1dKwehssqzSFa2H",
+      "syncedAt": "2026-11-02T09:20:58.451Z"
+    },
+    "1-L1JdbP_0fXOoL7M-pMJnnfJVmH95FCO": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/1 BOOK2D9 phần 1 câu 1 17 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/1 book2d9 phần 1 câu 1 17 ttt ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "1 BOOK2D9 phần 1 câu 1 17 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 552893740,
+      "dstFileId": "1rIQm3lgzvKuGRrdO8_IWPUdmqskquE4U",
+      "syncedAt": "2026-11-02T09:21:02.895Z"
+    },
+    "1QeBq5x4XEsA9x2dhYfQGTXg821BfAcd4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D11 – Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/1 BOOK2D11 phần 1 câu 1 13 Bổ trợ ứng dụng tích phân tính.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d11 – bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/1 book2d11 phần 1 câu 1 13 bổ trợ ứng dụng tích phân tính.mp4",
+      "title": "1 BOOK2D11 phần 1 câu 1 13 Bổ trợ ứng dụng tích phân tính.mp4",
+      "size": 280558726,
+      "dstFileId": "1jowLUiKnTeDprtmi3-0u-kv4VWt-sexV",
+      "syncedAt": "2026-11-02T09:21:04.907Z"
+    },
+    "167XJ_jYIWdN-C5nbnIPjJRKJvHyX8gjc": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D2 – Nguyên hàm của một số hàm số sơ cấp/2 BOOK2D2 phần 2 bài tập Nguyên hàm của một số hàm số sơ cấp mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d2 – nguyên hàm của một số hàm số sơ cấp/2 book2d2 phần 2 bài tập nguyên hàm của một số hàm số sơ cấp mp4.mp4",
+      "title": "2 BOOK2D2 phần 2 bài tập Nguyên hàm của một số hàm số sơ cấp mp4.mp4",
+      "size": 381185101,
+      "dstFileId": "1Q64dB4__wzi6S9P7-Y_eaEmbOvFJ5XRD",
+      "syncedAt": "2026-11-02T09:21:06.782Z"
+    },
+    "10-og3MEzHwWJr58m_ThgHcEvR9GYjnbO": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D6 – Ứng dụng tích phân tính diện tích/2 BOOK2D6 phần 2 câu 10 15 ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích/2 book2d6 phần 2 câu 10 15 ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "2 BOOK2D6 phần 2 câu 10 15 ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 263031576,
+      "dstFileId": "1btFISgxOQuRH6r9h75V5ApiRVgcy0e3O",
+      "syncedAt": "2026-11-02T09:21:08.617Z"
+    },
+    "1W4B7HSj4axR5NOi51uq0mPp8hLLSsMbY": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D7 – Bổ trợ ứng dụng tích phân tính diện tích/2 BOOK2D7 phần 2 câu 18 24 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d7 – bổ trợ ứng dụng tích phân tính diện tích/2 book2d7 phần 2 câu 18 24 bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "2 BOOK2D7 phần 2 câu 18 24 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 138411971,
+      "dstFileId": "1_iAeXDV1IyP2viPN-4-KWhtzFXTFpllI",
+      "syncedAt": "2026-11-02T09:21:10.447Z"
+    },
+    "1BsSP9EHhOxHbt4waXYqMANZ_QhGP1sSs": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/2 BOOK2D9 phần 2 câu 18 22 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/2 book2d9 phần 2 câu 18 22 ttt ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "2 BOOK2D9 phần 2 câu 18 22 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 206271667,
+      "dstFileId": "1h7OKZV62ITMbzEW57Q4gbSh-nXbi86Yb",
+      "syncedAt": "2026-11-02T09:25:06.791Z"
+    },
+    "1fC8qm-NM8rJSROQn_ejTQMqa8CydyB-J": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D11 – Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/2 BOOK2D11 phần 2 câu 14 20 Bổ trợ ứng dụng tích phân tính.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d11 – bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/2 book2d11 phần 2 câu 14 20 bổ trợ ứng dụng tích phân tính.mp4",
+      "title": "2 BOOK2D11 phần 2 câu 14 20 Bổ trợ ứng dụng tích phân tính.mp4",
+      "size": 286755533,
+      "dstFileId": "1rvLTKhLckaisVRPl1c3Y1ljssp2Z_P3K",
+      "syncedAt": "2026-11-02T09:25:08.714Z"
+    },
+    "1ZB7z8_5MQj4ZpEwvN4hRtWEZynlDuXwX": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D6 – Ứng dụng tích phân tính diện tích/3 BOOK2D6 phần 3 câu 16 23 ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích/3 book2d6 phần 3 câu 16 23 ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "3 BOOK2D6 phần 3 câu 16 23 ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 648233365,
+      "dstFileId": "1p9cCvcKFPX2wwKv1FHM2gmKcb1v1Ym4R",
+      "syncedAt": "2026-11-02T09:25:10.785Z"
+    },
+    "1gEMUm80NWBchU6mhbjyL6zWFgp8ldoQW": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D7 – Bổ trợ ứng dụng tích phân tính diện tích/3 BOOK2D7 phần 3 câu 25 30 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d7 – bổ trợ ứng dụng tích phân tính diện tích/3 book2d7 phần 3 câu 25 30 bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "3 BOOK2D7 phần 3 câu 25 30 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 118709440,
+      "dstFileId": "17Kqws_6hh206ICUUOLwsco3bNpTv6_8X",
+      "syncedAt": "2026-11-02T09:25:12.713Z"
+    },
+    "1tTGFO4FcoHzG4aznfXl-TJAroumtAqH8": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/3 BOOK2D9 phần 3 câu 23 31 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/3 book2d9 phần 3 câu 23 31 ttt ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "3 BOOK2D9 phần 3 câu 23 31 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 457514143,
+      "dstFileId": "1PrAvArQdJ7zHuq0K5SWNab6xMQz1SCpF",
+      "syncedAt": "2026-11-02T09:25:14.676Z"
+    },
+    "1ZHGlSEMfFZS_6CRTKgzYDLoRJAq9CGqy": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D7 – Bổ trợ ứng dụng tích phân tính diện tích/4 BOOK2D7 phần 4 câu 31 40 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d7 – bổ trợ ứng dụng tích phân tính diện tích/4 book2d7 phần 4 câu 31 40 bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "title": "4 BOOK2D7 phần 4 câu 31 40 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "size": 303707692,
+      "dstFileId": "1GrYvokvrlC7PqF4IDQEBiiat7S9b1Lai",
+      "syncedAt": "2026-11-02T09:25:16.590Z"
+    },
+    "1IwqmyDAiELW8N9NekCsKZze7GXqvXhlH": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK1 - Hành trình chinh phục Toán 12 tập 1/Chương 2 - Tọa độ vecto/BOOK1B5 - Bài tập bổ trợ biểu thức tọa độ các phép toán vectơ/BOOK1B5 phần 1 Câu 1 15.mp4",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book1 - hành trình chinh phục toán 12 tập 1/chương 2 - tọa độ vecto/book1b5 - bài tập bổ trợ biểu thức tọa độ các phép toán vectơ/book1b5 phần 1 câu 1 15.mp4",
+      "title": "BOOK1B5 phần 1 Câu 1 15.mp4",
+      "size": 171984177,
+      "dstFileId": "1Spq4268ARUU61rFs6ZCocBArs0Lh7-MC",
+      "syncedAt": "2026-11-02T09:25:18.465Z"
     }
   },
   "syncedNormPaths": {
@@ -317567,6 +317743,160 @@
       "dstFileId": "1Z7fWIjJ1o3IhSL8C2mNU-l-YXVNAJSC4",
       "size": 405682380,
       "syncedAt": "2026-11-02T05:20:33.019Z"
+    },
+    "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/liv2.3.mp4": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIV2.3.mp4",
+      "sourceFileId": "1eCNVgFauBoudYS4I_5Md3uTSVtCr812i",
+      "dstFileId": "1lVOkswwF_HZvZzLDsjhQI7XIonDucBAU",
+      "size": 828345296,
+      "syncedAt": "2026-11-02T06:25:47.663Z"
+    },
+    "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 1.2.mp4": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 1.2.mp4",
+      "sourceFileId": "1t9OEIcnFGJLvwJeFVGDxX7rZ-JJIpjOQ",
+      "dstFileId": "1pAFbPMCXGm8m3hKwN0rnmJFuSbZcAAYK",
+      "size": 610639228,
+      "syncedAt": "2026-11-02T06:25:49.665Z"
+    },
+    "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 1.3.mp4": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 1.3.mp4",
+      "sourceFileId": "1ijP_TYC-BDFpSPvkwfhI6ipqtfYHSFMW",
+      "dstFileId": "1hv_ZyLJLrf7C84sJuM3CvCVoLpWKLbos",
+      "size": 217450952,
+      "syncedAt": "2026-11-02T06:25:51.585Z"
+    },
+    "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 1.mp4": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 1.mp4",
+      "sourceFileId": "1O2STXPtL5QQlCRtAVUS7MxnQih1HDbs0",
+      "dstFileId": "1ihAfQ81hfASFUeqnXdZJEP9pDxmkos2c",
+      "size": 535793044,
+      "syncedAt": "2026-11-02T06:25:53.476Z"
+    },
+    "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 2.2.mp4": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 2.2.mp4",
+      "sourceFileId": "1G0rnCA1YA1io8sKiDi6EaInBGNc4ZiuU",
+      "dstFileId": "1u0kYzcWRJSulBnD6xL-MilYD5RDBwCnv",
+      "size": 772621720,
+      "syncedAt": "2026-11-02T06:25:55.441Z"
+    },
+    "hóa học/hoá thầy phạm thắng tyhh 2k9/1. khoá live t - chuyên đề (nền tảng hoá 12)/chuyên đề 3 - [sách] - 15 ngày chinh phục hợp chất nitrogen/live 1+2 - lý thuyết trọng tâm amine (vip1 + vip2)/live 2.mp4": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM THẮNG TYHH 2K9/1. KHOÁ LIVE T - CHUYÊN ĐỀ (NỀN TẢNG HOÁ 12)/CHUYÊN ĐỀ 3 - [SÁCH] - 15 NGÀY CHINH PHỤC HỢP CHẤT NITROGEN/LIVE 1+2 - LÝ THUYẾT TRỌNG TÂM AMINE (VIP1 + VIP2)/LIVE 2.mp4",
+      "sourceFileId": "1tftPFRR_qHz_-FvEnO_bjk7ZNfA97hg_",
+      "dstFileId": "1upGl6PavjrVpI3nh3Jb-CFqiJaWXC6GB",
+      "size": 667826196,
+      "syncedAt": "2026-11-02T06:25:57.359Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book1 - hành trình chinh phục toán 12 tập 1/chương 2 - tọa độ vecto/book1-b2 - hệ trục tọa độ oxyz - tọa độ vectơ/1 book1b2 phần 2 câu 5 14.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK1 - Hành trình chinh phục Toán 12 tập 1/Chương 2 - Tọa độ vecto/BOOK1-B2 - HỆ TRỤC TỌA ĐỘ OXYZ - TỌA ĐỘ VECTƠ/1 BOOK1B2 phần 2 câu 5 14.mp4",
+      "sourceFileId": "1f0QOavtYT-GJakX1DnNQD08HXLZbXINm",
+      "dstFileId": "1TZbb6zh7iLwvi7vE0F5vA3gsMFDPGRuk",
+      "size": 492719520,
+      "syncedAt": "2026-11-02T09:20:49.347Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d2 – nguyên hàm của một số hàm số sơ cấp/1 book2d2 phần 1 lý thuyết nguyên hàm của một số hàm số sơ cấp mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D2 – Nguyên hàm của một số hàm số sơ cấp/1 BOOK2D2 phần 1 lý thuyết Nguyên hàm của một số hàm số sơ cấp mp4.mp4",
+      "sourceFileId": "16QOjKIibrnYQRd3HJrbXQiIEdwpV62RY",
+      "dstFileId": "1SZb7pW4u84a2w3j8NKV7rKbDYmoWORQq",
+      "size": 451433576,
+      "syncedAt": "2026-11-02T09:20:51.368Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích/1 book2d6 phần 1 câu 1 9 ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D6 – Ứng dụng tích phân tính diện tích/1 BOOK2D6 phần 1 câu 1 9 ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "1d3BMs8smU9sXxkuA9XAT4wx8MzzYdVXU",
+      "dstFileId": "1izZizPN9xow2ABtCDaN0nNe6MsbW-K4Y",
+      "size": 554329887,
+      "syncedAt": "2026-11-02T09:20:56.199Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d7 – bổ trợ ứng dụng tích phân tính diện tích/1 book2d7 phần 1 câu 1 17 bổ trợ ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D7 – Bổ trợ ứng dụng tích phân tính diện tích/1 BOOK2D7 phần 1 câu 1 17 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "18zji3lxY-NSZmd2gLWRiELBYbdZe3Th1",
+      "dstFileId": "1LjkuWOmS8iFayAKha1dKwehssqzSFa2H",
+      "size": 427760907,
+      "syncedAt": "2026-11-02T09:20:58.451Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/1 book2d9 phần 1 câu 1 17 ttt ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/1 BOOK2D9 phần 1 câu 1 17 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "1-L1JdbP_0fXOoL7M-pMJnnfJVmH95FCO",
+      "dstFileId": "1rIQm3lgzvKuGRrdO8_IWPUdmqskquE4U",
+      "size": 552893740,
+      "syncedAt": "2026-11-02T09:21:02.895Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d11 – bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/1 book2d11 phần 1 câu 1 13 bổ trợ ứng dụng tích phân tính.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D11 – Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/1 BOOK2D11 phần 1 câu 1 13 Bổ trợ ứng dụng tích phân tính.mp4",
+      "sourceFileId": "1QeBq5x4XEsA9x2dhYfQGTXg821BfAcd4",
+      "dstFileId": "1jowLUiKnTeDprtmi3-0u-kv4VWt-sexV",
+      "size": 280558726,
+      "syncedAt": "2026-11-02T09:21:04.907Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d2 – nguyên hàm của một số hàm số sơ cấp/2 book2d2 phần 2 bài tập nguyên hàm của một số hàm số sơ cấp mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D2 – Nguyên hàm của một số hàm số sơ cấp/2 BOOK2D2 phần 2 bài tập Nguyên hàm của một số hàm số sơ cấp mp4.mp4",
+      "sourceFileId": "167XJ_jYIWdN-C5nbnIPjJRKJvHyX8gjc",
+      "dstFileId": "1Q64dB4__wzi6S9P7-Y_eaEmbOvFJ5XRD",
+      "size": 381185101,
+      "syncedAt": "2026-11-02T09:21:06.782Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích/2 book2d6 phần 2 câu 10 15 ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D6 – Ứng dụng tích phân tính diện tích/2 BOOK2D6 phần 2 câu 10 15 ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "10-og3MEzHwWJr58m_ThgHcEvR9GYjnbO",
+      "dstFileId": "1btFISgxOQuRH6r9h75V5ApiRVgcy0e3O",
+      "size": 263031576,
+      "syncedAt": "2026-11-02T09:21:08.617Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d7 – bổ trợ ứng dụng tích phân tính diện tích/2 book2d7 phần 2 câu 18 24 bổ trợ ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D7 – Bổ trợ ứng dụng tích phân tính diện tích/2 BOOK2D7 phần 2 câu 18 24 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "1W4B7HSj4axR5NOi51uq0mPp8hLLSsMbY",
+      "dstFileId": "1_iAeXDV1IyP2viPN-4-KWhtzFXTFpllI",
+      "size": 138411971,
+      "syncedAt": "2026-11-02T09:21:10.448Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/2 book2d9 phần 2 câu 18 22 ttt ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/2 BOOK2D9 phần 2 câu 18 22 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "1BsSP9EHhOxHbt4waXYqMANZ_QhGP1sSs",
+      "dstFileId": "1h7OKZV62ITMbzEW57Q4gbSh-nXbi86Yb",
+      "size": 206271667,
+      "syncedAt": "2026-11-02T09:25:06.791Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d11 – bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/2 book2d11 phần 2 câu 14 20 bổ trợ ứng dụng tích phân tính.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D11 – Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/2 BOOK2D11 phần 2 câu 14 20 Bổ trợ ứng dụng tích phân tính.mp4",
+      "sourceFileId": "1fC8qm-NM8rJSROQn_ejTQMqa8CydyB-J",
+      "dstFileId": "1rvLTKhLckaisVRPl1c3Y1ljssp2Z_P3K",
+      "size": 286755533,
+      "syncedAt": "2026-11-02T09:25:08.714Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích/3 book2d6 phần 3 câu 16 23 ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D6 – Ứng dụng tích phân tính diện tích/3 BOOK2D6 phần 3 câu 16 23 ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "1ZB7z8_5MQj4ZpEwvN4hRtWEZynlDuXwX",
+      "dstFileId": "1p9cCvcKFPX2wwKv1FHM2gmKcb1v1Ym4R",
+      "size": 648233365,
+      "syncedAt": "2026-11-02T09:25:10.786Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d7 – bổ trợ ứng dụng tích phân tính diện tích/3 book2d7 phần 3 câu 25 30 bổ trợ ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D7 – Bổ trợ ứng dụng tích phân tính diện tích/3 BOOK2D7 phần 3 câu 25 30 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "1gEMUm80NWBchU6mhbjyL6zWFgp8ldoQW",
+      "dstFileId": "17Kqws_6hh206ICUUOLwsco3bNpTv6_8X",
+      "size": 118709440,
+      "syncedAt": "2026-11-02T09:25:12.713Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/3 book2d9 phần 3 câu 23 31 ttt ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/3 BOOK2D9 phần 3 câu 23 31 TTT ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "1tTGFO4FcoHzG4aznfXl-TJAroumtAqH8",
+      "dstFileId": "1PrAvArQdJ7zHuq0K5SWNab6xMQz1SCpF",
+      "size": 457514143,
+      "syncedAt": "2026-11-02T09:25:14.676Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d7 – bổ trợ ứng dụng tích phân tính diện tích/4 book2d7 phần 4 câu 31 40 bổ trợ ứng dụng tích phân tính diện tích mp4.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D7 – Bổ trợ ứng dụng tích phân tính diện tích/4 BOOK2D7 phần 4 câu 31 40 Bổ trợ ứng dụng tích phân tính diện tích mp4.mp4",
+      "sourceFileId": "1ZHGlSEMfFZS_6CRTKgzYDLoRJAq9CGqy",
+      "dstFileId": "1GrYvokvrlC7PqF4IDQEBiiat7S9b1Lai",
+      "size": 303707692,
+      "syncedAt": "2026-11-02T09:25:16.590Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book1 - hành trình chinh phục toán 12 tập 1/chương 2 - tọa độ vecto/book1b5 - bài tập bổ trợ biểu thức tọa độ các phép toán vectơ/book1b5 phần 1 câu 1 15.mp4": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK1 - Hành trình chinh phục Toán 12 tập 1/Chương 2 - Tọa độ vecto/BOOK1B5 - Bài tập bổ trợ biểu thức tọa độ các phép toán vectơ/BOOK1B5 phần 1 Câu 1 15.mp4",
+      "sourceFileId": "1IwqmyDAiELW8N9NekCsKZze7GXqvXhlH",
+      "dstFileId": "1Spq4268ARUU61rFs6ZCocBArs0Lh7-MC",
+      "size": 171984177,
+      "syncedAt": "2026-11-02T09:25:18.465Z"
     }
   }
 }

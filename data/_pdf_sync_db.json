@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-02T05:21:37.794Z",
+  "updatedAt": "2026-11-02T12:37:27.406Z",
   "syncedFileIds": {
     "1bXVJtFUX7qV3X09VsFRzwumQ80aobQsK": {
       "relPath": "TOÁN/TOÁN THẦY NGUYỄN ĐĂNG ÁI TDM 2K9/0. INFO THÔNG TIN VÀ HƯỚNG DẪN KHOÁ HỌC/THÔNG TIN XPS TOÁN 2K9_A1.pdf",
@@ -146181,6 +146181,51 @@
       "dstFileId": "1KcN0R7MyjOJpGtQ8VxjCm4B3W99mVqkR",
       "isUni": true,
       "syncedAt": "2026-11-02T05:09:56.611Z"
+    },
+    "1GiFkejBXLABp2BsTIBxmv8jePuuqQAbE": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D6 – Ứng dụng tích phân tính diện tích/BOOK2D6 - Ứng dụng tích phân tính diện tích.pdf",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích/book2d6 - ứng dụng tích phân tính diện tích.pdf",
+      "title": "UNI BOOK2D6 - Ứng dụng tích phân tính diện tích.pdf",
+      "size": 1319262,
+      "dstFileId": "1iBqSELtkduAA9c3qXzWH3UlI7X6kglvr",
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:25:25.459Z"
+    },
+    "1agCTp-kZFemQ_CtsgKyf6m4p3nW13VQc": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/BOOK2D9 - TTT ứng dụng tích phân tính diện tích.pdf",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/book2d9 - ttt ứng dụng tích phân tính diện tích.pdf",
+      "title": "UNI BOOK2D9 - TTT ứng dụng tích phân tính diện tích.pdf",
+      "size": 1607101,
+      "dstFileId": "14Yl_hfVB3xN3z2DsdphMpaM0Q5mr3fVi",
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:25:31.858Z"
+    },
+    "1XYfM0-sIw_d1Gz7kW5266Yl_IsqmGFwS": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D2 – Nguyên hàm của một số hàm số sơ cấp/handover - BOOK2D2 - Nguyên hàm của một số hàm số sơ cấp.pdf",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d2 – nguyên hàm của một số hàm số sơ cấp/handover - book2d2 - nguyên hàm của một số hàm số sơ cấp.pdf",
+      "title": "UNI handover - BOOK2D2 - Nguyên hàm của một số hàm số sơ cấp.pdf",
+      "size": 16456967,
+      "dstFileId": "1J7c_D1xsk0NfyfS0ItvHRCqiPfIhLdSk",
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:25:42.974Z"
+    },
+    "1J7YMBlXs-rRDtv35gbwg33nAU0HW-WKK": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/handover - BOOK2D9 - TTT ứng dụng tích phân tính diện tích.pdf",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/handover - book2d9 - ttt ứng dụng tích phân tính diện tích.pdf",
+      "title": "UNI handover - BOOK2D9 - TTT ứng dụng tích phân tính diện tích.pdf",
+      "size": 16567102,
+      "dstFileId": "1azRfQJ_Qa85MuOgcrBXOl4ffBE_g_lQA",
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:30:08.696Z"
+    },
+    "1vcqHOgiUp1Goj23pB8qxg3S6S1IHjkkR": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D11 – Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/handover - BOOK2D11 - Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa.pdf",
+      "normRelPath": "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d11 – bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/handover - book2d11 - bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa.pdf",
+      "title": "UNI handover - BOOK2D11 - Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa.pdf",
+      "size": 10297526,
+      "dstFileId": "1DBW5LnvRVsxqB8awrUXUo_piRKE2uQ_r",
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:30:20.649Z"
     }
   },
   "syncedNormPaths": {
@@ -359696,6 +359741,46 @@
       "size": 1798149,
       "isUni": true,
       "syncedAt": "2026-11-02T05:20:11.481Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích/book2d6 - ứng dụng tích phân tính diện tích.pdf": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D6 – Ứng dụng tích phân tính diện tích/UNI BOOK2D6 - Ứng dụng tích phân tính diện tích.pdf",
+      "sourceFileId": "1GiFkejBXLABp2BsTIBxmv8jePuuqQAbE",
+      "dstFileId": "1iBqSELtkduAA9c3qXzWH3UlI7X6kglvr",
+      "size": 1319262,
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:25:25.459Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/book2d9 - ttt ứng dụng tích phân tính diện tích.pdf": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/UNI BOOK2D9 - TTT ứng dụng tích phân tính diện tích.pdf",
+      "sourceFileId": "1agCTp-kZFemQ_CtsgKyf6m4p3nW13VQc",
+      "dstFileId": "14Yl_hfVB3xN3z2DsdphMpaM0Q5mr3fVi",
+      "size": 1607101,
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:25:31.858Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d2 – nguyên hàm của một số hàm số sơ cấp/handover - book2d2 - nguyên hàm của một số hàm số sơ cấp.pdf": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D2 – Nguyên hàm của một số hàm số sơ cấp/UNI handover - BOOK2D2 - Nguyên hàm của một số hàm số sơ cấp.pdf",
+      "sourceFileId": "1XYfM0-sIw_d1Gz7kW5266Yl_IsqmGFwS",
+      "dstFileId": "1J7c_D1xsk0NfyfS0ItvHRCqiPfIhLdSk",
+      "size": 16456967,
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:25:42.974Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích/handover - book2d9 - ttt ứng dụng tích phân tính diện tích.pdf": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D9 – TTT ứng dụng tích phân tính diện tích/UNI handover - BOOK2D9 - TTT ứng dụng tích phân tính diện tích.pdf",
+      "sourceFileId": "1J7YMBlXs-rRDtv35gbwg33nAU0HW-WKK",
+      "dstFileId": "1azRfQJ_Qa85MuOgcrBXOl4ffBE_g_lQA",
+      "size": 16567102,
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:30:08.696Z"
+    },
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d11 – bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/handover - book2d11 - bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa.pdf": {
+      "relPath": "TOÁN/TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9/4. Khóa Sách - Hành trình chinh phục Toán 12/BOOK2 - Hành trình chinh phục Toán 12 tập 2/Chương 5 - Nguyên hàm tích phân/BOOK2D11 – Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa/UNI handover - BOOK2D11 - Bổ trợ ứng dụng tích phân tính thể tích bằng định nghĩa.pdf",
+      "sourceFileId": "1vcqHOgiUp1Goj23pB8qxg3S6S1IHjkkR",
+      "dstFileId": "1DBW5LnvRVsxqB8awrUXUo_piRKE2uQ_r",
+      "size": 10297526,
+      "isUni": true,
+      "syncedAt": "2026-11-02T09:30:20.649Z"
     }
   },
   "dstFolderCache": {
@@ -372083,7 +372168,9 @@
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act mapstudy 2k9 luyện thi đánh giá năng lực tp.hcm 2027/1. giai đoạn 1/7. hoá học/7. hoá học/#29. bài 29: đại cương về kim loại/3. bài 29.3: đại cương về kim loại (phần 3)": "1TBhswTmcscQInP4jsuyRvMZcAAdEHJGV",
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act mapstudy 2k9 luyện thi đánh giá năng lực tp.hcm 2027/1. giai đoạn 1/7. hoá học/7. hoá học/#30. bài 30: ăn mòn kim loại và điều chế kim loại/3. bài 30.3: ăn mòn kim loại - bài tập": "1POHVHdOSW-AuCE5an7vDrhqzNRiJVdxE",
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act mapstudy 2k9 luyện thi đánh giá năng lực tp.hcm 2027/1. giai đoạn 1/7. hoá học/7. hoá học/#18. bài 18: amino acid - câu hỏi và bài tập/4. bài 18.4: amino acid - dạng bài tập tính toán": "1ZAy9RBqu_zS0H9QDNLwHYT6yjJysrYQh",
-    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act mapstudy 2k9 luyện thi đánh giá năng lực tp.hcm 2027/1. giai đoạn 1/7. hoá học/7. hoá học/#30. bài 30: ăn mòn kim loại và điều chế kim loại/4. bài 30.4: kim loại cộng muối - câu hỏi lý thuyết": "1LByk_itkGqb0wbcgUq_kqufaOiIGt3q4"
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act mapstudy 2k9 luyện thi đánh giá năng lực tp.hcm 2027/1. giai đoạn 1/7. hoá học/7. hoá học/#30. bài 30: ăn mòn kim loại và điều chế kim loại/4. bài 30.4: kim loại cộng muối - câu hỏi lý thuyết": "1LByk_itkGqb0wbcgUq_kqufaOiIGt3q4",
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d6 – ứng dụng tích phân tính diện tích": "1wcxmI83wTeKr67JP7FeIK58s2ESfjWYS",
+    "toán/toán thầy đỗ văn đức tens 2k9/4. khóa sách - hành trình chinh phục toán 12/book2 - hành trình chinh phục toán 12 tập 2/chương 5 - nguyên hàm tích phân/book2d9 – ttt ứng dụng tích phân tính diện tích": "1OB4sGR_3cCqJhO5C3_6VbtMfRI5NLDWE"
   },
   "completedTeachers": {
     "1XRl6XoX3x69jII4sA4lgMHPKIbcYysiH": {
