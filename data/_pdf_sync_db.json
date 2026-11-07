@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-04T07:42:17.644Z",
+  "updatedAt": "2026-11-04T11:49:38.483Z",
   "syncedFileIds": {
     "1bXVJtFUX7qV3X09VsFRzwumQ80aobQsK": {
       "relPath": "TOÁN/TOÁN THẦY NGUYỄN ĐĂNG ÁI TDM 2K9/0. INFO THÔNG TIN VÀ HƯỚNG DẪN KHOÁ HỌC/THÔNG TIN XPS TOÁN 2K9_A1.pdf",
@@ -148425,6 +148425,141 @@
       "dstFileId": "1s43htrHh1tYf-1XIOI9AiAA5Tv_R6KBv",
       "isUni": true,
       "syncedAt": "2026-11-04T07:35:36.914Z"
+    },
+    "1mxgYK5mFlArvZRBKRIa-2WE1Q0pInyXD": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 2 ĐỊA LÝ ĐẠI CƯƠNG/TÀI LIỆU/CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - FILE ĐỀ HS IN.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 2 địa lý đại cương/tài liệu/chuyên đề 2. địa lí tự nhiên đại cương - đề luyện tập số 1 - file đề hs in.pdf",
+      "title": "UNI CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - FILE ĐỀ HS IN.pdf",
+      "size": 506348,
+      "dstFileId": "1fOBLb-LnQEyztq5zRtjGwhhossTa9oKt",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:41:35.697Z"
+    },
+    "1UzM-D6dnpWfNpwBSLxRimJEP-3y0B2cb": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 2 ĐỊA LÝ ĐẠI CƯƠNG/TÀI LIỆU/CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - HANDOUT.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 2 địa lý đại cương/tài liệu/chuyên đề 2. địa lí tự nhiên đại cương - đề luyện tập số 1 - handout.pdf",
+      "title": "UNI CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - HANDOUT.pdf",
+      "size": 862547,
+      "dstFileId": "1jrc1NXRuTJfR7RmxRQFyyKa_kZZKW7PS",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:41:40.431Z"
+    },
+    "1HN033h6NEWbWHZQAlbEwymNWax3DvBvD": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 2 ĐỊA LÝ ĐẠI CƯƠNG/TÀI LIỆU/CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - FILE ĐỀ HS IN.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 2 địa lý đại cương/tài liệu/chuyên đề 2. địa lí tự nhiên đại cương - đề luyện tập số 2 - file đề hs in.pdf",
+      "title": "UNI CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - FILE ĐỀ HS IN.pdf",
+      "size": 511252,
+      "dstFileId": "1OlAT2Q7mdGCl0EWYt8Hzalctzfj8D4YO",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:41:44.963Z"
+    },
+    "1QL_RuQlxwhBZCHbZDI-g5eCpUsMOegZB": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 2 ĐỊA LÝ ĐẠI CƯƠNG/TÀI LIỆU/CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - HANDOUT.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 2 địa lý đại cương/tài liệu/chuyên đề 2. địa lí tự nhiên đại cương - đề luyện tập số 2 - handout.pdf",
+      "title": "UNI CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - HANDOUT.pdf",
+      "size": 864321,
+      "dstFileId": "1GRkOyCXW41ITQfCcMUbQfECWM4wNf5g4",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:41:49.778Z"
+    },
+    "14vkcgD5FmY0XhUUC0r-m8QneOREYhmym": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/CHUYÊN ĐỀ 03 - ĐỊA LÍ KINH TẾ - XÃ HỘI THẾ GIỚI.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 03 - địa lí kinh tế - xã hội thế giới.pdf",
+      "title": "UNI CHUYÊN ĐỀ 03 - ĐỊA LÍ KINH TẾ - XÃ HỘI THẾ GIỚI.pdf",
+      "size": 13277906,
+      "dstFileId": "18ONUqxuZdNEWPIpUEjx26NmHYcCJibyq",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:01.095Z"
+    },
+    "1KNuE3vYJpVPosP9Nxwi9L9D2qNtb7yoq": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - FILE ĐỀ HS IN.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 3. địa lí kinh tế xã hội đại cương - đề luyện tập số 1 - file đề hs in.pdf",
+      "title": "UNI CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - FILE ĐỀ HS IN.pdf",
+      "size": 513894,
+      "dstFileId": "13mG0guB-P3X7Wb2-2xumCVYMXypzKCrg",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:05.461Z"
+    },
+    "1IXqOZEeQmAo5uVXS9NGp4DnyNgO7FSSw": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - HANDOUT.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 3. địa lí kinh tế xã hội đại cương - đề luyện tập số 1 - handout.pdf",
+      "title": "UNI CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - HANDOUT.pdf",
+      "size": 858701,
+      "dstFileId": "1dWf-om2lhT4rU5rrvyyIolr7RZhc4G62",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:10.481Z"
+    },
+    "1svIKLiQpbkR80vE77LBaCQbDLbiZsZIk": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - FILE ĐỀ HS IN.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 3. địa lí kinh tế xã hội đại cương - đề luyện tập số 2 - file đề hs in.pdf",
+      "title": "UNI CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - FILE ĐỀ HS IN.pdf",
+      "size": 525198,
+      "dstFileId": "1SAGC7HCymLAsRyKBdIBw3yUvRART0cDd",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:14.658Z"
+    },
+    "1SyD3fZOim9SWojaW2kXlATzc1XzcwSo3": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - HANDOUT.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 3. địa lí kinh tế xã hội đại cương - đề luyện tập số 2 - handout.pdf",
+      "title": "UNI CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - HANDOUT.pdf",
+      "size": 881205,
+      "dstFileId": "12yEzxAz6ba8QTodChUeLMiSBEHMnULPc",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:19.278Z"
+    },
+    "16oWFfeQa0um2IJyAcFPdht3jVaFw9u5b": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/(22.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 6 - cô phụng.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(22.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 6 - cô phụng.pdf",
+      "title": "UNI (22.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 6 - cô phụng.pdf",
+      "size": 5594348,
+      "dstFileId": "17wMhjjtfJFTjg2wA3aBT77QvFs-vJ3qG",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:27.560Z"
+    },
+    "1lgK1slt7bFAzsR_3q9o5zXQvdutHS4wj": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/(25.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 7 - cô phụng.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(25.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 7 - cô phụng.pdf",
+      "title": "UNI (25.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 7 - cô phụng.pdf",
+      "size": 5229588,
+      "dstFileId": "1VQRAv6cXSekjts_xOQlahz7JK6piVbZH",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:34.214Z"
+    },
+    "1zCdFOQumParDr-Ik0bUnY8f5fqUIZGVK": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/(29.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 8 - cô phụng.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(29.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 8 - cô phụng.pdf",
+      "title": "UNI (29.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 8 - cô phụng.pdf",
+      "size": 6616433,
+      "dstFileId": "1ODnanejcRzuukDebCwjmnziM3XlXBUJ_",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:42.983Z"
+    },
+    "1fT1hF5M749ro1RhAILyaMdhCjlSlGnwC": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/(30.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 9 - cô phụng.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(30.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 9 - cô phụng.pdf",
+      "title": "UNI (30.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 9 - cô phụng.pdf",
+      "size": 5561652,
+      "dstFileId": "16c9mwmEP9KMvJAyRHmmmdB-jAw20_ScW",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:50.349Z"
+    },
+    "18V6NV9zQIzAL-K-ttTIr3hGEe78dBYUA": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/(31.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 10 - cô phụng.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(31.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 10 - cô phụng.pdf",
+      "title": "UNI (31.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 10 - cô phụng.pdf",
+      "size": 5322946,
+      "dstFileId": "1B6Rcbq8RuM8BlhscfFB5Ud_PODgAH4e7",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:57.768Z"
+    },
+    "1TnsPYMasVTr_wSvQ-ewGCZw-dUYb_WMw": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/CHUYÊN ĐỀ 04 - ĐỊA LÍ VIỆT NAM.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/chuyên đề 04 - địa lí việt nam.pdf",
+      "title": "UNI CHUYÊN ĐỀ 04 - ĐỊA LÍ VIỆT NAM.pdf",
+      "size": 19803726,
+      "dstFileId": "16Qjr7-L4H35Y2uU_EpdJsRj8KwmMMu0C",
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:43:11.843Z"
     }
   },
   "syncedNormPaths": {
@@ -365556,6 +365691,126 @@
       "size": 1104955,
       "isUni": true,
       "syncedAt": "2026-11-04T07:41:41.058Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 2 địa lý đại cương/tài liệu/chuyên đề 2. địa lí tự nhiên đại cương - đề luyện tập số 1 - file đề hs in.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 2 ĐỊA LÝ ĐẠI CƯƠNG/TÀI LIỆU/UNI CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - FILE ĐỀ HS IN.pdf",
+      "sourceFileId": "1mxgYK5mFlArvZRBKRIa-2WE1Q0pInyXD",
+      "dstFileId": "1fOBLb-LnQEyztq5zRtjGwhhossTa9oKt",
+      "size": 506348,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:41:35.697Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 2 địa lý đại cương/tài liệu/chuyên đề 2. địa lí tự nhiên đại cương - đề luyện tập số 1 - handout.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 2 ĐỊA LÝ ĐẠI CƯƠNG/TÀI LIỆU/UNI CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - HANDOUT.pdf",
+      "sourceFileId": "1UzM-D6dnpWfNpwBSLxRimJEP-3y0B2cb",
+      "dstFileId": "1jrc1NXRuTJfR7RmxRQFyyKa_kZZKW7PS",
+      "size": 862547,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:41:40.431Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 2 địa lý đại cương/tài liệu/chuyên đề 2. địa lí tự nhiên đại cương - đề luyện tập số 2 - file đề hs in.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 2 ĐỊA LÝ ĐẠI CƯƠNG/TÀI LIỆU/UNI CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - FILE ĐỀ HS IN.pdf",
+      "sourceFileId": "1HN033h6NEWbWHZQAlbEwymNWax3DvBvD",
+      "dstFileId": "1OlAT2Q7mdGCl0EWYt8Hzalctzfj8D4YO",
+      "size": 511252,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:41:44.963Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 2 địa lý đại cương/tài liệu/chuyên đề 2. địa lí tự nhiên đại cương - đề luyện tập số 2 - handout.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 2 ĐỊA LÝ ĐẠI CƯƠNG/TÀI LIỆU/UNI CHUYÊN ĐỀ 2. ĐỊA LÍ TỰ NHIÊN ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - HANDOUT.pdf",
+      "sourceFileId": "1QL_RuQlxwhBZCHbZDI-g5eCpUsMOegZB",
+      "dstFileId": "1GRkOyCXW41ITQfCcMUbQfECWM4wNf5g4",
+      "size": 864321,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:41:49.778Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 03 - địa lí kinh tế - xã hội thế giới.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/UNI CHUYÊN ĐỀ 03 - ĐỊA LÍ KINH TẾ - XÃ HỘI THẾ GIỚI.pdf",
+      "sourceFileId": "14vkcgD5FmY0XhUUC0r-m8QneOREYhmym",
+      "dstFileId": "18ONUqxuZdNEWPIpUEjx26NmHYcCJibyq",
+      "size": 13277906,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:01.095Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 3. địa lí kinh tế xã hội đại cương - đề luyện tập số 1 - file đề hs in.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/UNI CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - FILE ĐỀ HS IN.pdf",
+      "sourceFileId": "1KNuE3vYJpVPosP9Nxwi9L9D2qNtb7yoq",
+      "dstFileId": "13mG0guB-P3X7Wb2-2xumCVYMXypzKCrg",
+      "size": 513894,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:05.461Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 3. địa lí kinh tế xã hội đại cương - đề luyện tập số 1 - handout.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/UNI CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 1 - HANDOUT.pdf",
+      "sourceFileId": "1IXqOZEeQmAo5uVXS9NGp4DnyNgO7FSSw",
+      "dstFileId": "1dWf-om2lhT4rU5rrvyyIolr7RZhc4G62",
+      "size": 858701,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:10.481Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 3. địa lí kinh tế xã hội đại cương - đề luyện tập số 2 - file đề hs in.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/UNI CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - FILE ĐỀ HS IN.pdf",
+      "sourceFileId": "1svIKLiQpbkR80vE77LBaCQbDLbiZsZIk",
+      "dstFileId": "1SAGC7HCymLAsRyKBdIBw3yUvRART0cDd",
+      "size": 525198,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:14.658Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 3 địa lý kinh tế - xã hội thế giới/tài liệu/chuyên đề 3. địa lí kinh tế xã hội đại cương - đề luyện tập số 2 - handout.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 3 ĐỊA LÝ KINH TẾ - XÃ HỘI THẾ GIỚI/TÀI LIỆU/UNI CHUYÊN ĐỀ 3. ĐỊA LÍ KINH TẾ XÃ HỘI ĐẠI CƯƠNG - ĐỀ LUYỆN TẬP SỐ 2 - HANDOUT.pdf",
+      "sourceFileId": "1SyD3fZOim9SWojaW2kXlATzc1XzcwSo3",
+      "dstFileId": "12yEzxAz6ba8QTodChUeLMiSBEHMnULPc",
+      "size": 881205,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:19.278Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(22.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 6 - cô phụng.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/UNI (22.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 6 - cô phụng.pdf",
+      "sourceFileId": "16oWFfeQa0um2IJyAcFPdht3jVaFw9u5b",
+      "dstFileId": "17wMhjjtfJFTjg2wA3aBT77QvFs-vJ3qG",
+      "size": 5594348,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:27.560Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(25.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 7 - cô phụng.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/UNI (25.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 7 - cô phụng.pdf",
+      "sourceFileId": "1lgK1slt7bFAzsR_3q9o5zXQvdutHS4wj",
+      "dstFileId": "1VQRAv6cXSekjts_xOQlahz7JK6piVbZH",
+      "size": 5229588,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:34.214Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(29.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 8 - cô phụng.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/UNI (29.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 8 - cô phụng.pdf",
+      "sourceFileId": "1zCdFOQumParDr-Ik0bUnY8f5fqUIZGVK",
+      "dstFileId": "1ODnanejcRzuukDebCwjmnziM3XlXBUJ_",
+      "size": 6616433,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:42.983Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(30.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 9 - cô phụng.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/UNI (30.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 9 - cô phụng.pdf",
+      "sourceFileId": "1fT1hF5M749ro1RhAILyaMdhCjlSlGnwC",
+      "dstFileId": "16c9mwmEP9KMvJAyRHmmmdB-jAw20_ScW",
+      "size": 5561652,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:50.349Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/(31.10) - địa lý - chuyên đề 4 địa lý việt nam buổi 10 - cô phụng.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/UNI (31.10) - địa lý - Chuyên đề 4 địa lý việt nam buổi 10 - cô phụng.pdf",
+      "sourceFileId": "18V6NV9zQIzAL-K-ttTIr3hGEe78dBYUA",
+      "dstFileId": "1B6Rcbq8RuM8BlhscfFB5Ud_PODgAH4e7",
+      "size": 5322946,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:42:57.768Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/hsa empire 2k9 luyện thi đgnl hà nội 2027/khóa học đgnl hsa 2k9 khóa 1 - tư duy khoa học/1. chuyên đề nền tảng/7. địa lý/chuyên đề 4 địa lý viêt nam/tài liệu/chuyên đề 04 - địa lí việt nam.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027/KHÓA HỌC ĐGNL HSA 2K9 KHÓA 1 - TƯ DUY KHOA HỌC/1. CHUYÊN ĐỀ NỀN TẢNG/7. ĐỊA LÝ/CHUYÊN ĐỀ 4 ĐỊA LÝ VIÊT NAM/TÀI LIỆU/UNI CHUYÊN ĐỀ 04 - ĐỊA LÍ VIỆT NAM.pdf",
+      "sourceFileId": "1TnsPYMasVTr_wSvQ-ewGCZw-dUYb_WMw",
+      "dstFileId": "16Qjr7-L4H35Y2uU_EpdJsRj8KwmMMu0C",
+      "size": 19803726,
+      "isUni": true,
+      "syncedAt": "2026-11-04T08:43:11.843Z"
     }
   },
   "dstFolderCache": {
