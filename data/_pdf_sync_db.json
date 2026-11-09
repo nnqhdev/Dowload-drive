@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-07T10:18:29.467Z",
+  "updatedAt": "2026-11-09T02:37:47.933Z",
   "syncedFileIds": {
     "1bXVJtFUX7qV3X09VsFRzwumQ80aobQsK": {
       "relPath": "TOÁN/TOÁN THẦY NGUYỄN ĐĂNG ÁI TDM 2K9/0. INFO THÔNG TIN VÀ HƯỚNG DẪN KHOÁ HỌC/THÔNG TIN XPS TOÁN 2K9_A1.pdf",
@@ -149733,6 +149733,756 @@
       "dstFileId": "1SOiaq5Rb_xIP-EFAtMTfoXWKkZ7gAKny",
       "isUni": true,
       "syncedAt": "2026-11-07T10:16:05.584Z"
+    },
+    "1fNxUzFzln2NFEU02lLAtr-8m1aILPBb6": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/0. BỘ ĐỀ THI 2026-2027 (Cập nhật)/ĐỀ THI THỬ MÔN HÓA TNTHPT MÙA THI 2026-2027/ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-ĐỀ.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/0. bộ đề thi 2026-2027 (cập nhật)/đề thi thử môn hóa tnthpt mùa thi 2026-2027/đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi-đề.pdf",
+      "title": "UNI ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-ĐỀ.pdf",
+      "size": 621217,
+      "dstFileId": "1JRiet9ZW_rd2xrTlQD8JTZtN3Mf4Hwhc",
+      "isUni": true,
+      "syncedAt": "2026-11-08T01:44:14.164Z"
+    },
+    "1TSiu1dAw9eszblLZUbH05f2Ur90xOuw_": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/0. BỘ ĐỀ THI 2026-2027 (Cập nhật)/ĐỀ THI THỬ MÔN HÓA TNTHPT MÙA THI 2026-2027/ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-ĐỀ.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/0. bộ đề thi 2026-2027 (cập nhật)/đề thi thử môn hóa tnthpt mùa thi 2026-2027/đề thi thử online môn hóa sở ninh bình lần 1 năm 2026-2027-đề.pdf",
+      "title": "UNI ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-ĐỀ.pdf",
+      "size": 459127,
+      "dstFileId": "1IH-gFXaatFJTXlP0J6nEI0S0EivjRa3_",
+      "isUni": true,
+      "syncedAt": "2026-11-08T01:44:18.757Z"
+    },
+    "16XIdK7MNSWnhAEqEnavlIVBq3MJnmVAf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/0. BỘ ĐỀ THI 2026-2027 (Cập nhật)/ĐỀ THI THỬ MÔN HÓA TNTHPT MÙA THI 2026-2027/ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/0. bộ đề thi 2026-2027 (cập nhật)/đề thi thử môn hóa tnthpt mùa thi 2026-2027/đề thi thử thpt hàn thuyên (bn) và lê xoay (phú thọ) 2026-2027.pdf",
+      "title": "UNI ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027.pdf",
+      "size": 856082,
+      "dstFileId": "1kbDsreljJDQDxI3T_Jo9jiHIDcjBffuT",
+      "isUni": true,
+      "syncedAt": "2026-11-08T01:44:23.734Z"
+    },
+    "1PmE2CsGtHGeisb4yRrnZchIOcukWS4LA": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 13/10/[NP 2026]_Bài tập ngày 13-10 - phần 1.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 13/10/[np 2026]_bài tập ngày 13-10 - phần 1.pdf",
+      "title": "UNI [NP 2026]_Bài tập ngày 13-10 - phần 1.pdf",
+      "size": 1363347,
+      "dstFileId": "1g-zg6qXBmgBqVnHECZyTTPSRh-cRcVE0",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:42:58.453Z"
+    },
+    "1e1-cVCl6c0TEB0KyVuT1CC52heRJs6ut": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Bài tập làm thêm tuần 25/[NP 2027]_Bài tập làm thêm tuần 25.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_bài tập làm thêm tuần 25/[np 2027]_bài tập làm thêm tuần 25.pdf",
+      "title": "UNI [NP 2027]_Bài tập làm thêm tuần 25.pdf",
+      "size": 316359,
+      "dstFileId": "1h4Jjl8zyE9QsSDieH74a0Yl_mMQRB8bR",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:05.286Z"
+    },
+    "1P-wLqTVUyVllfsKBu-2T6oytBX_DDKSA": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài ngày 10/10/[NP 2027]_Bài tập ngày 10-10 - phần trắc nghiệm.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài ngày 10/10/[np 2027]_bài tập ngày 10-10 - phần trắc nghiệm.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 10-10 - phần trắc nghiệm.pdf",
+      "size": 1073648,
+      "dstFileId": "1slxfWm33JN9Ugk_iMfriSOtxL2HaTCCL",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:12.918Z"
+    },
+    "1TKkvwIDwl8ICCQimUTngTiT28d4dwqMy": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài ngày 10/10/[NP 2027]_Bài tập ngày 10-10 - Phần tự luận.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài ngày 10/10/[np 2027]_bài tập ngày 10-10 - phần tự luận.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 10-10 - Phần tự luận.pdf",
+      "size": 213719,
+      "dstFileId": "1HiGrt2kHWYOTg3kM1E_SAtNUqwLO8rb9",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:17.326Z"
+    },
+    "18vNAlwPWdF04jCepv10o6KBq_CFKhfKR": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 13/10/[NP 2027]_Bài tập ngày 13-10 - phần 2.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 13/10/[np 2027]_bài tập ngày 13-10 - phần 2.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 13-10 - phần 2.pdf",
+      "size": 1294355,
+      "dstFileId": "1xByagvvvT_hqCwPSrqL-g6nGsGrlUDDt",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:22.533Z"
+    },
+    "13p_eWZXaF0I-iXXDa26AR3pEdJmf7euf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 14/10/[NP 2027]_Bài tập ngày 14-10 - phần 1.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 14/10/[np 2027]_bài tập ngày 14-10 - phần 1.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 14-10 - phần 1.pdf",
+      "size": 1272749,
+      "dstFileId": "1ChPLE7P7L8V_96L36NVwMXS4nm-i1up-",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:30.119Z"
+    },
+    "1t8Yk-l26LgnjmNR1qCffn-s_Y3RbkAY6": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 14/10/[NP 2027]_Bài tập ngày 14-10 - phần 2.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 14/10/[np 2027]_bài tập ngày 14-10 - phần 2.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 14-10 - phần 2.pdf",
+      "size": 826956,
+      "dstFileId": "1ydfss5e3yN4F_N4tdHEjHGFic6Ujlhw1",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:35.155Z"
+    },
+    "1wmZafjQ_yOy8Z4ySOUvb0hcEHTESAKr_": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 15/10/[NP 2027]_Bài tập ngày 15-10 - phần 1.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 15/10/[np 2027]_bài tập ngày 15-10 - phần 1.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 15-10 - phần 1.pdf",
+      "size": 834450,
+      "dstFileId": "1-v-ILUG8_ulJbVXOgXy8QYterhWDNNBF",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:42.170Z"
+    },
+    "1XQ9DJOfQQHzyUsNztRX_yi1azr4-qhBY": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 15/10/[NP 2027]_Bài tập ngày 15-10 - phần 2.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 15/10/[np 2027]_bài tập ngày 15-10 - phần 2.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 15-10 - phần 2.pdf",
+      "size": 800382,
+      "dstFileId": "1dgFNiFny6UvPulAqwiXac3dgUYC3Eacx",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:47.177Z"
+    },
+    "1i2hp1WZDBA2f_GsBd28gvvYxa5FmDEgq": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 16/10/[NP 2027]_Bài tập ngày 16-10 - phần 1.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 16/10/[np 2027]_bài tập ngày 16-10 - phần 1.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 16-10 - phần 1.pdf",
+      "size": 796943,
+      "dstFileId": "1_QhvO08t03HjaS-twGhWZ2399uYwlJ_H",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:54.184Z"
+    },
+    "1R6g4UZ0RYhir9s6DjjyC37HDE2Ls3u6-": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 16/10/[NP 2027]_Bài tập ngày 16-10 - phần 2.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 16/10/[np 2027]_bài tập ngày 16-10 - phần 2.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 16-10 - phần 2.pdf",
+      "size": 845864,
+      "dstFileId": "17wGpBoT3_OdtcD8SwOsqGqHm9U_Mnuen",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:58.604Z"
+    },
+    "1or7d3hAIb7qoeGRYLJBE5WM49cQPnRgv": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 17/10/[NP 2027]_Bài tập ngày 17-10 - phần 1.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 17/10/[np 2027]_bài tập ngày 17-10 - phần 1.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 17-10 - phần 1.pdf",
+      "size": 814380,
+      "dstFileId": "1vKggnpumYpzdBHldEj58tyuDaGfdEaHO",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:44:05.754Z"
+    },
+    "1CzAPJ80WQ8nEoJkznYN6inWmNnuv_BZw": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 17/10/[NP 2027]_Bài tập ngày 17-10 - phần 2.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 17/10/[np 2027]_bài tập ngày 17-10 - phần 2.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 17-10 - phần 2.pdf",
+      "size": 831078,
+      "dstFileId": "1Qy_MI4BsGh_1O3opZE4GH3M92yx3ddYP",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:44:10.568Z"
+    },
+    "1b3jBUho2kuaOEhx7cy0O2McuwDeWzu9R": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 5/10/[NP 2027]_Bài tập ngày 5-10.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 5/10/[np 2027]_bài tập ngày 5-10.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 5-10.pdf",
+      "size": 2422077,
+      "dstFileId": "1O-wpyBp9kcSpp-irZcFJy_xws6BXrBYb",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:15.994Z"
+    },
+    "17JXzKETqIVh1SrKaKIcJ7drtxgkyFkF7": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 6/10/[NP 2027]_Bài tập ngày 6-10.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 6/10/[np 2027]_bài tập ngày 6-10.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 6-10.pdf",
+      "size": 4165089,
+      "dstFileId": "1G-mn2IDnyQF_lH-eicXWYgiPyHviG109",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:25.915Z"
+    },
+    "1hfc3H9o-FUOWZp4PtyqwxVEeC8aZDc-s": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 7/10/[NP 2027]_Bài tập ngày 7-10.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 7/10/[np 2027]_bài tập ngày 7-10.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 7-10.pdf",
+      "size": 2331135,
+      "dstFileId": "1kC-kk87cLg9HM-10pbbJKjS24AA74DU9",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:34.642Z"
+    },
+    "1069tZ3UPynkY-BBEkNhetsoIAAtWUE4O": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 8/10/[NP 2027]_Bài tập ngày 8-10.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 8/10/[np 2027]_bài tập ngày 8-10.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 8-10.pdf",
+      "size": 3278529,
+      "dstFileId": "153Z9xDhTc0hmfIu9QoVavNrkpRGYJAHc",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:44.271Z"
+    },
+    "1nqBjqoQTrdYL5kUGDVq7GnnWMA5TK8TW": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 9/10/[NP 2027]_Bài tập ngày 9-10.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 9/10/[np 2027]_bài tập ngày 9-10.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 9-10.pdf",
+      "size": 3640634,
+      "dstFileId": "1qEwDXTOsCE2KUdW-2JNoqUUJtxtKx3Us",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:53.378Z"
+    },
+    "1o3ttsifgVHZqAuRaIhWfX770Foq4DEOQ": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Chữa bài tập ngày 12/10/[NP 2027]_Bài tập ngày 12-10 - phần 1.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_chữa bài tập ngày 12/10/[np 2027]_bài tập ngày 12-10 - phần 1.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 12-10 - phần 1.pdf",
+      "size": 1547953,
+      "dstFileId": "111O8T5EjBRAscP1XrU745bBfuG05kUgb",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:46:01.057Z"
+    },
+    "1ei-QqqXkbTzXb0VCbEl2aQ2OkwXxPaOD": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Chữa bài tập ngày 12/10/[NP 2027]_Bài tập ngày 12-10 - phần 2.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_chữa bài tập ngày 12/10/[np 2027]_bài tập ngày 12-10 - phần 2.pdf",
+      "title": "UNI [NP 2027]_Bài tập ngày 12-10 - phần 2.pdf",
+      "size": 1330759,
+      "dstFileId": "1ZQAsdfE5gR7-VX3K7Iyz9flyPHtr9Dm-",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:46:06.996Z"
+    },
+    "1eD2IcBaZpJHUS2fs-6IDs-7o3gGrKPIb": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP2027]_Thi thử tuần 26/[NP2027] Thi thử tuần 26.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np2027]_thi thử tuần 26/[np2027] thi thử tuần 26.pdf",
+      "title": "UNI [NP2027] Thi thử tuần 26.pdf",
+      "size": 352705,
+      "dstFileId": "12CcAuSIiTsc_mkoYIAlvu-Vy6JbfovZJ",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:53:37.532Z"
+    },
+    "1FXXabGD0hsLt8t7W02_ewp44OYEpJM5R": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP2027]_Thi thử tuần 25/[NP2027]_Thi thử tuần 25.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np2027]_thi thử tuần 25/[np2027]_thi thử tuần 25.pdf",
+      "title": "UNI [NP2027]_Thi thử tuần 25.pdf",
+      "size": 232665,
+      "dstFileId": "1erGRR2uKd3_wV5FtOIcpTWG9UUYAaQIG",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:55:10.599Z"
+    },
+    "1VX6F8FAnP2jYjY3PJv-rE3UYPMGWrR4h": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP2027]_Thi thử tuần 26/[NP2027]_Thi thử tuần 26.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np2027]_thi thử tuần 26/[np2027]_thi thử tuần 26.pdf",
+      "title": "UNI [NP2027]_Thi thử tuần 26.pdf",
+      "size": 299158,
+      "dstFileId": "1W7AQYEUWvqgyUyZb0gRebWodTJq3MUa6",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:55:52.925Z"
+    },
+    "1vJisMOGTgIz9-a62Jyo9GC5l2Lx3RiMA": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/0. TÀI LIỆU/[NP 2027]_Bài tập tuần 26.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu/[np 2027]_bài tập tuần 26.pdf",
+      "title": "UNI [NP 2027]_Bài tập tuần 26.pdf",
+      "size": 791505,
+      "dstFileId": "1Gzc-Th_HqRawczEcsiHULY5ugUjBT-4a",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:55:59.807Z"
+    },
+    "1fOhl_RZxvr8Phn4DHHQy7LJqTMcqJwR0": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/0. TÀI LIỆU/[NP 2027]_Bảng từ vựng tuần 26.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu/[np 2027]_bảng từ vựng tuần 26.pdf",
+      "title": "UNI [NP 2027]_Bảng từ vựng tuần 26.pdf",
+      "size": 545743,
+      "dstFileId": "1UgACGoiyu5YlJPMElXnTR89OAtHlyuM4",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:56:04.089Z"
+    },
+    "1ogGW4J0Uz2fyDCQlp4uLLPA1TX6j_VSk": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/0. TÀI LIỆU/[NP2027]_Ngữ pháp nâng cao tuần 26.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu/[np2027]_ngữ pháp nâng cao tuần 26.pdf",
+      "title": "UNI [NP2027]_Ngữ pháp nâng cao tuần 26.pdf",
+      "size": 368642,
+      "dstFileId": "1S8sAyb1eS6OwUHJgMznM_OEGZxWB9PJK",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:56:08.197Z"
+    },
+    "1R1wvCihNxkVb_NzXyDlanDokGX9R_FAM": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/0. TÀI LIỆU/[NP2027]_Ngữ pháp ứng dụng tuần 26.pdf",
+      "normRelPath": "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu/[np2027]_ngữ pháp ứng dụng tuần 26.pdf",
+      "title": "UNI [NP2027]_Ngữ pháp ứng dụng tuần 26.pdf",
+      "size": 427709,
+      "dstFileId": "1f2yhcnMRv79iGIcM3FKz1doB0DHZF59Y",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:56:12.528Z"
+    },
+    "1G7PfUdaUjc_JxWYy6aT456HnuNvU3dCq": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9/2. LIVE C - Luyện Thi Chuyên Đề - Lí 12 2K9 - VTA/3. CHƯƠNG 3: TỪ TRƯỜNG \"/24. Bài 7. Dây dẫn chuyển động trong từ trường/Bản sao của Bài 5+6+7+8.pdf",
+      "normRelPath": "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2. live c - luyện thi chuyên đề - lí 12 2k9 - vta/3. chương 3: từ trường \"/24. bài 7. dây dẫn chuyển động trong từ trường/bản sao của bài 5+6+7+8.pdf",
+      "title": "UNI Bản sao của Bài 5+6+7+8.pdf",
+      "size": 7576947,
+      "dstFileId": "1wXysdQ8L4MX8_veCxu1dhHnNHJ0ybiUO",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:58:12.275Z"
+    },
+    "1Rvcol-qxNO5Kww3GcnOx_bPT2fQRU7wC": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9/2. LIVE C - Luyện Thi Chuyên Đề - Lí 12 2K9 - VTA/3. CHƯƠNG 3: TỪ TRƯỜNG \"/25. Bài 8. Máy phát điện xoay chiều/Bản sao của Bài 5+6+7+8.pdf",
+      "normRelPath": "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2. live c - luyện thi chuyên đề - lí 12 2k9 - vta/3. chương 3: từ trường \"/25. bài 8. máy phát điện xoay chiều/bản sao của bài 5+6+7+8.pdf",
+      "title": "UNI Bản sao của Bài 5+6+7+8.pdf",
+      "size": 7576947,
+      "dstFileId": "1lLCMOu1a0CF0f1cOcywuXBEO5shJ3uiV",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:58:19.529Z"
+    },
+    "1UdRzeLakhNbJuIfzro-B1qA7J2EbNoCl": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9/2.1 BỔ TRỢ LIVE C/CHƯƠNG 1: VẬT LÍ NHIỆT/31. KSCL HK1 - Hưng Yên - Đề lẻ/Sở Hưng Yên - Mã chắn.pdf",
+      "normRelPath": "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2.1 bổ trợ live c/chương 1: vật lí nhiệt/31. kscl hk1 - hưng yên - đề lẻ/sở hưng yên - mã chắn.pdf",
+      "title": "UNI Sở Hưng Yên - Mã chắn.pdf",
+      "size": 545572,
+      "dstFileId": "16SodyoZow-axeRIxBULpfKocQn4FsLI1",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:58:51.836Z"
+    },
+    "1f1kDrOgW5aul2uhyWUeR45bRdy__3mM6": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9/2.1 BỔ TRỢ LIVE C/CHƯƠNG 1: VẬT LÍ NHIỆT/31. KSCL HK1 - Hưng Yên - Đề lẻ/Sở Hưng Yên - Mã lẻ.pdf",
+      "normRelPath": "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2.1 bổ trợ live c/chương 1: vật lí nhiệt/31. kscl hk1 - hưng yên - đề lẻ/sở hưng yên - mã lẻ.pdf",
+      "title": "UNI Sở Hưng Yên - Mã lẻ.pdf",
+      "size": 614167,
+      "dstFileId": "1QUgYvkUMab_C1jRo-U-kql0krlEye13B",
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:58:56.452Z"
+    },
+    "12o_qyfaYXVXPJfIqmOq-1mPvpdq-w7hh": {
+      "relPath": "ĐỊA LÝ/ĐỊA LÝ CÔ MAI ANH LỚP HỌC ĐỊA LÝ 2K9/2. CHẶNG 2: LIVE C - CHUYÊN ĐỀ CHUYÊN SÂU - Cô Mai Anh/25. BÀI 14 + 15: TCLT NÔNG NGHIỆP & CDCC CÔNG NGHIỆP/BT14+15.pdf",
+      "normRelPath": "địa lý/địa lý cô mai anh lớp học địa lý 2k9/2. chặng 2: live c - chuyên đề chuyên sâu - cô mai anh/25. bài 14 + 15: tclt nông nghiệp & cdcc công nghiệp/bt14+15.pdf",
+      "title": "UNI BT14+15.pdf",
+      "size": 2671881,
+      "dstFileId": "1DmBAs_j5ECkdiXZH0GRbjYIeWc0j2Q98",
+      "isUni": true,
+      "syncedAt": "2026-11-08T09:04:59.263Z"
+    },
+    "1soWDVMxZTE3dsfDsbPh-XhjPCDnK3il5": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/5. CHƯƠNG 5: NGUYÊN HÀM - TÍCH PHÂN/BÀI 1 NGUYÊN HÀM NỀN TẢNG/BÀI 1 NGUYÊN HÀM NỀN TẢNG.pdf",
+      "normRelPath": "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 1 nguyên hàm nền tảng/bài 1 nguyên hàm nền tảng.pdf",
+      "title": "UNI BÀI 1 NGUYÊN HÀM NỀN TẢNG.pdf",
+      "size": 519985,
+      "dstFileId": "1LEAeZvb8n7XUzxwsA0G0aUasu2OFuPYB",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:17.725Z"
+    },
+    "1uH23zbKXM_d_Q3TKy2H1wvquMVHWWX5U": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/6. CHƯƠNG 6: PHƯƠNG TRÌNH MẶT PHẲNG - ĐƯỜNG THẲNG - MẶT CẦU/BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG/BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG.pdf",
+      "normRelPath": "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/6. chương 6: phương trình mặt phẳng - đường thẳng - mặt cầu/bài 1 phương trình mặt phẳng nền tảng/bài 1 phương trình mặt phẳng nền tảng.pdf",
+      "title": "UNI BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG.pdf",
+      "size": 274297,
+      "dstFileId": "1u3umFlXvFr7iBu2mrcmzHTWQ2_SGN1pp",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:25.241Z"
+    },
+    "1SOZ0dmurLQDkQWN_M-2CrqPX3ErLtFSL": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/6. CHƯƠNG 6: PHƯƠNG TRÌNH MẶT PHẲNG - ĐƯỜNG THẲNG - MẶT CẦU/BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG/Đáp án (1).pdf",
+      "normRelPath": "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/6. chương 6: phương trình mặt phẳng - đường thẳng - mặt cầu/bài 1 phương trình mặt phẳng nền tảng/đáp án (1).pdf",
+      "title": "UNI Đáp án (1).pdf",
+      "size": 409777,
+      "dstFileId": "1vnqOeXQgGmqyw0Ip3ZXKqAqaoQ1nXEPu",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:31.531Z"
+    },
+    "1M_2iGEqB9rjlL1lqtn3RXWptRujteFQY": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/5. CHƯƠNG 5: NGUYÊN HÀM - TÍCH PHÂN/BÀI 1 NGUYÊN HÀM NỀN TẢNG/Đề bài cách dòng (1).pdf",
+      "normRelPath": "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 1 nguyên hàm nền tảng/đề bài cách dòng (1).pdf",
+      "title": "UNI Đề bài cách dòng (1).pdf",
+      "size": 527719,
+      "dstFileId": "1UAtsoqpI1Br8c66lWdQCYL8bhAYCJY0E",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:35.849Z"
+    },
+    "1Dh2fgSl2K9Y5a4G4z45JedQ4MNpZL0mF": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/6. CHƯƠNG 6: PHƯƠNG TRÌNH MẶT PHẲNG - ĐƯỜNG THẲNG - MẶT CẦU/BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG/Đề bài cách dòng.pdf",
+      "normRelPath": "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/6. chương 6: phương trình mặt phẳng - đường thẳng - mặt cầu/bài 1 phương trình mặt phẳng nền tảng/đề bài cách dòng.pdf",
+      "title": "UNI Đề bài cách dòng.pdf",
+      "size": 285601,
+      "dstFileId": "1PBpP7VpQrZbWcwUIyB1FZ6w_0HPF7qxq",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:40.020Z"
+    },
+    "199r5TtoZKx_CE7MEqT_dX2uK1V8xLZ8T": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/5. CHƯƠNG 5: NGUYÊN HÀM - TÍCH PHÂN/BÀI 2 NGUYÊN HÀM VẬN DỤNG/BÀI 2 NGUYÊN HÀM VẬN DỤNG.pdf",
+      "normRelPath": "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 2 nguyên hàm vận dụng/bài 2 nguyên hàm vận dụng.pdf",
+      "title": "UNI BÀI 2 NGUYÊN HÀM VẬN DỤNG.pdf",
+      "size": 214272,
+      "dstFileId": "1MNovpzqgWE-Cjs-RoU8v9g0HRd8y34Ok",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:46.271Z"
+    },
+    "1YuE_WIAmhkXTGLrH2q22ItukInWGq_Id": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/4. CHƯƠNG 4 XÁC SUẤT/BÀI 16 CÔNG THỨC XÁC SUẤT TOÀN PHẦN VẬN DỤNG/Đáp án.pdf",
+      "normRelPath": "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/4. chương 4 xác suất/bài 16 công thức xác suất toàn phần vận dụng/đáp án.pdf",
+      "title": "UNI Đáp án.pdf",
+      "size": 517162,
+      "dstFileId": "1TWRgfVRrcljbr_5dYPTF3UP5jND1GNHY",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:52.673Z"
+    },
+    "18khuNPeJTudnpeD9fwUN1cxTorOfFL7J": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/5. CHƯƠNG 5: NGUYÊN HÀM - TÍCH PHÂN/BÀI 2 NGUYÊN HÀM VẬN DỤNG/Đề bài cách dòng (2).pdf",
+      "normRelPath": "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 2 nguyên hàm vận dụng/đề bài cách dòng (2).pdf",
+      "title": "UNI Đề bài cách dòng (2).pdf",
+      "size": 225079,
+      "dstFileId": "1Gq7R2a_i7jFTicRTXBpmj8MQeKs2ExeA",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:56.800Z"
+    },
+    "11wCQiSWVa2ICOeQ1zWqUyecK1wCblXQJ": {
+      "relPath": "NGỮ VĂN/VĂN CHỊ LINH THƯỞNG THỨC SÁCH TTS 2K9/2. LUYỆN ĐỀ CHUYÊN SÂU KIẾN THỨC/12. ĐỀ 12/🌿 𝐓𝐓𝐒 – 12 – ĐỀ LUYỆN LẦN 12 – TTS-ER 2K9 ❤.pdf",
+      "normRelPath": "ngữ văn/văn chị linh thưởng thức sách tts 2k9/2. luyện đề chuyên sâu kiến thức/12. đề 12/🌿 𝐓𝐓𝐒 – 12 – đề luyện lần 12 – tts-er 2k9 ❤.pdf",
+      "title": "UNI 🌿 𝐓𝐓𝐒 – 12 – ĐỀ LUYỆN LẦN 12 – TTS-ER 2K9 ❤.pdf",
+      "size": 2692262,
+      "dstFileId": "1YWgen80vU-yrgDEssE4xXAxsMdCmXwt0",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:22:37.517Z"
+    },
+    "1aM8abUnkX506fuQsuZPci-R8rAju_tJf": {
+      "relPath": "NGỮ VĂN/VĂN CHỊ LINH THƯỞNG THỨC SÁCH TTS 2K9/1. KHOÁ CHUYÊN SÂU KIẾN THỨC 5 THÁNG ĐẶC BIỆT/30. 🌿 𝐓𝐓𝐒 - BUỔI 30 - CHUYÊN ĐỀ KÍ 💚/🌿 𝐓𝐓𝐒 – BUỔI 30 – CHUYÊN ĐỀ ĐỌC HIỂU & ĐOẠN VĂN VỀ KÍ ❤.pdf",
+      "normRelPath": "ngữ văn/văn chị linh thưởng thức sách tts 2k9/1. khoá chuyên sâu kiến thức 5 tháng đặc biệt/30. 🌿 𝐓𝐓𝐒 - buổi 30 - chuyên đề kí 💚/🌿 𝐓𝐓𝐒 – buổi 30 – chuyên đề đọc hiểu & đoạn văn về kí ❤.pdf",
+      "title": "UNI 🌿 𝐓𝐓𝐒 – BUỔI 30 – CHUYÊN ĐỀ ĐỌC HIỂU & ĐOẠN VĂN VỀ KÍ ❤.pdf",
+      "size": 7188388,
+      "dstFileId": "1Q3hrAqqoKa06eVhd-HUsCkqK3QlKZbL1",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:22:47.914Z"
+    },
+    "1jH7NMLLBHbYhOmhatvzaLwkUwKMcrRck": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1. KHOÁ T NỀN TẢNG/7. CHƯƠNG 7- KIM LOẠI NHÓM IA VÀ IIA/8. ĐỀ 1-CĐ3-TỔNG ÔN KIM LOẠI KIỀM (68 CÂU LÝ THUYẾT KLK)/ĐỀ 1-CHUYÊN ĐỀ 3-TỔNG ÔN KIM LOẠI KIỀM (68 CÂU LÝ THUYẾT CHUYÊN BIỆT VỀ KIM LOẠI KIỀM)-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/7. chương 7- kim loại nhóm ia và iia/8. đề 1-cđ3-tổng ôn kim loại kiềm (68 câu lý thuyết klk)/đề 1-chuyên đề 3-tổng ôn kim loại kiềm (68 câu lý thuyết chuyên biệt về kim loại kiềm)-viết tay.pdf",
+      "title": "UNI ĐỀ 1-CHUYÊN ĐỀ 3-TỔNG ÔN KIM LOẠI KIỀM (68 CÂU LÝ THUYẾT CHUYÊN BIỆT VỀ KIM LOẠI KIỀM)-VIẾT TAY.pdf",
+      "size": 11116864,
+      "dstFileId": "1__QUZE52VayxOMqnGgE5eEoEMCUUhEbT",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:08.065Z"
+    },
+    "13JR3Es7WN0WR-C2HlwYrYmO-yRcDmc56": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1. KHOÁ T NỀN TẢNG/7. CHƯƠNG 7- KIM LOẠI NHÓM IA VÀ IIA/9. ĐỀ 2-CĐ3-TỔNG ÔN KIM LOẠI KIỀM THỔ (68 CÂU LÝ THUYẾT KLKT)/ĐỀ 2-CHUYÊN ĐỀ 3-TỔNG ÔN KIM LOẠI KIỀM THỔ (68 CÂU LÝ THUYẾT CHUYÊN BIỆT VỀ KIM LOẠI KIỀM THỔ)-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/7. chương 7- kim loại nhóm ia và iia/9. đề 2-cđ3-tổng ôn kim loại kiềm thổ (68 câu lý thuyết klkt)/đề 2-chuyên đề 3-tổng ôn kim loại kiềm thổ (68 câu lý thuyết chuyên biệt về kim loại kiềm thổ)-viết tay.pdf",
+      "title": "UNI ĐỀ 2-CHUYÊN ĐỀ 3-TỔNG ÔN KIM LOẠI KIỀM THỔ (68 CÂU LÝ THUYẾT CHUYÊN BIỆT VỀ KIM LOẠI KIỀM THỔ)-VIẾT TAY.pdf",
+      "size": 11016829,
+      "dstFileId": "1BDBkDmHExC63_IiVZEEQbse5tu8WQVFG",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:18.852Z"
+    },
+    "1vVdIT8maTyH3d4856754sW2e2cYsJq3w": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/13. ĐỀ THI THỬ THPT SƠN ĐỘNG 1 BẮC NINH 2026-2027/ĐỀ KSCL LẦN 1-THPT SƠN ĐỘNG 1-TỈNH BẮC NINH 2026-2027-ĐỀ.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/13. đề thi thử thpt sơn động 1 bắc ninh 2026-2027/đề kscl lần 1-thpt sơn động 1-tỉnh bắc ninh 2026-2027-đề.pdf",
+      "title": "UNI ĐỀ KSCL LẦN 1-THPT SƠN ĐỘNG 1-TỈNH BẮC NINH 2026-2027-ĐỀ.pdf",
+      "size": 502569,
+      "dstFileId": "15jK3BqZSASnEI4p9s84u7o0ot812zR2Y",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:27.247Z"
+    },
+    "1_sRGLuYcSQ-x6ymoovQOuySpHsQRujUX": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/13. ĐỀ THI THỬ THPT SƠN ĐỘNG 1 BẮC NINH 2026-2027/ĐỀ KSCL LẦN 1-THPT SƠN ĐỘNG 1-TỈNH BẮC NINH 2026-2027-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/13. đề thi thử thpt sơn động 1 bắc ninh 2026-2027/đề kscl lần 1-thpt sơn động 1-tỉnh bắc ninh 2026-2027-viết tay.pdf",
+      "title": "UNI ĐỀ KSCL LẦN 1-THPT SƠN ĐỘNG 1-TỈNH BẮC NINH 2026-2027-VIẾT TAY.pdf",
+      "size": 5952616,
+      "dstFileId": "1TgTdZtmEDdnq1QuBZIay6wbv4hf9GyTn",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:34.052Z"
+    },
+    "1CBeHu4BcGdToEQjzCtyRzes-kGP8dMs0": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/15. ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI 2026-2027/ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-ĐỀ.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/15. đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi 2026-2027/đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi-đề.pdf",
+      "title": "UNI ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-ĐỀ.pdf",
+      "size": 649981,
+      "dstFileId": "1BgnR02aTbNtZFat2N9PrRsdCY886OQtc",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:43.030Z"
+    },
+    "1jLexWgCA7XN_yq2m9UkqPyxBchfPIEX8": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/15. ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI 2026-2027/ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/15. đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi 2026-2027/đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi-viết tay.pdf",
+      "title": "UNI ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-VIẾT TAY.pdf",
+      "size": 10175205,
+      "dstFileId": "1GbyWp4lM8a8hB7BK4VCRe9DuHIfY4A22",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:51.120Z"
+    },
+    "1K9bT63U0YPGFVYs8NC5rlwqxiouLZsUB": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/14. ĐỀ THI THỬ TNTHPT MÔN HÓA HỌC- SỞ NINH BÌNH LẦN 1-THI ONLINE/ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-ĐỀ.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/14. đề thi thử tnthpt môn hóa học- sở ninh bình lần 1-thi online/đề thi thử online môn hóa sở ninh bình lần 1 năm 2026-2027-đề.pdf",
+      "title": "UNI ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-ĐỀ.pdf",
+      "size": 485380,
+      "dstFileId": "12Xc1gdv5gla78eIL8u1C3-W0A6CicYOH",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:01.662Z"
+    },
+    "1A5CxapcbTjyEBzAb75UB-BzGver0wi-S": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/14. ĐỀ THI THỬ TNTHPT MÔN HÓA HỌC- SỞ NINH BÌNH LẦN 1-THI ONLINE/ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/14. đề thi thử tnthpt môn hóa học- sở ninh bình lần 1-thi online/đề thi thử online môn hóa sở ninh bình lần 1 năm 2026-2027-viết tay.pdf",
+      "title": "UNI ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-VIẾT TAY.pdf",
+      "size": 7148886,
+      "dstFileId": "1kVYjeVbYZ387Z_bIJnfuH13DkjXRnWmi",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:08.842Z"
+    },
+    "1_NpzwJFGPMxkQIe6_KB4GpuwJms7206w": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/16. ĐỀ THI THỬ TNTHPT HÀN THUYÊN-BẮC NINH LẦN 1 - LÊ XOAY-PHÚ THỌ LẦN 1/ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/16. đề thi thử tnthpt hàn thuyên-bắc ninh lần 1 - lê xoay-phú thọ lần 1/đề thi thử thpt hàn thuyên (bn) và lê xoay (phú thọ) 2026-2027-viết tay.pdf",
+      "title": "UNI ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027-VIẾT TAY.pdf",
+      "size": 11296861,
+      "dstFileId": "1zqlqL_JDf2p6pVJj-T4PjUWtA9Ndsyfi",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:18.843Z"
+    },
+    "1CFI9QPczTntM8edqvHS71pjCUbPQksJB": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/16. ĐỀ THI THỬ TNTHPT HÀN THUYÊN-BẮC NINH LẦN 1 - LÊ XOAY-PHÚ THỌ LẦN 1/ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/16. đề thi thử tnthpt hàn thuyên-bắc ninh lần 1 - lê xoay-phú thọ lần 1/đề thi thử thpt hàn thuyên (bn) và lê xoay (phú thọ) 2026-2027.pdf",
+      "title": "UNI ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027.pdf",
+      "size": 887047,
+      "dstFileId": "1sM5Z7Y2M88CGj2Sbh51fBI2_PFOqxVqK",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:23.862Z"
+    },
+    "1eZAXPCBfHdbpqYPd2XtApYxEziHWub9m": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/2. ĐỀ HỌC SINH GIỎI MÔN HÓA MỚI NHẤT 2026-2027/18. ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027/ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027-ĐỀ.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/18. đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027/đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027-đề.pdf",
+      "title": "UNI ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027-ĐỀ.pdf",
+      "size": 789514,
+      "dstFileId": "1myc84KZ1yN8b9RFWvG4Y9Bwnk1LxCf-e",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:39.219Z"
+    },
+    "1L_M56XoKIll22h0xQK0ZFS8OGO_l3eim": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/2. ĐỀ HỌC SINH GIỎI MÔN HÓA MỚI NHẤT 2026-2027/18. ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027/ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/18. đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027/đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027-viết tay.pdf",
+      "title": "UNI ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027-VIẾT TAY.pdf",
+      "size": 12407542,
+      "dstFileId": "1sWxIvKZVQMvBZo7QAYMN1vK6zya38hlX",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:47.964Z"
+    },
+    "1wC7yC5BwsZzIola9I807feSNXNS41wnX": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/2. ĐỀ HỌC SINH GIỎI MÔN HÓA MỚI NHẤT 2026-2027/19. ĐỀ THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027/ĐỀ TRẮC NGHIỆM-TỰ LUẬN THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027-ĐỀ.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/19. đề thi thử hsg liên trường nghệ an 2026-2027/đề trắc nghiệm-tự luận thi thử hsg liên trường nghệ an 2026-2027-đề.pdf",
+      "title": "UNI ĐỀ TRẮC NGHIỆM-TỰ LUẬN THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027-ĐỀ.pdf",
+      "size": 779331,
+      "dstFileId": "148Mur8gj_-OfZ_2_ObEdJHAYLw28h3lJ",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:52.500Z"
+    },
+    "19G311YFQ-9XtXCBVXOp9HVBXBtwRP5LI": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/2. ĐỀ HỌC SINH GIỎI MÔN HÓA MỚI NHẤT 2026-2027/19. ĐỀ THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027/ĐỀ TRẮC NGHIỆM-TỰ LUẬN THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/19. đề thi thử hsg liên trường nghệ an 2026-2027/đề trắc nghiệm-tự luận thi thử hsg liên trường nghệ an 2026-2027-viết tay.pdf",
+      "title": "UNI ĐỀ TRẮC NGHIỆM-TỰ LUẬN THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027-VIẾT TAY.pdf",
+      "size": 10430126,
+      "dstFileId": "1MvSfj_zPyddg8fG1mdZ6cRyQ8-hcxyqv",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:31:01.729Z"
+    },
+    "16pbc-0X5Q_zHLq1ZuCqabJvnqVXxH2BJ": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1. KHOÁ T NỀN TẢNG/2. CHƯƠNG 2-CARBOHYDRATE/31. TỔNG ÔN CARBOHYDRATE PHẦN 3-KHÓA ĐOM ĐÓM/TỔNG ÔN CARBOHYDRATE-PHẦN 3-ĐỀ.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/2. chương 2-carbohydrate/31. tổng ôn carbohydrate phần 3-khóa đom đóm/tổng ôn carbohydrate-phần 3-đề.pdf",
+      "title": "UNI TỔNG ÔN CARBOHYDRATE-PHẦN 3-ĐỀ.pdf",
+      "size": 1034453,
+      "dstFileId": "1j6TLa3vBHfrJ8PS1wNWgrHXFhQskxI_d",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:31:08.911Z"
+    },
+    "1SaXp2xEodx8Vs2VjannxGtbfS_52488r": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1. KHOÁ T NỀN TẢNG/2. CHƯƠNG 2-CARBOHYDRATE/31. TỔNG ÔN CARBOHYDRATE PHẦN 3-KHÓA ĐOM ĐÓM/TỔNG ÔN CARBOHYDRATE-PHẦN 3-VIẾT TAY.pdf",
+      "normRelPath": "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/2. chương 2-carbohydrate/31. tổng ôn carbohydrate phần 3-khóa đom đóm/tổng ôn carbohydrate-phần 3-viết tay.pdf",
+      "title": "UNI TỔNG ÔN CARBOHYDRATE-PHẦN 3-VIẾT TAY.pdf",
+      "size": 13522422,
+      "dstFileId": "18ehtgc9eCtUUDlgpvSC3wpiPyLfCiarb",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:31:18.375Z"
+    },
+    "1hqH6aztnLl3eNf31NIBdTSLcT_lf0N6o": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/4.1 PHÒNG THỰC CHIẾN THÁNG 9 - 2026/5. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 17/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/4.1 phòng thực chiến tháng 9 - 2026/5. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 17/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 481809,
+      "dstFileId": "1Cfwrn1Zrs2eNbkdTdGpJT1iJ5HZJ3i60",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:08.342Z"
+    },
+    "1DpGhzB0pdiUGpuUd2JN0coLTanYcjvjd": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/4.1 PHÒNG THỰC CHIẾN THÁNG 9 - 2026/6. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 18/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/4.1 phòng thực chiến tháng 9 - 2026/6. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 18/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 483188,
+      "dstFileId": "1wgXJ6q_20M-2v3NccQKCclRM6acRgvr-",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:13.194Z"
+    },
+    "1y5ze3eknqhs5WzJYRuTD98Ac_YsfUrdn": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/1. Một số lỗi dùng từ thường gặp/Bài tập.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/1. một số lỗi dùng từ thường gặp/bài tập.pdf",
+      "title": "UNI Bài tập.pdf",
+      "size": 426175,
+      "dstFileId": "1FoU_7vzu6n0cNfeeWBiHSF3kE90wxqu7",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:35.510Z"
+    },
+    "1YryJcAUv9O2LfcXAk-bsfPE_yI7HTo2x": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/1. Một số lỗi dùng từ thường gặp/Đáp án.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/1. một số lỗi dùng từ thường gặp/đáp án.pdf",
+      "title": "UNI Đáp án.pdf",
+      "size": 433532,
+      "dstFileId": "1PBe4gAK4Vg-EzcCje2we4QrBhSw_D2Ev",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:39.705Z"
+    },
+    "1BIUEOXFN69o3f8HHrbNPhEpHgAodGhAz": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/1. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 19/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/1. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 19/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 483188,
+      "dstFileId": "158jfiO5p3mMeWCgdVvqXtap4VRnDCA17",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:44.261Z"
+    },
+    "1ZCpG4mdPl8tC-6xYZuJseddqWZ50Ffou": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/1. Một số lỗi dùng từ thường gặp/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/1. một số lỗi dùng từ thường gặp/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 4660450,
+      "dstFileId": "1e6_XC-8ZGkdOLZZ_J7Aepf6jYwSBrC5C",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:50.364Z"
+    },
+    "1LiMDddSvd9-gpKDsKqn6w3e4Df54ODhw": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/1. Tổng ôn V-ACT - Môn Toán/6. THÁNG 11 - 2026/1. Phương pháp, kĩ năng xử lí các bài toán về hình học Oxyz (P2)/Bài tập.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/6. tháng 11 - 2026/1. phương pháp, kĩ năng xử lí các bài toán về hình học oxyz (p2)/bài tập.pdf",
+      "title": "UNI Bài tập.pdf",
+      "size": 505700,
+      "dstFileId": "1laJMwJHb331ZUOhQtFRTNkrH7xibj_Db",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:27.116Z"
+    },
+    "1sVhqQ6nHI-kGIPqt0aAZniQtt4Sl-30t": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/4. Tổng ôn V-ACT Tư duy khoa học - V/6. THÁNG 11 - 2026/1. Thực hành nội suy và ngoại suy từ bảng số liệu khoa học (P1)/Bài tập.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/4. tổng ôn v-act tư duy khoa học - v/6. tháng 11 - 2026/1. thực hành nội suy và ngoại suy từ bảng số liệu khoa học (p1)/bài tập.pdf",
+      "title": "UNI Bài tập.pdf",
+      "size": 485705,
+      "dstFileId": "1VX7I5GGZiQSvcItZx-MWjtAjDUdX70aJ",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:31.477Z"
+    },
+    "1HOKt3IUvgy7-icxx9qWUlO2CCq4V1iIR": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/2. Cấu tạo và lỗi thành phần, liên kết của câu/Bài tập.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/2. cấu tạo và lỗi thành phần, liên kết của câu/bài tập.pdf",
+      "title": "UNI Bài tập.pdf",
+      "size": 434515,
+      "dstFileId": "1tCOOu-RH6w9jGjw1IaKNAXWtX8s0v_G-",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:35.667Z"
+    },
+    "1ncNWdMDuv-lHM5_7kI0K1IMrjhB1I8Ft": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/1. Tổng ôn V-ACT - Môn Toán/6. THÁNG 11 - 2026/1. Phương pháp, kĩ năng xử lí các bài toán về hình học Oxyz (P2)/Đáp án.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/6. tháng 11 - 2026/1. phương pháp, kĩ năng xử lí các bài toán về hình học oxyz (p2)/đáp án.pdf",
+      "title": "UNI Đáp án.pdf",
+      "size": 514136,
+      "dstFileId": "1ySl-RAY3mCBlYHNVkU9r1VWrnP64uiBb",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:40.147Z"
+    },
+    "1fdJmjIH9LamES0fwykt8-kQl8YI0z9yd": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/4. Tổng ôn V-ACT Tư duy khoa học - V/6. THÁNG 11 - 2026/1. Thực hành nội suy và ngoại suy từ bảng số liệu khoa học (P1)/Đáp án.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/4. tổng ôn v-act tư duy khoa học - v/6. tháng 11 - 2026/1. thực hành nội suy và ngoại suy từ bảng số liệu khoa học (p1)/đáp án.pdf",
+      "title": "UNI Đáp án.pdf",
+      "size": 491312,
+      "dstFileId": "186AnFgAQCmz5ekv03z9q6Nak9pRUUhTz",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:44.577Z"
+    },
+    "1IzbcOCQOhW-b7u8lw1HYdqODB_HPE2ln": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/2. Cấu tạo và lỗi thành phần, liên kết của câu/Đáp án.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/2. cấu tạo và lỗi thành phần, liên kết của câu/đáp án.pdf",
+      "title": "UNI Đáp án.pdf",
+      "size": 444710,
+      "dstFileId": "1nyoLzvwKFXEf5UN5ql98Ph5PQA5h7xz3",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:48.734Z"
+    },
+    "1AUWIgZQVVoRcBrSTc9470-hKClD-HJQY": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/1. Tổng ôn V-ACT - Môn Toán/6. THÁNG 11 - 2026/1. Phương pháp, kĩ năng xử lí các bài toán về hình học Oxyz (P2)/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/6. tháng 11 - 2026/1. phương pháp, kĩ năng xử lí các bài toán về hình học oxyz (p2)/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 5323134,
+      "dstFileId": "1n3OwVlySgprfe_gknNmvortcvOkv0kvw",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:55.666Z"
+    },
+    "1o0lVIyTtDcG4jcpCdgOm6YTrvsK1a0Lr": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/4. Tổng ôn V-ACT Tư duy khoa học - V/6. THÁNG 11 - 2026/1. Thực hành nội suy và ngoại suy từ bảng số liệu khoa học (P1)/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/4. tổng ôn v-act tư duy khoa học - v/6. tháng 11 - 2026/1. thực hành nội suy và ngoại suy từ bảng số liệu khoa học (p1)/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 4603305,
+      "dstFileId": "1BMBJPquhiRe4X4pe39UEzUsQcVtkYvhG",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:01.963Z"
+    },
+    "123Pxp0EQzhjcynh3Sa2H3FzowBsjSlRB": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/2. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 20/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/2. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 20/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 482166,
+      "dstFileId": "1xvMVBxrU61WHfpsLMVEAQQtCtP6slQ0m",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:06.350Z"
+    },
+    "1mWeDcQFRjwOVLNVRDTAKFa9lgCU3HBLr": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/2. Cấu tạo và lỗi thành phần, liên kết của câu/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/2. cấu tạo và lỗi thành phần, liên kết của câu/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 4632814,
+      "dstFileId": "1KTry83SIwEDK2TueOUIUgvMW06WV3HhO",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:12.697Z"
+    },
+    "1rd8aAulAznjjWdiPdJXcJ2LxTg8eeH27": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/3. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 21/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/3. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 21/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 481072,
+      "dstFileId": "1gs-SRM3G1Rd3mCywuE8XJu0JU1JwzmtX",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:27.822Z"
+    },
+    "1MExROliDEQstSRsj4KRaP93Z6CB-3eHa": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/4. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 22/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/4. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 22/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 471938,
+      "dstFileId": "1EKVEt65AIAqjV8LEMEQ1uizkIzi02q8N",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:32.397Z"
+    },
+    "1gwQsL28aswDJbH6DbeXbsI325Wu6WdXI": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/5. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 23/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/5. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 23/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 496525,
+      "dstFileId": "1dZkk7K9Xta1oX3touqsXXXrbWZ8sZWnb",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:42.126Z"
+    },
+    "1dV2ar8jveJGsG_I7P1rxlrny_Oe7rJdC": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/6. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 24/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/6. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 24/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 503550,
+      "dstFileId": "1VVFwJd7hfMA36W-fPqbhfTOfp30LEYMS",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:51.699Z"
+    },
+    "1cySVb2-Cu4TXsxtFrhPrt-YRGRSWkiez": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/7. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 26/Tài liệu live.pdf",
+      "normRelPath": "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/7. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 26/tài liệu live.pdf",
+      "title": "UNI Tài liệu live.pdf",
+      "size": 482612,
+      "dstFileId": "1npPGl2V40NC4uJFecR_GpAB99I46oneL",
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:41:01.351Z"
+    },
+    "1QUSU68_vEcVumvmp5EQERtDElox7nv0a": {
+      "dstFileId": "1aM_GmCiEs4ULa9sIn7oacTKlwrdoBK3M",
+      "name": "UNI Sổ tay lý thuyết Vật lý 10 11 12 - IPCLASS.pdf"
+    },
+    "120NsBrCege4K-SOmPEVr4fqZIajLAyCx": {
+      "dstFileId": "1uaOqtulgxmwW4o58VuVNOhU4I8L1UT49",
+      "name": "UNI Ebook Phát triển năng lực Vật lý 12 Tập 1 (Vật lý nhiệt, Khí lý tưởng) - IPCLASS.pdf"
+    },
+    "1c8Sdb14hS5SrOdXJm4TrofVZ9uxwWC__": {
+      "dstFileId": "15PGw_GEIg6_7gVL33wzS5LRKDiK8PvGs",
+      "name": "UNI Ebook Phát triển năng lực Vật lý 12 Tập 2 (Từ trường, Vật lý hạt nhân) - IPCLASS.pdf"
     }
   },
   "syncedNormPaths": {
@@ -368752,6 +369502,662 @@
       "size": 36655831,
       "isUni": true,
       "syncedAt": "2026-11-07T10:17:57.300Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/0. bộ đề thi 2026-2027 (cập nhật)/đề thi thử môn hóa tnthpt mùa thi 2026-2027/đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi-đề.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/0. BỘ ĐỀ THI 2026-2027 (Cập nhật)/ĐỀ THI THỬ MÔN HÓA TNTHPT MÙA THI 2026-2027/UNI ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-ĐỀ.pdf",
+      "sourceFileId": "1fNxUzFzln2NFEU02lLAtr-8m1aILPBb6",
+      "dstFileId": "1JRiet9ZW_rd2xrTlQD8JTZtN3Mf4Hwhc",
+      "size": 621217,
+      "isUni": true,
+      "syncedAt": "2026-11-08T01:44:14.164Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/0. bộ đề thi 2026-2027 (cập nhật)/đề thi thử môn hóa tnthpt mùa thi 2026-2027/đề thi thử online môn hóa sở ninh bình lần 1 năm 2026-2027-đề.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/0. BỘ ĐỀ THI 2026-2027 (Cập nhật)/ĐỀ THI THỬ MÔN HÓA TNTHPT MÙA THI 2026-2027/UNI ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-ĐỀ.pdf",
+      "sourceFileId": "1TSiu1dAw9eszblLZUbH05f2Ur90xOuw_",
+      "dstFileId": "1IH-gFXaatFJTXlP0J6nEI0S0EivjRa3_",
+      "size": 459127,
+      "isUni": true,
+      "syncedAt": "2026-11-08T01:44:18.757Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/0. bộ đề thi 2026-2027 (cập nhật)/đề thi thử môn hóa tnthpt mùa thi 2026-2027/đề thi thử thpt hàn thuyên (bn) và lê xoay (phú thọ) 2026-2027.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/0. BỘ ĐỀ THI 2026-2027 (Cập nhật)/ĐỀ THI THỬ MÔN HÓA TNTHPT MÙA THI 2026-2027/UNI ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027.pdf",
+      "sourceFileId": "16XIdK7MNSWnhAEqEnavlIVBq3MJnmVAf",
+      "dstFileId": "1kbDsreljJDQDxI3T_Jo9jiHIDcjBffuT",
+      "size": 856082,
+      "isUni": true,
+      "syncedAt": "2026-11-08T01:44:23.735Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 13/10/[np 2026]_bài tập ngày 13-10 - phần 1.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 13/10/UNI [NP 2026]_Bài tập ngày 13-10 - phần 1.pdf",
+      "sourceFileId": "1PmE2CsGtHGeisb4yRrnZchIOcukWS4LA",
+      "dstFileId": "1g-zg6qXBmgBqVnHECZyTTPSRh-cRcVE0",
+      "size": 1363347,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:42:58.454Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_bài tập làm thêm tuần 25/[np 2027]_bài tập làm thêm tuần 25.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Bài tập làm thêm tuần 25/UNI [NP 2027]_Bài tập làm thêm tuần 25.pdf",
+      "sourceFileId": "1e1-cVCl6c0TEB0KyVuT1CC52heRJs6ut",
+      "dstFileId": "1h4Jjl8zyE9QsSDieH74a0Yl_mMQRB8bR",
+      "size": 316359,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:05.286Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài ngày 10/10/[np 2027]_bài tập ngày 10-10 - phần trắc nghiệm.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài ngày 10/10/UNI [NP 2027]_Bài tập ngày 10-10 - phần trắc nghiệm.pdf",
+      "sourceFileId": "1P-wLqTVUyVllfsKBu-2T6oytBX_DDKSA",
+      "dstFileId": "1slxfWm33JN9Ugk_iMfriSOtxL2HaTCCL",
+      "size": 1073648,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:12.918Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài ngày 10/10/[np 2027]_bài tập ngày 10-10 - phần tự luận.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài ngày 10/10/UNI [NP 2027]_Bài tập ngày 10-10 - Phần tự luận.pdf",
+      "sourceFileId": "1TKkvwIDwl8ICCQimUTngTiT28d4dwqMy",
+      "dstFileId": "1HiGrt2kHWYOTg3kM1E_SAtNUqwLO8rb9",
+      "size": 213719,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:17.326Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 13/10/[np 2027]_bài tập ngày 13-10 - phần 2.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 13/10/UNI [NP 2027]_Bài tập ngày 13-10 - phần 2.pdf",
+      "sourceFileId": "18vNAlwPWdF04jCepv10o6KBq_CFKhfKR",
+      "dstFileId": "1xByagvvvT_hqCwPSrqL-g6nGsGrlUDDt",
+      "size": 1294355,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:22.533Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 14/10/[np 2027]_bài tập ngày 14-10 - phần 1.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 14/10/UNI [NP 2027]_Bài tập ngày 14-10 - phần 1.pdf",
+      "sourceFileId": "13p_eWZXaF0I-iXXDa26AR3pEdJmf7euf",
+      "dstFileId": "1ChPLE7P7L8V_96L36NVwMXS4nm-i1up-",
+      "size": 1272749,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:30.119Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 14/10/[np 2027]_bài tập ngày 14-10 - phần 2.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 14/10/UNI [NP 2027]_Bài tập ngày 14-10 - phần 2.pdf",
+      "sourceFileId": "1t8Yk-l26LgnjmNR1qCffn-s_Y3RbkAY6",
+      "dstFileId": "1ydfss5e3yN4F_N4tdHEjHGFic6Ujlhw1",
+      "size": 826956,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:35.155Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 15/10/[np 2027]_bài tập ngày 15-10 - phần 1.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 15/10/UNI [NP 2027]_Bài tập ngày 15-10 - phần 1.pdf",
+      "sourceFileId": "1wmZafjQ_yOy8Z4ySOUvb0hcEHTESAKr_",
+      "dstFileId": "1-v-ILUG8_ulJbVXOgXy8QYterhWDNNBF",
+      "size": 834450,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:42.170Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 15/10/[np 2027]_bài tập ngày 15-10 - phần 2.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 15/10/UNI [NP 2027]_Bài tập ngày 15-10 - phần 2.pdf",
+      "sourceFileId": "1XQ9DJOfQQHzyUsNztRX_yi1azr4-qhBY",
+      "dstFileId": "1dgFNiFny6UvPulAqwiXac3dgUYC3Eacx",
+      "size": 800382,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:47.177Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 16/10/[np 2027]_bài tập ngày 16-10 - phần 1.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 16/10/UNI [NP 2027]_Bài tập ngày 16-10 - phần 1.pdf",
+      "sourceFileId": "1i2hp1WZDBA2f_GsBd28gvvYxa5FmDEgq",
+      "dstFileId": "1_QhvO08t03HjaS-twGhWZ2399uYwlJ_H",
+      "size": 796943,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:54.184Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 16/10/[np 2027]_bài tập ngày 16-10 - phần 2.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 16/10/UNI [NP 2027]_Bài tập ngày 16-10 - phần 2.pdf",
+      "sourceFileId": "1R6g4UZ0RYhir9s6DjjyC37HDE2Ls3u6-",
+      "dstFileId": "17wGpBoT3_OdtcD8SwOsqGqHm9U_Mnuen",
+      "size": 845864,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:43:58.604Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 17/10/[np 2027]_bài tập ngày 17-10 - phần 1.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 17/10/UNI [NP 2027]_Bài tập ngày 17-10 - phần 1.pdf",
+      "sourceFileId": "1or7d3hAIb7qoeGRYLJBE5WM49cQPnRgv",
+      "dstFileId": "1vKggnpumYpzdBHldEj58tyuDaGfdEaHO",
+      "size": 814380,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:44:05.754Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 17/10/[np 2027]_bài tập ngày 17-10 - phần 2.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Bài tập ngày 17/10/UNI [NP 2027]_Bài tập ngày 17-10 - phần 2.pdf",
+      "sourceFileId": "1CzAPJ80WQ8nEoJkznYN6inWmNnuv_BZw",
+      "dstFileId": "1Qy_MI4BsGh_1O3opZE4GH3M92yx3ddYP",
+      "size": 831078,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:44:10.568Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 5/10/[np 2027]_bài tập ngày 5-10.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 5/10/UNI [NP 2027]_Bài tập ngày 5-10.pdf",
+      "sourceFileId": "1b3jBUho2kuaOEhx7cy0O2McuwDeWzu9R",
+      "dstFileId": "1O-wpyBp9kcSpp-irZcFJy_xws6BXrBYb",
+      "size": 2422077,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:15.994Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 6/10/[np 2027]_bài tập ngày 6-10.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 6/10/UNI [NP 2027]_Bài tập ngày 6-10.pdf",
+      "sourceFileId": "17JXzKETqIVh1SrKaKIcJ7drtxgkyFkF7",
+      "dstFileId": "1G-mn2IDnyQF_lH-eicXWYgiPyHviG109",
+      "size": 4165089,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:25.915Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 7/10/[np 2027]_bài tập ngày 7-10.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 7/10/UNI [NP 2027]_Bài tập ngày 7-10.pdf",
+      "sourceFileId": "1hfc3H9o-FUOWZp4PtyqwxVEeC8aZDc-s",
+      "dstFileId": "1kC-kk87cLg9HM-10pbbJKjS24AA74DU9",
+      "size": 2331135,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:34.642Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 8/10/[np 2027]_bài tập ngày 8-10.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 8/10/UNI [NP 2027]_Bài tập ngày 8-10.pdf",
+      "sourceFileId": "1069tZ3UPynkY-BBEkNhetsoIAAtWUE4O",
+      "dstFileId": "153Z9xDhTc0hmfIu9QoVavNrkpRGYJAHc",
+      "size": 3278529,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:44.271Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 9/10/[np 2027]_bài tập ngày 9-10.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP 2027]_Chữa bài tập ngày 9/10/UNI [NP 2027]_Bài tập ngày 9-10.pdf",
+      "sourceFileId": "1nqBjqoQTrdYL5kUGDVq7GnnWMA5TK8TW",
+      "dstFileId": "1qEwDXTOsCE2KUdW-2JNoqUUJtxtKx3Us",
+      "size": 3640634,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:45:53.379Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_chữa bài tập ngày 12/10/[np 2027]_bài tập ngày 12-10 - phần 1.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Chữa bài tập ngày 12/10/UNI [NP 2027]_Bài tập ngày 12-10 - phần 1.pdf",
+      "sourceFileId": "1o3ttsifgVHZqAuRaIhWfX770Foq4DEOQ",
+      "dstFileId": "111O8T5EjBRAscP1XrU745bBfuG05kUgb",
+      "size": 1547953,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:46:01.057Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_chữa bài tập ngày 12/10/[np 2027]_bài tập ngày 12-10 - phần 2.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP 2027]_Chữa bài tập ngày 12/10/UNI [NP 2027]_Bài tập ngày 12-10 - phần 2.pdf",
+      "sourceFileId": "1ei-QqqXkbTzXb0VCbEl2aQ2OkwXxPaOD",
+      "dstFileId": "1ZQAsdfE5gR7-VX3K7Iyz9flyPHtr9Dm-",
+      "size": 1330759,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:46:06.996Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np2027]_thi thử tuần 26/[np2027] thi thử tuần 26.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP2027]_Thi thử tuần 26/UNI [NP2027] Thi thử tuần 26.pdf",
+      "sourceFileId": "1eD2IcBaZpJHUS2fs-6IDs-7o3gGrKPIb",
+      "dstFileId": "12CcAuSIiTsc_mkoYIAlvu-Vy6JbfovZJ",
+      "size": 352705,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:53:37.532Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np2027]_thi thử tuần 25/[np2027]_thi thử tuần 25.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/25. TUẦN 25 (TỪ NGÀY 5/10/2026 - 11/10/2026)/[NP2027]_Thi thử tuần 25/UNI [NP2027]_Thi thử tuần 25.pdf",
+      "sourceFileId": "1FXXabGD0hsLt8t7W02_ewp44OYEpJM5R",
+      "dstFileId": "1erGRR2uKd3_wV5FtOIcpTWG9UUYAaQIG",
+      "size": 232665,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:55:10.599Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np2027]_thi thử tuần 26/[np2027]_thi thử tuần 26.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/[NP2027]_Thi thử tuần 26/UNI [NP2027]_Thi thử tuần 26.pdf",
+      "sourceFileId": "1VX6F8FAnP2jYjY3PJv-rE3UYPMGWrR4h",
+      "dstFileId": "1W7AQYEUWvqgyUyZb0gRebWodTJq3MUa6",
+      "size": 299158,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:55:52.925Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu/[np 2027]_bài tập tuần 26.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/0. TÀI LIỆU/UNI [NP 2027]_Bài tập tuần 26.pdf",
+      "sourceFileId": "1vJisMOGTgIz9-a62Jyo9GC5l2Lx3RiMA",
+      "dstFileId": "1Gzc-Th_HqRawczEcsiHULY5ugUjBT-4a",
+      "size": 791505,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:55:59.807Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu/[np 2027]_bảng từ vựng tuần 26.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/0. TÀI LIỆU/UNI [NP 2027]_Bảng từ vựng tuần 26.pdf",
+      "sourceFileId": "1fOhl_RZxvr8Phn4DHHQy7LJqTMcqJwR0",
+      "dstFileId": "1UgACGoiyu5YlJPMElXnTR89OAtHlyuM4",
+      "size": 545743,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:56:04.089Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu/[np2027]_ngữ pháp nâng cao tuần 26.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/0. TÀI LIỆU/UNI [NP2027]_Ngữ pháp nâng cao tuần 26.pdf",
+      "sourceFileId": "1ogGW4J0Uz2fyDCQlp4uLLPA1TX6j_VSk",
+      "dstFileId": "1S8sAyb1eS6OwUHJgMznM_OEGZxWB9PJK",
+      "size": 368642,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:56:08.197Z"
+    },
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu/[np2027]_ngữ pháp ứng dụng tuần 26.pdf": {
+      "relPath": "TIẾNG ANH/ANH CÔ TRANG ANH MOON 2K9/1. NGỮ PHÁP TIẾNG ANH TOÀN DIỆN/26. TUẦN 26 (TỪ NGÀY 12/10/2026 - 18/10/2026)/0. TÀI LIỆU/UNI [NP2027]_Ngữ pháp ứng dụng tuần 26.pdf",
+      "sourceFileId": "1R1wvCihNxkVb_NzXyDlanDokGX9R_FAM",
+      "dstFileId": "1f2yhcnMRv79iGIcM3FKz1doB0DHZF59Y",
+      "size": 427709,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:56:12.528Z"
+    },
+    "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2. live c - luyện thi chuyên đề - lí 12 2k9 - vta/3. chương 3: từ trường \"/24. bài 7. dây dẫn chuyển động trong từ trường/bản sao của bài 5+6+7+8.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9/2. LIVE C - Luyện Thi Chuyên Đề - Lí 12 2K9 - VTA/3. CHƯƠNG 3: TỪ TRƯỜNG \"/24. Bài 7. Dây dẫn chuyển động trong từ trường/UNI Bản sao của Bài 5+6+7+8.pdf",
+      "sourceFileId": "1G7PfUdaUjc_JxWYy6aT456HnuNvU3dCq",
+      "dstFileId": "1wXysdQ8L4MX8_veCxu1dhHnNHJ0ybiUO",
+      "size": 7576947,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:58:12.275Z"
+    },
+    "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2. live c - luyện thi chuyên đề - lí 12 2k9 - vta/3. chương 3: từ trường \"/25. bài 8. máy phát điện xoay chiều/bản sao của bài 5+6+7+8.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9/2. LIVE C - Luyện Thi Chuyên Đề - Lí 12 2K9 - VTA/3. CHƯƠNG 3: TỪ TRƯỜNG \"/25. Bài 8. Máy phát điện xoay chiều/UNI Bản sao của Bài 5+6+7+8.pdf",
+      "sourceFileId": "1Rvcol-qxNO5Kww3GcnOx_bPT2fQRU7wC",
+      "dstFileId": "1lLCMOu1a0CF0f1cOcywuXBEO5shJ3uiV",
+      "size": 7576947,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:58:19.529Z"
+    },
+    "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2.1 bổ trợ live c/chương 1: vật lí nhiệt/31. kscl hk1 - hưng yên - đề lẻ/sở hưng yên - mã chắn.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9/2.1 BỔ TRỢ LIVE C/CHƯƠNG 1: VẬT LÍ NHIỆT/31. KSCL HK1 - Hưng Yên - Đề lẻ/UNI Sở Hưng Yên - Mã chắn.pdf",
+      "sourceFileId": "1UdRzeLakhNbJuIfzro-B1qA7J2EbNoCl",
+      "dstFileId": "16SodyoZow-axeRIxBULpfKocQn4FsLI1",
+      "size": 545572,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:58:51.836Z"
+    },
+    "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2.1 bổ trợ live c/chương 1: vật lí nhiệt/31. kscl hk1 - hưng yên - đề lẻ/sở hưng yên - mã lẻ.pdf": {
+      "relPath": "VẬT LÝ/LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9/2.1 BỔ TRỢ LIVE C/CHƯƠNG 1: VẬT LÍ NHIỆT/31. KSCL HK1 - Hưng Yên - Đề lẻ/UNI Sở Hưng Yên - Mã lẻ.pdf",
+      "sourceFileId": "1f1kDrOgW5aul2uhyWUeR45bRdy__3mM6",
+      "dstFileId": "1QUgYvkUMab_C1jRo-U-kql0krlEye13B",
+      "size": 614167,
+      "isUni": true,
+      "syncedAt": "2026-11-08T08:58:56.452Z"
+    },
+    "địa lý/địa lý cô mai anh lớp học địa lý 2k9/2. chặng 2: live c - chuyên đề chuyên sâu - cô mai anh/25. bài 14 + 15: tclt nông nghiệp & cdcc công nghiệp/bt14+15.pdf": {
+      "relPath": "ĐỊA LÝ/ĐỊA LÝ CÔ MAI ANH LỚP HỌC ĐỊA LÝ 2K9/2. CHẶNG 2: LIVE C - CHUYÊN ĐỀ CHUYÊN SÂU - Cô Mai Anh/25. BÀI 14 + 15: TCLT NÔNG NGHIỆP & CDCC CÔNG NGHIỆP/UNI BT14+15.pdf",
+      "sourceFileId": "12o_qyfaYXVXPJfIqmOq-1mPvpdq-w7hh",
+      "dstFileId": "1DmBAs_j5ECkdiXZH0GRbjYIeWc0j2Q98",
+      "size": 2671881,
+      "isUni": true,
+      "syncedAt": "2026-11-08T09:04:59.263Z"
+    },
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 1 nguyên hàm nền tảng/bài 1 nguyên hàm nền tảng.pdf": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/5. CHƯƠNG 5: NGUYÊN HÀM - TÍCH PHÂN/BÀI 1 NGUYÊN HÀM NỀN TẢNG/UNI BÀI 1 NGUYÊN HÀM NỀN TẢNG.pdf",
+      "sourceFileId": "1soWDVMxZTE3dsfDsbPh-XhjPCDnK3il5",
+      "dstFileId": "1LEAeZvb8n7XUzxwsA0G0aUasu2OFuPYB",
+      "size": 519985,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:17.725Z"
+    },
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/6. chương 6: phương trình mặt phẳng - đường thẳng - mặt cầu/bài 1 phương trình mặt phẳng nền tảng/bài 1 phương trình mặt phẳng nền tảng.pdf": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/6. CHƯƠNG 6: PHƯƠNG TRÌNH MẶT PHẲNG - ĐƯỜNG THẲNG - MẶT CẦU/BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG/UNI BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG.pdf",
+      "sourceFileId": "1uH23zbKXM_d_Q3TKy2H1wvquMVHWWX5U",
+      "dstFileId": "1u3umFlXvFr7iBu2mrcmzHTWQ2_SGN1pp",
+      "size": 274297,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:25.241Z"
+    },
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/6. chương 6: phương trình mặt phẳng - đường thẳng - mặt cầu/bài 1 phương trình mặt phẳng nền tảng/đáp án (1).pdf": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/6. CHƯƠNG 6: PHƯƠNG TRÌNH MẶT PHẲNG - ĐƯỜNG THẲNG - MẶT CẦU/BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG/UNI Đáp án (1).pdf",
+      "sourceFileId": "1SOZ0dmurLQDkQWN_M-2CrqPX3ErLtFSL",
+      "dstFileId": "1vnqOeXQgGmqyw0Ip3ZXKqAqaoQ1nXEPu",
+      "size": 409777,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:31.531Z"
+    },
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 1 nguyên hàm nền tảng/đề bài cách dòng (1).pdf": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/5. CHƯƠNG 5: NGUYÊN HÀM - TÍCH PHÂN/BÀI 1 NGUYÊN HÀM NỀN TẢNG/UNI Đề bài cách dòng (1).pdf",
+      "sourceFileId": "1M_2iGEqB9rjlL1lqtn3RXWptRujteFQY",
+      "dstFileId": "1UAtsoqpI1Br8c66lWdQCYL8bhAYCJY0E",
+      "size": 527719,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:35.849Z"
+    },
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/6. chương 6: phương trình mặt phẳng - đường thẳng - mặt cầu/bài 1 phương trình mặt phẳng nền tảng/đề bài cách dòng.pdf": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/6. CHƯƠNG 6: PHƯƠNG TRÌNH MẶT PHẲNG - ĐƯỜNG THẲNG - MẶT CẦU/BÀI 1 PHƯƠNG TRÌNH MẶT PHẲNG NỀN TẢNG/UNI Đề bài cách dòng.pdf",
+      "sourceFileId": "1Dh2fgSl2K9Y5a4G4z45JedQ4MNpZL0mF",
+      "dstFileId": "1PBpP7VpQrZbWcwUIyB1FZ6w_0HPF7qxq",
+      "size": 285601,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:40.020Z"
+    },
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 2 nguyên hàm vận dụng/bài 2 nguyên hàm vận dụng.pdf": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/5. CHƯƠNG 5: NGUYÊN HÀM - TÍCH PHÂN/BÀI 2 NGUYÊN HÀM VẬN DỤNG/UNI BÀI 2 NGUYÊN HÀM VẬN DỤNG.pdf",
+      "sourceFileId": "199r5TtoZKx_CE7MEqT_dX2uK1V8xLZ8T",
+      "dstFileId": "1MNovpzqgWE-Cjs-RoU8v9g0HRd8y34Ok",
+      "size": 214272,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:46.272Z"
+    },
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/4. chương 4 xác suất/bài 16 công thức xác suất toàn phần vận dụng/đáp án.pdf": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/4. CHƯƠNG 4 XÁC SUẤT/BÀI 16 CÔNG THỨC XÁC SUẤT TOÀN PHẦN VẬN DỤNG/UNI Đáp án.pdf",
+      "sourceFileId": "1YuE_WIAmhkXTGLrH2q22ItukInWGq_Id",
+      "dstFileId": "1TWRgfVRrcljbr_5dYPTF3UP5jND1GNHY",
+      "size": 517162,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:52.673Z"
+    },
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 2 nguyên hàm vận dụng/đề bài cách dòng (2).pdf": {
+      "relPath": "TOÁN/TOÁN ANH SHIPPER TOÁN 2K9/1. 2K9 TRÙM 12A3/5. CHƯƠNG 5: NGUYÊN HÀM - TÍCH PHÂN/BÀI 2 NGUYÊN HÀM VẬN DỤNG/UNI Đề bài cách dòng (2).pdf",
+      "sourceFileId": "18khuNPeJTudnpeD9fwUN1cxTorOfFL7J",
+      "dstFileId": "1Gq7R2a_i7jFTicRTXBpmj8MQeKs2ExeA",
+      "size": 225079,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:21:56.800Z"
+    },
+    "ngữ văn/văn chị linh thưởng thức sách tts 2k9/2. luyện đề chuyên sâu kiến thức/12. đề 12/🌿 𝐓𝐓𝐒 – 12 – đề luyện lần 12 – tts-er 2k9 ❤.pdf": {
+      "relPath": "NGỮ VĂN/VĂN CHỊ LINH THƯỞNG THỨC SÁCH TTS 2K9/2. LUYỆN ĐỀ CHUYÊN SÂU KIẾN THỨC/12. ĐỀ 12/UNI 🌿 𝐓𝐓𝐒 – 12 – ĐỀ LUYỆN LẦN 12 – TTS-ER 2K9 ❤.pdf",
+      "sourceFileId": "11wCQiSWVa2ICOeQ1zWqUyecK1wCblXQJ",
+      "dstFileId": "1YWgen80vU-yrgDEssE4xXAxsMdCmXwt0",
+      "size": 2692262,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:22:37.517Z"
+    },
+    "ngữ văn/văn chị linh thưởng thức sách tts 2k9/1. khoá chuyên sâu kiến thức 5 tháng đặc biệt/30. 🌿 𝐓𝐓𝐒 - buổi 30 - chuyên đề kí 💚/🌿 𝐓𝐓𝐒 – buổi 30 – chuyên đề đọc hiểu & đoạn văn về kí ❤.pdf": {
+      "relPath": "NGỮ VĂN/VĂN CHỊ LINH THƯỞNG THỨC SÁCH TTS 2K9/1. KHOÁ CHUYÊN SÂU KIẾN THỨC 5 THÁNG ĐẶC BIỆT/30. 🌿 𝐓𝐓𝐒 - BUỔI 30 - CHUYÊN ĐỀ KÍ 💚/UNI 🌿 𝐓𝐓𝐒 – BUỔI 30 – CHUYÊN ĐỀ ĐỌC HIỂU & ĐOẠN VĂN VỀ KÍ ❤.pdf",
+      "sourceFileId": "1aM8abUnkX506fuQsuZPci-R8rAju_tJf",
+      "dstFileId": "1Q3hrAqqoKa06eVhd-HUsCkqK3QlKZbL1",
+      "size": 7188388,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:22:47.914Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/7. chương 7- kim loại nhóm ia và iia/8. đề 1-cđ3-tổng ôn kim loại kiềm (68 câu lý thuyết klk)/đề 1-chuyên đề 3-tổng ôn kim loại kiềm (68 câu lý thuyết chuyên biệt về kim loại kiềm)-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1. KHOÁ T NỀN TẢNG/7. CHƯƠNG 7- KIM LOẠI NHÓM IA VÀ IIA/8. ĐỀ 1-CĐ3-TỔNG ÔN KIM LOẠI KIỀM (68 CÂU LÝ THUYẾT KLK)/UNI ĐỀ 1-CHUYÊN ĐỀ 3-TỔNG ÔN KIM LOẠI KIỀM (68 CÂU LÝ THUYẾT CHUYÊN BIỆT VỀ KIM LOẠI KIỀM)-VIẾT TAY.pdf",
+      "sourceFileId": "1jH7NMLLBHbYhOmhatvzaLwkUwKMcrRck",
+      "dstFileId": "1__QUZE52VayxOMqnGgE5eEoEMCUUhEbT",
+      "size": 11116864,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:08.065Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/7. chương 7- kim loại nhóm ia và iia/9. đề 2-cđ3-tổng ôn kim loại kiềm thổ (68 câu lý thuyết klkt)/đề 2-chuyên đề 3-tổng ôn kim loại kiềm thổ (68 câu lý thuyết chuyên biệt về kim loại kiềm thổ)-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1. KHOÁ T NỀN TẢNG/7. CHƯƠNG 7- KIM LOẠI NHÓM IA VÀ IIA/9. ĐỀ 2-CĐ3-TỔNG ÔN KIM LOẠI KIỀM THỔ (68 CÂU LÝ THUYẾT KLKT)/UNI ĐỀ 2-CHUYÊN ĐỀ 3-TỔNG ÔN KIM LOẠI KIỀM THỔ (68 CÂU LÝ THUYẾT CHUYÊN BIỆT VỀ KIM LOẠI KIỀM THỔ)-VIẾT TAY.pdf",
+      "sourceFileId": "13JR3Es7WN0WR-C2HlwYrYmO-yRcDmc56",
+      "dstFileId": "1BDBkDmHExC63_IiVZEEQbse5tu8WQVFG",
+      "size": 11016829,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:18.852Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/13. đề thi thử thpt sơn động 1 bắc ninh 2026-2027/đề kscl lần 1-thpt sơn động 1-tỉnh bắc ninh 2026-2027-đề.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/13. ĐỀ THI THỬ THPT SƠN ĐỘNG 1 BẮC NINH 2026-2027/UNI ĐỀ KSCL LẦN 1-THPT SƠN ĐỘNG 1-TỈNH BẮC NINH 2026-2027-ĐỀ.pdf",
+      "sourceFileId": "1vVdIT8maTyH3d4856754sW2e2cYsJq3w",
+      "dstFileId": "15jK3BqZSASnEI4p9s84u7o0ot812zR2Y",
+      "size": 502569,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:27.247Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/13. đề thi thử thpt sơn động 1 bắc ninh 2026-2027/đề kscl lần 1-thpt sơn động 1-tỉnh bắc ninh 2026-2027-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/13. ĐỀ THI THỬ THPT SƠN ĐỘNG 1 BẮC NINH 2026-2027/UNI ĐỀ KSCL LẦN 1-THPT SƠN ĐỘNG 1-TỈNH BẮC NINH 2026-2027-VIẾT TAY.pdf",
+      "sourceFileId": "1_sRGLuYcSQ-x6ymoovQOuySpHsQRujUX",
+      "dstFileId": "1TgTdZtmEDdnq1QuBZIay6wbv4hf9GyTn",
+      "size": 5952616,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:34.052Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/15. đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi 2026-2027/đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi-đề.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/15. ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI 2026-2027/UNI ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-ĐỀ.pdf",
+      "sourceFileId": "1CBeHu4BcGdToEQjzCtyRzes-kGP8dMs0",
+      "dstFileId": "1BgnR02aTbNtZFat2N9PrRsdCY886OQtc",
+      "size": 649981,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:43.030Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/15. đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi 2026-2027/đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/15. ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI 2026-2027/UNI ĐỀ THI GIỮA KỲ 1 SỞ HƯNG YÊN-FULL 2 CA THI-VIẾT TAY.pdf",
+      "sourceFileId": "1jLexWgCA7XN_yq2m9UkqPyxBchfPIEX8",
+      "dstFileId": "1GbyWp4lM8a8hB7BK4VCRe9DuHIfY4A22",
+      "size": 10175205,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:29:51.120Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/14. đề thi thử tnthpt môn hóa học- sở ninh bình lần 1-thi online/đề thi thử online môn hóa sở ninh bình lần 1 năm 2026-2027-đề.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/14. ĐỀ THI THỬ TNTHPT MÔN HÓA HỌC- SỞ NINH BÌNH LẦN 1-THI ONLINE/UNI ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-ĐỀ.pdf",
+      "sourceFileId": "1K9bT63U0YPGFVYs8NC5rlwqxiouLZsUB",
+      "dstFileId": "12Xc1gdv5gla78eIL8u1C3-W0A6CicYOH",
+      "size": 485380,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:01.662Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/14. đề thi thử tnthpt môn hóa học- sở ninh bình lần 1-thi online/đề thi thử online môn hóa sở ninh bình lần 1 năm 2026-2027-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/14. ĐỀ THI THỬ TNTHPT MÔN HÓA HỌC- SỞ NINH BÌNH LẦN 1-THI ONLINE/UNI ĐỀ THI THỬ ONLINE MÔN HÓA SỞ NINH BÌNH LẦN 1 NĂM 2026-2027-VIẾT TAY.pdf",
+      "sourceFileId": "1A5CxapcbTjyEBzAb75UB-BzGver0wi-S",
+      "dstFileId": "1kVYjeVbYZ387Z_bIJnfuH13DkjXRnWmi",
+      "size": 7148886,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:08.843Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/16. đề thi thử tnthpt hàn thuyên-bắc ninh lần 1 - lê xoay-phú thọ lần 1/đề thi thử thpt hàn thuyên (bn) và lê xoay (phú thọ) 2026-2027-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/16. ĐỀ THI THỬ TNTHPT HÀN THUYÊN-BẮC NINH LẦN 1 - LÊ XOAY-PHÚ THỌ LẦN 1/UNI ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027-VIẾT TAY.pdf",
+      "sourceFileId": "1_NpzwJFGPMxkQIe6_KB4GpuwJms7206w",
+      "dstFileId": "1zqlqL_JDf2p6pVJj-T4PjUWtA9Ndsyfi",
+      "size": 11296861,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:18.843Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/16. đề thi thử tnthpt hàn thuyên-bắc ninh lần 1 - lê xoay-phú thọ lần 1/đề thi thử thpt hàn thuyên (bn) và lê xoay (phú thọ) 2026-2027.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/3. ĐỀ THI THỬ MÔN HÓA MỚI NHẤT 2026-2027/16. ĐỀ THI THỬ TNTHPT HÀN THUYÊN-BẮC NINH LẦN 1 - LÊ XOAY-PHÚ THỌ LẦN 1/UNI ĐỀ THI THỬ THPT HÀN THUYÊN (BN) VÀ LÊ XOAY (PHÚ THỌ) 2026-2027.pdf",
+      "sourceFileId": "1CFI9QPczTntM8edqvHS71pjCUbPQksJB",
+      "dstFileId": "1sM5Z7Y2M88CGj2Sbh51fBI2_PFOqxVqK",
+      "size": 887047,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:23.862Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/18. đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027/đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027-đề.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/2. ĐỀ HỌC SINH GIỎI MÔN HÓA MỚI NHẤT 2026-2027/18. ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027/UNI ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027-ĐỀ.pdf",
+      "sourceFileId": "1eZAXPCBfHdbpqYPd2XtApYxEziHWub9m",
+      "dstFileId": "1myc84KZ1yN8b9RFWvG4Y9Bwnk1LxCf-e",
+      "size": 789514,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:39.220Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/18. đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027/đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/2. ĐỀ HỌC SINH GIỎI MÔN HÓA MỚI NHẤT 2026-2027/18. ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027/UNI ĐỀ THI HSG MÔN HÓA CỤM NINH GIANG-TỨ KỲ-HẢI PHÒNG 2026-2027-VIẾT TAY.pdf",
+      "sourceFileId": "1L_M56XoKIll22h0xQK0ZFS8OGO_l3eim",
+      "dstFileId": "1sWxIvKZVQMvBZo7QAYMN1vK6zya38hlX",
+      "size": 12407542,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:47.964Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/19. đề thi thử hsg liên trường nghệ an 2026-2027/đề trắc nghiệm-tự luận thi thử hsg liên trường nghệ an 2026-2027-đề.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/2. ĐỀ HỌC SINH GIỎI MÔN HÓA MỚI NHẤT 2026-2027/19. ĐỀ THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027/UNI ĐỀ TRẮC NGHIỆM-TỰ LUẬN THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027-ĐỀ.pdf",
+      "sourceFileId": "1wC7yC5BwsZzIola9I807feSNXNS41wnX",
+      "dstFileId": "148Mur8gj_-OfZ_2_ObEdJHAYLw28h3lJ",
+      "size": 779331,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:30:52.500Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/19. đề thi thử hsg liên trường nghệ an 2026-2027/đề trắc nghiệm-tự luận thi thử hsg liên trường nghệ an 2026-2027-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1.1 MỘT SỐ SERIES KHÁC/2. ĐỀ HỌC SINH GIỎI MÔN HÓA MỚI NHẤT 2026-2027/19. ĐỀ THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027/UNI ĐỀ TRẮC NGHIỆM-TỰ LUẬN THI THỬ HSG LIÊN TRƯỜNG NGHỆ AN 2026-2027-VIẾT TAY.pdf",
+      "sourceFileId": "19G311YFQ-9XtXCBVXOp9HVBXBtwRP5LI",
+      "dstFileId": "1MvSfj_zPyddg8fG1mdZ6cRyQ8-hcxyqv",
+      "size": 10430126,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:31:01.729Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/2. chương 2-carbohydrate/31. tổng ôn carbohydrate phần 3-khóa đom đóm/tổng ôn carbohydrate-phần 3-đề.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1. KHOÁ T NỀN TẢNG/2. CHƯƠNG 2-CARBOHYDRATE/31. TỔNG ÔN CARBOHYDRATE PHẦN 3-KHÓA ĐOM ĐÓM/UNI TỔNG ÔN CARBOHYDRATE-PHẦN 3-ĐỀ.pdf",
+      "sourceFileId": "16pbc-0X5Q_zHLq1ZuCqabJvnqVXxH2BJ",
+      "dstFileId": "1j6TLa3vBHfrJ8PS1wNWgrHXFhQskxI_d",
+      "size": 1034453,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:31:08.911Z"
+    },
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/2. chương 2-carbohydrate/31. tổng ôn carbohydrate phần 3-khóa đom đóm/tổng ôn carbohydrate-phần 3-viết tay.pdf": {
+      "relPath": "HÓA HỌC/HOÁ THẦY PHẠM VĂN TRỌNG TENS 2K9/1. KHOÁ T NỀN TẢNG/2. CHƯƠNG 2-CARBOHYDRATE/31. TỔNG ÔN CARBOHYDRATE PHẦN 3-KHÓA ĐOM ĐÓM/UNI TỔNG ÔN CARBOHYDRATE-PHẦN 3-VIẾT TAY.pdf",
+      "sourceFileId": "1SaXp2xEodx8Vs2VjannxGtbfS_52488r",
+      "dstFileId": "18ehtgc9eCtUUDlgpvSC3wpiPyLfCiarb",
+      "size": 13522422,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:31:18.375Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/4.1 phòng thực chiến tháng 9 - 2026/5. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 17/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/4.1 PHÒNG THỰC CHIẾN THÁNG 9 - 2026/5. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 17/UNI Tài liệu live.pdf",
+      "sourceFileId": "1hqH6aztnLl3eNf31NIBdTSLcT_lf0N6o",
+      "dstFileId": "1Cfwrn1Zrs2eNbkdTdGpJT1iJ5HZJ3i60",
+      "size": 481809,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:08.342Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/4.1 phòng thực chiến tháng 9 - 2026/6. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 18/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/4.1 PHÒNG THỰC CHIẾN THÁNG 9 - 2026/6. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 18/UNI Tài liệu live.pdf",
+      "sourceFileId": "1DpGhzB0pdiUGpuUd2JN0coLTanYcjvjd",
+      "dstFileId": "1wgXJ6q_20M-2v3NccQKCclRM6acRgvr-",
+      "size": 483188,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:13.194Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/1. một số lỗi dùng từ thường gặp/bài tập.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/1. Một số lỗi dùng từ thường gặp/UNI Bài tập.pdf",
+      "sourceFileId": "1y5ze3eknqhs5WzJYRuTD98Ac_YsfUrdn",
+      "dstFileId": "1FoU_7vzu6n0cNfeeWBiHSF3kE90wxqu7",
+      "size": 426175,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:35.510Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/1. một số lỗi dùng từ thường gặp/đáp án.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/1. Một số lỗi dùng từ thường gặp/UNI Đáp án.pdf",
+      "sourceFileId": "1YryJcAUv9O2LfcXAk-bsfPE_yI7HTo2x",
+      "dstFileId": "1PBe4gAK4Vg-EzcCje2we4QrBhSw_D2Ev",
+      "size": 433532,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:39.705Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/1. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 19/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/1. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 19/UNI Tài liệu live.pdf",
+      "sourceFileId": "1BIUEOXFN69o3f8HHrbNPhEpHgAodGhAz",
+      "dstFileId": "158jfiO5p3mMeWCgdVvqXtap4VRnDCA17",
+      "size": 483188,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:44.261Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/1. một số lỗi dùng từ thường gặp/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/1. Một số lỗi dùng từ thường gặp/UNI Tài liệu live.pdf",
+      "sourceFileId": "1ZCpG4mdPl8tC-6xYZuJseddqWZ50Ffou",
+      "dstFileId": "1e6_XC-8ZGkdOLZZ_J7Aepf6jYwSBrC5C",
+      "size": 4660450,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:38:50.364Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/6. tháng 11 - 2026/1. phương pháp, kĩ năng xử lí các bài toán về hình học oxyz (p2)/bài tập.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/1. Tổng ôn V-ACT - Môn Toán/6. THÁNG 11 - 2026/1. Phương pháp, kĩ năng xử lí các bài toán về hình học Oxyz (P2)/UNI Bài tập.pdf",
+      "sourceFileId": "1LiMDddSvd9-gpKDsKqn6w3e4Df54ODhw",
+      "dstFileId": "1laJMwJHb331ZUOhQtFRTNkrH7xibj_Db",
+      "size": 505700,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:27.116Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/4. tổng ôn v-act tư duy khoa học - v/6. tháng 11 - 2026/1. thực hành nội suy và ngoại suy từ bảng số liệu khoa học (p1)/bài tập.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/4. Tổng ôn V-ACT Tư duy khoa học - V/6. THÁNG 11 - 2026/1. Thực hành nội suy và ngoại suy từ bảng số liệu khoa học (P1)/UNI Bài tập.pdf",
+      "sourceFileId": "1sVhqQ6nHI-kGIPqt0aAZniQtt4Sl-30t",
+      "dstFileId": "1VX7I5GGZiQSvcItZx-MWjtAjDUdX70aJ",
+      "size": 485705,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:31.477Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/2. cấu tạo và lỗi thành phần, liên kết của câu/bài tập.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/2. Cấu tạo và lỗi thành phần, liên kết của câu/UNI Bài tập.pdf",
+      "sourceFileId": "1HOKt3IUvgy7-icxx9qWUlO2CCq4V1iIR",
+      "dstFileId": "1tCOOu-RH6w9jGjw1IaKNAXWtX8s0v_G-",
+      "size": 434515,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:35.667Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/6. tháng 11 - 2026/1. phương pháp, kĩ năng xử lí các bài toán về hình học oxyz (p2)/đáp án.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/1. Tổng ôn V-ACT - Môn Toán/6. THÁNG 11 - 2026/1. Phương pháp, kĩ năng xử lí các bài toán về hình học Oxyz (P2)/UNI Đáp án.pdf",
+      "sourceFileId": "1ncNWdMDuv-lHM5_7kI0K1IMrjhB1I8Ft",
+      "dstFileId": "1ySl-RAY3mCBlYHNVkU9r1VWrnP64uiBb",
+      "size": 514136,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:40.148Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/4. tổng ôn v-act tư duy khoa học - v/6. tháng 11 - 2026/1. thực hành nội suy và ngoại suy từ bảng số liệu khoa học (p1)/đáp án.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/4. Tổng ôn V-ACT Tư duy khoa học - V/6. THÁNG 11 - 2026/1. Thực hành nội suy và ngoại suy từ bảng số liệu khoa học (P1)/UNI Đáp án.pdf",
+      "sourceFileId": "1fdJmjIH9LamES0fwykt8-kQl8YI0z9yd",
+      "dstFileId": "186AnFgAQCmz5ekv03z9q6Nak9pRUUhTz",
+      "size": 491312,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:44.577Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/2. cấu tạo và lỗi thành phần, liên kết của câu/đáp án.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/2. Cấu tạo và lỗi thành phần, liên kết của câu/UNI Đáp án.pdf",
+      "sourceFileId": "1IzbcOCQOhW-b7u8lw1HYdqODB_HPE2ln",
+      "dstFileId": "1nyoLzvwKFXEf5UN5ql98Ph5PQA5h7xz3",
+      "size": 444710,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:48.736Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/6. tháng 11 - 2026/1. phương pháp, kĩ năng xử lí các bài toán về hình học oxyz (p2)/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/1. Tổng ôn V-ACT - Môn Toán/6. THÁNG 11 - 2026/1. Phương pháp, kĩ năng xử lí các bài toán về hình học Oxyz (P2)/UNI Tài liệu live.pdf",
+      "sourceFileId": "1AUWIgZQVVoRcBrSTc9470-hKClD-HJQY",
+      "dstFileId": "1n3OwVlySgprfe_gknNmvortcvOkv0kvw",
+      "size": 5323134,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:39:55.666Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/4. tổng ôn v-act tư duy khoa học - v/6. tháng 11 - 2026/1. thực hành nội suy và ngoại suy từ bảng số liệu khoa học (p1)/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/4. Tổng ôn V-ACT Tư duy khoa học - V/6. THÁNG 11 - 2026/1. Thực hành nội suy và ngoại suy từ bảng số liệu khoa học (P1)/UNI Tài liệu live.pdf",
+      "sourceFileId": "1o0lVIyTtDcG4jcpCdgOm6YTrvsK1a0Lr",
+      "dstFileId": "1BMBJPquhiRe4X4pe39UEzUsQcVtkYvhG",
+      "size": 4603305,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:01.963Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/2. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 20/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/2. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 20/UNI Tài liệu live.pdf",
+      "sourceFileId": "123Pxp0EQzhjcynh3Sa2H3FzowBsjSlRB",
+      "dstFileId": "1xvMVBxrU61WHfpsLMVEAQQtCtP6slQ0m",
+      "size": 482166,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:06.351Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/2. cấu tạo và lỗi thành phần, liên kết của câu/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/6. THÁNG 11 - 2026/2. Cấu tạo và lỗi thành phần, liên kết của câu/UNI Tài liệu live.pdf",
+      "sourceFileId": "1mWeDcQFRjwOVLNVRDTAKFa9lgCU3HBLr",
+      "dstFileId": "1KTry83SIwEDK2TueOUIUgvMW06WV3HhO",
+      "size": 4632814,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:12.698Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/3. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 21/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/3. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 21/UNI Tài liệu live.pdf",
+      "sourceFileId": "1rd8aAulAznjjWdiPdJXcJ2LxTg8eeH27",
+      "dstFileId": "1gs-SRM3G1Rd3mCywuE8XJu0JU1JwzmtX",
+      "size": 481072,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:27.822Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/4. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 22/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/4. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 22/UNI Tài liệu live.pdf",
+      "sourceFileId": "1MExROliDEQstSRsj4KRaP93Z6CB-3eHa",
+      "dstFileId": "1EKVEt65AIAqjV8LEMEQ1uizkIzi02q8N",
+      "size": 471938,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:32.397Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/5. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 23/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/5. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 23/UNI Tài liệu live.pdf",
+      "sourceFileId": "1gwQsL28aswDJbH6DbeXbsI325Wu6WdXI",
+      "dstFileId": "1dZkk7K9Xta1oX3touqsXXXrbWZ8sZWnb",
+      "size": 496525,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:42.126Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/6. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 24/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/6. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 24/UNI Tài liệu live.pdf",
+      "sourceFileId": "1dV2ar8jveJGsG_I7P1rxlrny_Oe7rJdC",
+      "dstFileId": "1VVFwJd7hfMA36W-fPqbhfTOfp30LEYMS",
+      "size": 503550,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:40:51.699Z"
+    },
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/7. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 26/tài liệu live.pdf": {
+      "relPath": "ĐGNL - ĐGTD (HSA, TSA, V-ACT, SPT)/V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027/2. GIAI ĐOẠN 2: TOPUNI TỔNG ÔN V-ACT/2. Tổng ôn V-ACT - Môn Tiếng Việt - V/5.1 PHÒNG THỰC CHIẾN THÁNG 10 - 2026/7. [Bổ trợ]_Chữa bài tập_V-ACT_Tiếng Việt số 26/UNI Tài liệu live.pdf",
+      "sourceFileId": "1cySVb2-Cu4TXsxtFrhPrt-YRGRSWkiez",
+      "dstFileId": "1npPGl2V40NC4uJFecR_GpAB99I46oneL",
+      "size": 482612,
+      "isUni": true,
+      "syncedAt": "2026-11-08T20:41:01.351Z"
     }
   },
   "dstFolderCache": {
@@ -369896,15 +371302,10 @@
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12": "1JUV0f3WMKIF5dZsWrUPf1Xu38R3isUIH",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/66. [npnc]_chữa bài tập ngày 17/7": "1gPINTspLgEJ730-X0PtPJ4eS4ExyJ72E",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/67. [npnc]_chữa bài tập ngày 20/7": "1MIZOOxfdBe6Kcu7_hLoA0IApzBES5-Xo",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường": "19XTKg_Cq7WkkDIXdZU-B4X3ibtq14LEd",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/68. [npnc]_chữa bài tập ngày 21/7": "1hVR6mmozvH7rPAwV9GFhHJk0kEH-ijjv",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.7: điện từ trường. mô hình sóng điện từ": "1YUtGIiHzZsPp754CXCv9xiaCd-SDNz1B",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.6: ứng dụng hiện tượng cảm ứng điện từ": "1zoZXrY7oU_zrnz-tMh8ykhNRKwvWGE99",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.5: máy phát điện xoay chiều": "1on2iNiiR6-2UrHIHJzGPS6QC4qErhgXT",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/65. [npnc]_chữa bài tập ngày 16/7": "1kQBRC4K6ibfFk1vciEk8QRB6u0vvE_ia",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/64. [npnc]_chữa bài tập ngày 15/7": "1spoJxYE9IDhVOSG0dBQRCWljVzX4JcfS",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/36. chủ đề 4 social issues (đề số 2)": "1eF2P5mLTI3C7Cx0v3epeg9sfm5XIeWTL",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.3: từ thông": "1p9ppUwuU66y79W5hCz-HY24sYi7qfPTc",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/34. chủ đề 4 social issues (đề số 1)": "18HXIrJU8YO7LiSJIg3pHPs2mI7Ny-8WU",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/ôn tập kiểm tra cuối học kì ii - lớp 11 | ipclass/2. đề cương ôn tập & luyện đề kiểm tra cuối học kì ii (bắt đầu sau 5/4)/2. luyện đề kiểm tra cuối học kì ii": "1kDFt1hWgIZbonvg89vPFHw5MeoHz51WC",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/ôn tập kiểm tra cuối học kì ii - lớp 11 | ipclass/2. đề cương ôn tập & luyện đề kiểm tra cuối học kì ii (bắt đầu sau 5/4)/2. luyện đề kiểm tra cuối học kì ii/4. đề kiểm tra học kì 2 số 5 đề kiểm tra học kì 2 số 6": "1OVIAio9ati73cjJ8OGZgGScocwOiovep",
@@ -369978,51 +371379,32 @@
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/22. [np 2027]_chữa bài tập ngày 18/5": "1hRswb7AsUsoJwoRM-4_ISNXPhMstRIMa",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/21. [np2027]_chữa bài tập ngày 15/5": "1LLzj6dgV1qFgf6J_uQtv0bYpbtZGrrQC",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/23. [np 2027]_chữa bài tập ngày 19/5": "1uZKaiqrYYi9c_-Bx4zn_bxWwbFMLL5Dt",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.1: từ trường": "19oxgY4-L4wbkn3EkEpyOw8X7BeI4AHkE",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.4: hiện tượng cảm ứng điện từ": "18vJ6lBKxUjfVllOZObGP3ldwOX55944x",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.4: hiện tượng cảm ứng điện từ/btvn": "1sSRllWm-oOn46hE4C3u5BrAuVHGtrQmA",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.1: từ trường/file": "1th8wPwI_HSGbMBmensRcVPLbgaMPado4",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/103. thi online chủ đề 11 the media and communication (đề số 4)": "106iS33zeroymjyaZ_0UtyNPHZsNU8_VR",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/18. [np2027]_chữa bài tập ngày 12/5": "1qBOMFlCH2eUBX7XxiAwFaDpC7-nDdKV-",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/19. [np2027]_chữa bài tập ngày 13/5": "1lI18YR1vcZeTzzaVCL9hMnTkegD-P5KU",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/20. [np2027]_chữa bài tập ngày 14/5": "1-wY8OMmxc6EqmqklVLdg8V32rJiwOB5-",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.2: lực từ. cảm ứng từ": "1I5-aBWotWw70WYpeqJ8pYHc3W7zVacIg",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.2: lực từ. cảm ứng từ/file": "1tpCE_WFV-qFHm-kkSC4xSok2WAyKk4lR",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/17. [np2027]_chữa bài tập ngày 11/5": "17VxIbTZloY3H1QZRGBybxLHS3uX7S7hs",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/101. thi online chủ đề 11 the media and communication (đề số 3)": "1ACVTqwg89fAgx94XDmFe2jrzZEebv9Nl",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/15. [np2027]_chữa bài tập ngày 7/5": "1A6v3CbAeHTFFDFltf1A7ULSDFuyfp84R",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/07. thi online chủ đề 1 family and relationships (buổi 4)": "1RlsqnLrf7MFvmCFy4eo0kxdF1wuqdNVT",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/09. thi online chủ đề 1 family and relationships (buổi 5)": "1KYwV8ID3xSUd134-jUVc1TPKB3-9i13c",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt": "1XcuR18XR4uCSs6yybBLz5a2tnHNfePBZ",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/4. chủ đề 1.4: nhiệt độ. thang nhiệt độ - nhiệt kế": "1vW24WxJjfAu9Xq5yQsAqnQ_GZm8Mi-xt",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/4. chủ đề 1.4: nhiệt độ. thang nhiệt độ - nhiệt kế/2. luyện tập chủ đề 1.4": "1soENlcfEqipB1SpY7SJPr6bU8r1vORHs",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/05. thi online chủ đề 1 family and relationships (buổi 3)": "1vxxbL_jRl95S2rghBr-XY5Z7T8gNFiaC",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/01. thi online chủ đề 1 family and relationships (buổi 1)": "1BcwXDHGKMErsWEaarXiy68qRSSSdZQm7",
     "tiếng anh/anh cô vũ mai phương ngoaingu24h 2027/2. combo pro3m plus 2027 nâng cao mục tiêu 9+/1. plus 1: luyện đọc điền và đọc hiểu chuyên sâu (2027)/02. chuyên đề 2. 20 chủ đề từ vựng & đọc điền - đọc hiểu chuyên sâu/03. thi online chủ đề 1 family and relationships (buổi 2)": "1hqAJGHtJ4ZzOa-SiM4TH6X4PQRQFCp1r",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/16. [np2027]_chữa bài tập ngày 8/5": "1p7Ku7oTvG8YIMkvt30TRLOPxA0ila1Lp",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/4. chủ đề 1.4: nhiệt độ. thang nhiệt độ - nhiệt kế/1. \"(1) sự truyền năng lượng nhiệt (2) thang nhiệt độ (3) nhiệt kế\"": "1SgKXnTgLT2_Aq3ONITHb-7DIVuTM2fXG",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/12. [np2027]_chữa bài tập ngày 4/5": "1Rpzk3f3dGFEwW8cEy3ZZHJAUcxkhVmqW",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/13. [np2027]_chữa bài tập ngày 5/5": "1rVBrd1vTcZvx9dhoWOTRurd5V0djbaMS",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/14. [np2027]_chữa bài tập ngày 6/5": "18AYOcETKKaDFXA-kPbY1JcM2kpOHO4HT",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/9. [np2027]_chữa bài tập ngày 29/4": "1f52FUG2Py4kEIFugG5s4XLu0Ix435_GC",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/11. [np2027]_chữa bài tập ngày 1/5": "1sY0sdCAeqBbGhMUENuig9_JGgJTeBvN4",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/10. [np2027]_chữa bài tập ngày 30/4": "1RUkv0jQCSQbFn9tS5zztgECpdnm9S6sC",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/2. chủ đề 1.2: sự chuyển thể": "1Mjtbt2qPjSZRyAEGE-lMJ55MHSDRafCs",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/2. chủ đề 1.2: sự chuyển thể/2. luyện tập chủ đề 1.2": "12lo9XnilNEFKJ__q48GWbVrLcwiI54KE",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/5. [np2027]_chữa bài tập ngày 24/4": "1sqN3IcIGCFNgk08mAvXtFbhKomgDNj28",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/7. [np2027]_chữa bài tập ngày 28/4": "1WWphw7lzapG8uA3r9xJT1tWD8s_kArru",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/6. [np2027]_chữa bài tập ngày 27/4": "1wy33P7ivmMDv0bwEwsZBGjqmUTZDOiCw",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/3. chủ đề 1.3: nội năng. định luật i của nhiệt động lực học": "1wlM4Ja0BuBe_IsrQ9Lp5xaP3l1zY6whe",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/3. chủ đề 1.3: nội năng. định luật i của nhiệt động lực học/1. \"(1) nội năng (2) các cách làm thay đổi nội năng (3) định luật i của nhiệt động lực học (4) động cơ nhiệt\"": "13OHHSRiiGj_q_xozMAF08So5hT1RyRGn",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/3. chủ đề 1.3: nội năng. định luật i của nhiệt động lực học/2. luyện tập chủ đề 1.3": "1eGF3zuLUOYu9qrlhX8jrC427lh_wR9XE",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/2. chủ đề 1.2: sự chuyển thể/1. \"(1) sự chuyển thể của chất (2) sự nóng chảy (3) sự hóa hơi\"": "1Pg7bMMF7GeK5PfZ5yMGeCP_LJpBWeaQa",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/3. [np2027]_chữa bài tập ngày 22/4": "16KpqBtkzKj0yi0bk2aYEgM8VfSFNznLI",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/4. [np2027]_chữa bài tập ngày 23/4": "1CwVyIIMzSY9IUGhl6ZNRshWesVKqpwNB",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/2. [np2027]_chữa bài tập ngày 21/4": "1jSmNO3MYMFHRkTRFPCFFu0qSbCrFJdGX",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/1. chủ đề 1.1: cấu trúc của chất": "1s-fonFPD6i_W5MHH2naoVaZrHL_H2kpk",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/1. chủ đề 1.1: cấu trúc của chất/2. luyện tập chủ đề 1.1": "1mYp-Xl9AYBxVnLLgomQDFMJh__nCgfkf",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.1.ngữ pháp ứng dụng": "1FBLB7KC61CgTMot0qxnfwRzLk1ZEUKw9",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/1. chủ đề 1.1: cấu trúc của chất/1. \"(1) mô hình động học phân tử về cấu tạo chất (2) cấu trúc của chất rắn, chất lỏng và chất khí\"": "1zcGruBX88V5tZ4gDAfF5E6ToiZKIhz2W",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.1.ngữ pháp ứng dụng/121. [npưd]_bài tập ngày 2/10": "1kWTjxSUWEAzg56tklYhmgzY1a8VCpfRK",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.2.ngữ pháp nâng cao/1. [np2027]_chữa bài tập ngày 20/4": "187iA8TKNaQA_aiqZQ2TScrL4Qb0KAwLR",
     "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/0.1.ngữ pháp ứng dụng/117. [npưd]_bài tập ngày 29/9": "1obJ6HDlb0j7UZM3zk2PHVIl3nUq7tqLg",
@@ -373158,26 +374540,6 @@
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/back to school/vở hs: bài 2": "14ELk6TI7j6rBOUEjpnwGNRnlKW9itf02",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/back to school/vở hs: bài 3": "1HtzAy6z0B3zuqir9Bps4fXND5C5mb0LC",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/2. khoá ip02 vdc - thực tế/chương 1 vật lí nhiệt": "1cT5ZwGSreHduHEtZ8vVxyXyY23klJVEf",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/0. hướng dẫn học": "103q0DErFBVfBUmSVTmBIYJBnz8jqIAl7",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng": "1nfbRCZe11DpKpswzpXPfVFM9C-8PIGVW",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.1_ mô hình động học phân tử chất khí": "13BnCIAaMb9TZW5jWierznASXq0uelvTB",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.2_ định luật boyle": "15E_PfYCothQIyBJtSW03nX2YcsSYJNTz",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.3_ định luật charles": "1_evCAR9Du-O8Ziyla-exa1AJOHF9VIFw",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.4_ phương trình trạng thái khí lí tưởng": "16w4bzi3pgE7UI7eI_Hx8G-_9zIp_fj60",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.5_ áp suất - động năng của khí lí tưởng": "1mg4YNuz3YnAWLWNkdVGw0MceVLtcP_50",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/ôn tập cuối chương": "1lzudRORHb70ioEfa8Yt44qq58UgYVJQm",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.2: định luật boyle": "15E_PfYCothQIyBJtSW03nX2YcsSYJNTz",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.1: mô hình động học phân tử chất khí": "13BnCIAaMb9TZW5jWierznASXq0uelvTB",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.4: phương trình trạng thái khí lí tưởng": "16w4bzi3pgE7UI7eI_Hx8G-_9zIp_fj60",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.3: định luật charles": "1_evCAR9Du-O8Ziyla-exa1AJOHF9VIFw",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/1. chủ đề 1.1_ cấu trúc của chất": "1ixb2a3JkXoVeIVTGsCSU3SYin90ZQqAo",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/2. chủ đề 1.2_ sự chuyển thể": "1gTPlDkoWffVJAqvuRvenHuZM0jcNC45V",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/3. chủ đề 1.3_ nội năng. định luật i của nhiệt động lực học": "1FSMDslBqCUxUupjowdVhihw1zT1TZYNt",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/4. chủ đề 1.4_ nhiệt độ. thang nhiệt độ - nhiệt kế": "1iZcy-zSgbCRMyZgz3VhIneksLYvhMIgD",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/5. luyện tập": "1Eij0JEb5u7BBaP4MDc7CO8nq8Tf5OvOV",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/6. chủ đề 1.5_ nhiệt dung riêng. nhiệt nóng chảy riêng. nhiệt hóa hơi riêng": "1soNjU0Yjbsymq8DT7-V45tCP2PKyTShM",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/7. ôn tập cuối chương": "17pUiDHk6O1olBRdbBW4AHzvyKnk3kH-B",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/8.đánh giá cuối chương": "1ryqA0HnPBflaHgwfN39fqfFM3Wms7Mch",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/bổ trợ/7.bổ trợ thí nghiệm khảo sát quá trình đẳng nhiệt, đẳng áp/file": "1qgW2ZjhaYyH98_eMNcc1JhjiV_-4qlB2",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/bổ trợ/7.bổ trợ thí nghiệm khảo sát quá trình đẳng nhiệt, đẳng áp/video": "1kgmb9b9HLaSW2i1Lm0XRF-dMfstEom5Q",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/bổ trợ/1.bổ trợ bổ trợ chương i (4 chủ đề đầu)/file": "1v-stmVtoeZM9O10Kvb9a_hQ1tFZDRKvL",
@@ -373214,17 +374576,6 @@
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/iptest kiểm tra định kì/đề kiểm tra định kì hằng tuần iptest 09/video": "1RQv7aD-0BaxYJdXgDvdIqpbAu2akVwc3",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/iptest kiểm tra định kì/đề kiểm tra định kì hằng tuần iptest 10/file": "15Nw8bUvJSZHSU-lmEe7bLCEMuO1M0-gs",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/iptest kiểm tra định kì/đề kiểm tra định kì hằng tuần iptest 10/video": "1Klu6MIv8peS__eBJMfF3UsFpO0ghu4-g",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.5: áp suất - động năng của khí lí tưởng": "1mg4YNuz3YnAWLWNkdVGw0MceVLtcP_50",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/2. chương 2 - khí lí tưởng/chủ đề 2.5: áp suất - động năng của khí lí tưởng/video": "1u_sDE0VOR5G2MohqxQKwWYhIWg20wRqX",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/6. chủ đề 1.5: nhiệt dung riêng. nhiệt nóng chảy riêng. nhiệt hóa hơi riêng": "1soNjU0Yjbsymq8DT7-V45tCP2PKyTShM",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/6. chủ đề 1.5: nhiệt dung riêng. nhiệt nóng chảy riêng. nhiệt hóa hơi riêng/1. _(1) nhiệt dung riêng (2) nhiệt nóng chảy riêng (3) nhiệt hóa hơi riêng_": "13PaDRhPrZNw-5MvCQ_YZbORF_if_ndvv",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/6. chủ đề 1.5: nhiệt dung riêng. nhiệt nóng chảy riêng. nhiệt hóa hơi riêng/2. luyện tập chủ đề 1.5": "1vFtM8mVB_4qBOCAub85UFsEMK5gmiOKw",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/6. chủ đề 1.5: nhiệt dung riêng. nhiệt nóng chảy riêng. nhiệt hóa hơi riêng/1. \"(1) nhiệt dung riêng (2) nhiệt nóng chảy riêng (3) nhiệt hóa hơi riêng\"": "13PaDRhPrZNw-5MvCQ_YZbORF_if_ndvv",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/5. luyện tập/1. ôn tập các chủ đề đã học (1.1 đến 1.4)": "1Ppaxw8WLavUO6ZYBdw6ULmy5LfAIX9oI",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/5. luyện tập/2. đề đánh giá năng lực lần 1 (1.1 đến 1.4)": "1V3e3ZgxbfH42RfCbjZi5ok8QYgPxleTL",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/7. ôn tập cuối chương/1. ôn tập cuối chương + đề ôn tập cuối chương i": "1UGtmZMSIVl6bijSL5tEGNvRgv9ov70py",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/7. ôn tập cuối chương/2. kiểm tra chương": "1EMcPlz-kE61A2Ap88ypTqptJJQ5WJfaI",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/1. chương 1 - vật lí nhiệt/6. chủ đề 1.5: nhiệt dung riêng. nhiệt nóng chảy riêng. nhiệt hóa hơi riêng/1. \"(1) nhiệt dung riêng (2) nhiệt nóng chảy riêng (3) nhiệt hóa hơi riêng\"/video chữa": "1Vh4r3n3d-LAX2l75uw1k236R4AmtcStd",
     "vật lý/lý thầy đỗ ngọc hà 2k9/2. zoom-t tổng ôn, luyện đề và nâng cao tư duy": "1hZUupyunoPAbCLKoabcnHs0WTBDIUmKC",
     "vật lý/lý thầy đỗ ngọc hà 2k9/học lại từ đầu": "19TtJ74vJeYMfxbR-p6wjgfvSj7iZAOWO",
     "vật lý/lý thầy đỗ ngọc hà 2k9/1. zoom-h chuyên đề trang bị kiến thức": "1o3teAF93NZiEPMq7nftPRVdaE622kuQ5",
@@ -379233,9 +380584,6 @@
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/ôn tập kiểm tra cuối học kì ii - lớp 11 | ipclass/2. đề cương ôn tập & luyện đề kiểm tra cuối học kì ii (bắt đầu sau 5/4)/1. đề cương ôn tập/4. buổi 4": "1ydzjriNMtc33bNkdF55_AuavSWVZE3ML",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/ôn tập kiểm tra cuối học kì ii - lớp 11 | ipclass/2. đề cương ôn tập & luyện đề kiểm tra cuối học kì ii (bắt đầu sau 5/4)/1. đề cương ôn tập/5. buổi 5": "1RfA73ommHyhIYtSzQxzU0NIZBXlz8Q1i",
     "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/ôn tập kiểm tra cuối học kì ii - lớp 11 | ipclass/2. đề cương ôn tập & luyện đề kiểm tra cuối học kì ii (bắt đầu sau 5/4)/1. đề cương ôn tập/6.. buổi 6": "1XUkE6HEmVSv18lW6A6UUIxRVswfFGihc",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.1: từ trường/video": "1wNOeXnb8qMCaYXSAb406MXb-tnQfc38f",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.2: lực từ. cảm ứng từ/video": "1en7LSi7wAFqtGdT2NURhNysfAnH3daye",
-    "vật lý/lý thầy thắng, thầy tiến ipclass 2k9/1. khoá ip01 chuyên đề toàn diện 12/3.chương 3 - từ trường/chủ đề 3.2: lực từ. cảm ứng từ/video/video": "1WCC0zGRwf1CxuPiiiSN2oQiNqHZ6CZjG",
     "vật lý/lý thầy đỗ ngọc hà 2k9/1. zoom-h chuyên đề trang bị kiến thức/31": "1EP-fucwpPYjlEJUFwXaHIIWYz6OjERpq",
     "vật lý/lý thầy đỗ ngọc hà 2k9/3.khoá học lại từ đầu/chương 1: vật lí nhiệt/buổi 07: thí nghiệm vật lí nhiệt": "1WEk9OHfHYZv2_kAQJASQ9xTC6VIeucbX",
     "vật lý/lý thầy đỗ ngọc hà 2k9/3.khoá học lại từ đầu/chương 1: vật lí nhiệt/buổi 06: máy nhiệt": "16V-Kx4t5VpEGspKuETzjBjw80RRzgR9w",
@@ -381473,7 +382821,88 @@
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/18. lũy thừa, mũ và logarit/5. cách tiếp cận và xử lí bài toán đặc thù mũ – logarit (p2)": "1Qd7HbVn9Oj7h-zGajiABAFwBiqYOqi4j",
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/17. dãy số - cấp số cộng - cấp số nhân - đạo hàm - giới hạn/5. những kiến thức, kĩ năng cần lưu ý khi xử lí bài toán đạo hàm và giới hạn (p2)": "1btcvNraDR9WDElzZkeLI1_OviTI2XUcS",
     "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/18. lũy thừa, mũ và logarit/6. bài toán thực tế về mũ – logarit": "1f0RZeEU-S1PGw9rA8oeP7XwZ7CnrQXHG",
-    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/17. dãy số - cấp số cộng - cấp số nhân - đạo hàm - giới hạn/6. các dạng bài đặc thù về giới hạn dãy số - giới hạn hàm số": "1f0SmgSXwNJGAx27jP9NolnzKeHVd2uK3"
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/17. dãy số - cấp số cộng - cấp số nhân - đạo hàm - giới hạn/6. các dạng bài đặc thù về giới hạn dãy số - giới hạn hàm số": "1f0SmgSXwNJGAx27jP9NolnzKeHVd2uK3",
+    "ngữ văn/văn cô trần thuỳ dương qanda 2k9/1. phần 1 nền tảng - live/buổi 58. [bổ trợ] - phân tích thơ": "1Y91VaDUdhe9P3ix-bvKtqa-W8Ac_ubN-",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/1. tuần 1 (từ ngày 20_4_2026 - 26_4_2026)": "1g8HZvBmbLo830hYheTP_d-HHDDa9fect",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/2. tuần 2 (từ ngày 27_4_2026 - 3_5_2026)": "1ZqrXu5J9dxRR6f4zP-rTrc1CPOBcYnlc",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/3. tuần 3 (từ ngày 4_5_2026 - 10_5_2026)": "10c5cofARy74jqm7Q-xlXrXOMdCBuVzre",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/4. tuần 4 (từ ngày 11_5_2026 - 17_5_2026)": "1MXDPMvQEH9RhXiG5PtIQ8p_tlHc2FD5H",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/5. tuần 5 (từ ngày 18_5_2026 - 24_5_2026)": "14Nfy1tzWnft6dscdtGbNZwGmaWP8Smwj",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/6. tuần 6 (từ ngày 25_5_2026 - 31_5_2026)": "1m2BV2t7-7-1Lk3qMkx6P3LsmieOvAkHn",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/7. tuần 7 (từ ngày 1_6_2026 - 7_6_2026)": "1_BBUi3o9ew7w7H690NChwDdA-rF9nNPU",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/8. tuần 8 (từ ngày 8_6_2026 - 14_6_2026)": "1uKa4ue0gZE39TWMIY8wiBnEBqi2apKYP",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/9. tuần 9 (từ ngày 15_6_2026 - 21_6_2026)": "1C9x6K5nrkPXY4GlC89JsfYVADUmf2naZ",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/10. tuần 10 (từ ngày 22_6_2026 - 28_6_2026)": "1JXWCSGYplU0f5kJ-Rp7DrNx3nGyqI8Pu",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/11. tuần 11 (từ ngày 29_6_2026 - 5_7_2026)": "1gZJtvemA3-lbP7ntfPYY8EBfrqQkPltP",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/12. tuần 12 (từ ngày 6_7_2026 - 12_7_2026)": "1NeWosTPIxI2KDlwkMCFGkzuQjqggTI9t",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/13. tuần 13 (từ ngày 13_7_2026 - 19_7_2026)": "1FgVXDWdeWxKTcO0EJQJvuLlHGKnxrH3V",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/14. tuần 14 (từ ngày 20_7_2026 - 26_7_2026)": "1FoCaIvGxBgwKayKLh3z80UsqqV-8kIPe",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/15. tuần 15 (từ ngày 27_7_2026 - 2_8_2026)": "1w8U3VIwExy37mZjsgAj0smdI9TkgV49o",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/16. tuần 16 (từ ngày 3_8_2026 - 9_8_2026)": "1E_bPURBp-F0apx69TrmmdtOYGuRMmodp",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/17. tuần 17 (từ ngày 10_8_2026 - 16_8_2026)": "1LF15G8xVEsNRxoKnFrC6UTsfqvCuEUJ5",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/18. tuần 18 (từ ngày 17_8_2026 - 23_8_2026)": "18s3iEO96MmqXMBIUUU0Nh5mmKpPBytov",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/19. tuần 19 (từ ngày 24_8_2026 - 30_8_2026)": "116uRtkDJz7ItXCqajZUyIEtIlNrBg9Sm",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/20. tuần 20 (từ ngày 31_8_2026 - 6_9_2026)": "1xsPdgWbVwecyzl5AaT-XlyGdnqBAlVPO",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/21. tuần 21 (từ ngày 7_9_2026 - 13_9_2026)": "1bdkLevI_mZA4i4de5tiH6SjzrD0OviM_",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/22. tuần 22 (từ ngày 14_9_2026 - 20_9_2026)": "1IM0D1G_7uFoqw7-xsiQRfuce7z3ZH2xR",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/23. tuần 23 (từ ngày 21_9_2026 - 27_9_2026)": "17VMGuwNbsGNMemHzytNSFD2zTqMqNX2N",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/24. tuần 24 (từ ngày 28_9_2026 - 4_10_2026)": "1B2B6VfCUMpXz_u25nq1JE95tz1BTv_AR",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5_10_2026 - 11_10_2026)": "13l6tFO02Po2Ld1z9-1f4vW0ybQ9hMWoa",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)": "1OtJUwbahv-wA__qZZ9puOVx0MnzNDLcb",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 13/10": "1LCTPmDshTVmFuExPl6Bl-z_kUN9M6mtC",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_bài tập làm thêm tuần 25": "1aVvB-FHdsLhbnrCqdN604pbLoEmBHkEF",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài ngày 10/10": "19iNZbjR4qZq0lqNgVJVAVHwK5sXzi2D7",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 14/10": "19rPqpckArQgwdoS3OnH-7yE8pvJlLL-r",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 15/10": "1ve67tgIIaXcdcFp8p2B7p4WS78hxtUBE",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 16/10": "174mIqyegcH7BvEVmF4JGpsgPIYMhan3O",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_bài tập ngày 17/10": "1OsXujZ7KVX0mbwY5o2FIIfHCcLNXygPt",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 5/10": "1bIh0bjjl_zner0OzJAOJiJihJm5kyZwj",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 6/10": "1oxB08JEuKog-ni12Sf3CtHcYbmOSQsrr",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 7/10": "1z_Oj_Jc3iq3v-6i_LAGF5EhGLtLVgnb3",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 8/10": "1Kx0Bu4EiVoW0No4-WYJA5eHRe9BedgpS",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np 2027]_chữa bài tập ngày 9/10": "1sn8R3pQBW59yIVvvUdzStVRuRnT88hwI",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np 2027]_chữa bài tập ngày 12/10": "1K37gxHKOF1tuF5_Xk03IVwS6O0n2U-0h",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np2027]_thi thử tuần 26": "1Q16zVyvA6kYvVwgWu8pATxtzyyym6fMT",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/[np2027]_live tuần 26": "10QtAS8l5qZ8NYeylvz2o8rXaW_y-4gGz",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/25. tuần 25 (từ ngày 5/10/2026 - 11/10/2026)/[np2027]_thi thử tuần 25": "1KQb4XZVJh7RleyNhLcmUcCJEJyK9TQve",
+    "tiếng anh/anh cô trang anh moon 2k9/1. ngữ pháp tiếng anh toàn diện/26. tuần 26 (từ ngày 12/10/2026 - 18/10/2026)/0. tài liệu": "1H2ZVnK2ay37eCaLSM_FTYA7JKJUKaZqM",
+    "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2. live c - luyện thi chuyên đề - lí 12 2k9 - vta/3. chương 3: từ trường \"/25. bài 8. máy phát điện xoay chiều": "1JUAi8nDKMichAsrWeqANxRZsTBCjIZz_",
+    "vật lý/lý thầy vũ tuấn anh sangsang 2k9/2.1 bổ trợ live c/chương 1: vật lí nhiệt/31. kscl hk1 - hưng yên - đề lẻ": "1E-HG3kJ--aKWm8RsjnUALMwaXhqfvpB_",
+    "địa lý/địa lý cô mai anh lớp học địa lý 2k9/2. chặng 2: live c - chuyên đề chuyên sâu - cô mai anh/25. bài 14 + 15: tclt nông nghiệp & cdcc công nghiệp": "1Qhyxm6grYtX-9ua8Kv2x59QrUDfsZwgW",
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân": "1It5iplcBRvrVFQUXohsJz9sSgD1vTi2W",
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 1 nguyên hàm nền tảng": "12DSvfOZIdcw9C0kG9NV9Gde70RfegI63",
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/6. chương 6: phương trình mặt phẳng - đường thẳng - mặt cầu": "1YbCkU65eBpUNhJfhty09SghXo69xnLBF",
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/6. chương 6: phương trình mặt phẳng - đường thẳng - mặt cầu/bài 1 phương trình mặt phẳng nền tảng": "1OUjAtwVqqgEPeqE0UTj4GSFY-MMLi0Va",
+    "toán/toán anh shipper toán 2k9/1. 2k9 trùm 12a3/5. chương 5: nguyên hàm - tích phân/bài 2 nguyên hàm vận dụng": "1eIEttu0cKGQ4qzJQIYRk9IY0SbdQdvur",
+    "ngữ văn/văn chị linh thưởng thức sách tts 2k9/2. luyện đề chuyên sâu kiến thức/12. đề 12": "1fq-iJ6UKCfv39NGnPiskoTNLSitqTluv",
+    "ngữ văn/văn chị linh thưởng thức sách tts 2k9/1. khoá chuyên sâu kiến thức 5 tháng đặc biệt/30. 🌿 𝐓𝐓𝐒 - buổi 30 - chuyên đề kí 💚": "13tKTHwsemMIIY_kze9qazBTl9DPYg2i_",
+    "vật lý/lý thầy vũ ngọc anh mapstudy 2k9/1. live i chuyên đề cơ bản/0. ôn tập vật lí lớp 10 và lớp 11/9. củng cố nền tảng vật lí – buổi 1": "1MM-3yeThcpc7EMwH_mfsTZRcq6c4vB97",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/7. chương 7- kim loại nhóm ia và iia/8. đề 1-cđ3-tổng ôn kim loại kiềm (68 câu lý thuyết klk)": "1GH7OfKaNeJkp8cZ7ti-yCXrrLIciEpkS",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/7. chương 7- kim loại nhóm ia và iia/9. đề 2-cđ3-tổng ôn kim loại kiềm thổ (68 câu lý thuyết klkt)": "1V0pnwwzeEm7Wkz5UHQ0oZtoNHs0YB-4V",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/13. đề thi thử thpt sơn động 1 bắc ninh 2026-2027": "1VyQ6Pjy1DQDPAQ-gUlNwbHX2_rrIJg3j",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/15. đề thi giữa kỳ 1 sở hưng yên-full 2 ca thi 2026-2027": "1HXjsU00IZQB7Q_O8nTQ2qSLJdPaiAnjr",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/14. đề thi thử tnthpt môn hóa học- sở ninh bình lần 1-thi online": "1H0gtmpOV-lzOIFRCfluHuiePE_j8gbW6",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/3. đề thi thử môn hóa mới nhất 2026-2027/16. đề thi thử tnthpt hàn thuyên-bắc ninh lần 1 - lê xoay-phú thọ lần 1": "14zO_r7m4AR-36_hBovSP52pIsIehsH0f",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/19. đề thi thử hsg liên trường nghệ an 2026-2027": "1Z2F3FXqr_E_MS-lBj8EL92WL-0cPMlKr",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1.1 một số series khác/2. đề học sinh giỏi môn hóa mới nhất 2026-2027/18. đề thi hsg môn hóa cụm ninh giang-tứ kỳ-hải phòng 2026-2027": "1p20CdEDMvQ8U3LmZWCTMTVu7lRW7NAu5",
+    "hóa học/hoá thầy phạm văn trọng tens 2k9/1. khoá t nền tảng/2. chương 2-carbohydrate/31. tổng ôn carbohydrate phần 3-khóa đom đóm": "1Ha2K6L0LRKQ0zKjdZagzehgR2Nbbw8xu",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/4.1 phòng thực chiến tháng 9 - 2026/5. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 17": "1PLvw6TRItYf2mIOgoJByFNN1gGUQ_ofl",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/4.1 phòng thực chiến tháng 9 - 2026/6. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 18": "1XsaRJAnwfxIAp3kIec2ROzRyMoBo8Hty",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026": "1CVWprh0ToLDe4e3DzDdt3AYkm6UOU0CT",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/1. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 19": "1RnfnPXpfkTdN-FjskZ1XQ2D-tcuVxBKc",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026": "1F2n-rg2U7jDJ8gxjxvePlEGUzqTwGS7Y",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/1. một số lỗi dùng từ thường gặp": "1GcwAfawncaoXmdyLBtfoMCAaez_F2R3G",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/6. tháng 11 - 2026": "1nPxbP-pw6qs8ee7hkHijNo10zfocYzRX",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/1. tổng ôn v-act - môn toán/6. tháng 11 - 2026/1. phương pháp, kĩ năng xử lí các bài toán về hình học oxyz (p2)": "1Jd16YHwATzv_dOQXV11FJdSLX3r0kgYX",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/4. tổng ôn v-act tư duy khoa học - v/6. tháng 11 - 2026": "1630HTNSAuyjUiWH4DN5fDz-BegNd7mBZ",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/4. tổng ôn v-act tư duy khoa học - v/6. tháng 11 - 2026/1. thực hành nội suy và ngoại suy từ bảng số liệu khoa học (p1)": "1RKk2FP29lwDUgfvDiohDCV3dO45eVTAr",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/2. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 20": "1M5lNFSPIsqEk8F_yCnfl8nTWRAiETN9q",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/6. tháng 11 - 2026/2. cấu tạo và lỗi thành phần, liên kết của câu": "1gSVyLSbEopc7nrLe21tQMPF9nqp3OVDM",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/3. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 21": "1QlxIm8qcy9L93jfmm009tkl6RTXIm_JL",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/4. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 22": "1QsTWCktLBVrQrjoYiYd_mb5wZ4C-OoX3",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/5. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 23": "1T_6SyBxfo9_7kJDJW4rR7KqCQTTPbKpC",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/6. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 24": "1TlCR5ywaKoIgzrrCO2ivRSYqukBNUwPy",
+    "đgnl - đgtd (hsa, tsa, v-act, spt)/v-act hocmai 2k9 luyện thi đgnl tp.hcm 2027/2. giai đoạn 2: topuni tổng ôn v-act/2. tổng ôn v-act - môn tiếng việt - v/5.1 phòng thực chiến tháng 10 - 2026/7. [bổ trợ]_chữa bài tập_v-act_tiếng việt số 26": "1Ffja87qlhZFWYxJQYLNY1DSQz7EP0-ss"
   },
   "completedTeachers": {
     "1XRl6XoX3x69jII4sA4lgMHPKIbcYysiH": {
