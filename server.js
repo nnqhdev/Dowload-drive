@@ -331,7 +331,7 @@ function buildNormPaths(relPathParts) {
 }
 
 const EBOOK_FOLDER_RE = /^(?:z\.?\s*)?ebook\b|ebook\s*sách\s*kèm|full\s*ebook\s*sgk|sách\s*ebook/i;
-const BONUS_GUIDE_FOLDER_RE = /^🎁?\s*bonus\b|hướng\s*dẫn\s*học|\+?\s*vote\s*hs/i;
+const BONUS_GUIDE_FOLDER_RE = /^(?:z\.?\s*)?(?:🎁)?\s*bonus\b|hướng\s*dẫn\s*học|\+?\s*vote\s*hs/iu;
 const INFO_FOLDER_RE = /^0\.\s*info\b|thông\s*tin\s*và\s*hướng\s*dẫn\s*khoá\s*học/i;
 
 function shouldSkipFolder(folderName, rules = toolConfig.rules) {
@@ -751,9 +751,12 @@ async function downloadDriveFile(fileId, destPath, kind = 'auto') {
       const token = await getToken({ requireWrite: false });
       const res = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&supportsAllDrives=true`, {
         headers: { Authorization: `Bearer ${token}` },
+        signal: AbortSignal.timeout(180000),
       });
       if (res.ok && res.body) {
-        await pipeline(Readable.fromWeb(res.body), fs.createWriteStream(destPath));
+        await pipeline(Readable.fromWeb(res.body), fs.createWriteStream(destPath), {
+          signal: AbortSignal.timeout(240000),
+        });
         return fs.statSync(destPath).size;
       }
       lastStatus = res.status;
@@ -764,10 +767,13 @@ async function downloadDriveFile(fileId, destPath, kind = 'auto') {
         const directUrl = `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`;
         const resDirect = await fetch(directUrl, {
           headers: { Authorization: `Bearer ${token}` },
+          signal: AbortSignal.timeout(180000),
         });
         const ctype = resDirect.headers.get('content-type') || '';
         if (resDirect.ok && resDirect.body && !ctype.toLowerCase().includes('text/html')) {
-          await pipeline(Readable.fromWeb(resDirect.body), fs.createWriteStream(destPath));
+          await pipeline(Readable.fromWeb(resDirect.body), fs.createWriteStream(destPath), {
+            signal: AbortSignal.timeout(240000),
+          });
           const sz = fs.statSync(destPath).size;
           if (sz > 1024) return sz;
         }
@@ -996,6 +1002,7 @@ async function uploadLocalFileToDrive(localPath, fileName, parentFolderId, mimeT
             name: fileName,
             parents: [parentFolderId],
           }),
+          signal: AbortSignal.timeout(30000),
         }
       );
 
@@ -1013,27 +1020,52 @@ async function uploadLocalFileToDrive(localPath, fileName, parentFolderId, mimeT
         throw new Error('Không nhận được Resumable Upload Location từ Google Drive');
       }
 
-      const readStream = fs.createReadStream(localPath, { highWaterMark: 4 * 1024 * 1024 });
-      const putRes = await fetch(uploadUrl, {
-        method: 'PUT',
-        headers: {
-          'Content-Length': String(fileSize),
-          'Content-Type': mimeType,
-        },
-        body: Readable.toWeb(readStream),
-        duplex: 'half',
+      const curlOut = await new Promise((resolve, reject) => {
+        execFile(
+          '/usr/bin/curl',
+          [
+            '-sS',
+            '--speed-limit',
+            '10240',
+            '--speed-time',
+            '45',
+            '--max-time',
+            '7200',
+            '-X',
+            'PUT',
+            '-H',
+            `Content-Type: ${mimeType}`,
+            '--upload-file',
+            localPath,
+            uploadUrl,
+          ],
+          { maxBuffer: 16 * 1024 * 1024 },
+          (err, stdout, stderr) => {
+            if (err) return reject(new Error(stderr || stdout || err.message));
+            resolve(stdout);
+          }
+        );
       });
 
-      if (!putRes.ok) {
-        const errText = await putRes.text().catch(() => '');
+      let parsedRes = null;
+      try {
+        parsedRes = JSON.parse(curlOut);
+      } catch {
+        throw new Error(`Phản hồi upload không hợp lệ: ${String(curlOut).slice(0, 200)}`);
+      }
+      if (parsedRes?.error) {
+        const errText = JSON.stringify(parsedRes.error);
         if (/userRateLimitExceeded|User rate limit exceeded/i.test(errText)) {
           markTokenUploadQuotaExhausted(token);
           if (attempt < 2) continue;
         }
-        throw new Error(`Upload dữ liệu thất bại (${putRes.status}): ${errText.slice(0, 200)}`);
+        throw new Error(`Upload dữ liệu thất bại: ${errText.slice(0, 200)}`);
+      }
+      if (!parsedRes?.id) {
+        throw new Error(`Upload không trả về file ID: ${String(curlOut).slice(0, 200)}`);
       }
 
-      return await putRes.json();
+      return parsedRes;
     } catch (err) {
       lastErr = err;
       if (attempt < 2) {

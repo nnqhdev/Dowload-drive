@@ -162,32 +162,119 @@ def download_stream_parallel(opener, url, dest_path, num_threads=12):
     return os.path.getsize(dest_path)
 
 
+def get_hung_oauth_token():
+    school_env_path = "/Users/quochung/Project/School/school.unizvn/.env"
+    tool_cfg_path = os.path.join(BASE_DIR, "data", "tool-config.json")
+    env = {}
+    if os.path.exists(school_env_path):
+        with open(school_env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                env[k.strip()] = v.strip().strip("'\"")
+    client_id = env.get("GDRIVE_CLIENT_ID", "")
+    client_secret = env.get("GDRIVE_CLIENT_SECRET", "")
+    if not client_id or not client_secret:
+        return None
+    rts = []
+    if os.path.exists(tool_cfg_path):
+        try:
+            with open(tool_cfg_path, "r", encoding="utf-8") as f:
+                cfg = json.load(f)
+                rts.extend(cfg.get("writeRefreshTokens") or [])
+        except Exception:
+            pass
+    rts.extend([s.strip() for s in (env.get("GDRIVE_REFRESH_TOKENS") or "").split(",") if s.strip()])
+    for rt in rts:
+        body = urllib.parse.urlencode({
+            "client_id": client_id,
+            "client_secret": client_secret,
+            "refresh_token": rt,
+            "grant_type": "refresh_token",
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            "https://oauth2.googleapis.com/token",
+            data=body,
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=15) as r:
+                tdata = json.loads(r.read().decode("utf-8", "ignore"))
+            tok = tdata.get("access_token")
+            if not tok:
+                continue
+            about_req = urllib.request.Request(
+                "https://www.googleapis.com/drive/v3/about?fields=user(emailAddress)",
+                headers={"Authorization": f"Bearer {tok}"},
+            )
+            with urllib.request.urlopen(about_req, timeout=15) as r2:
+                adata = json.loads(r2.read().decode("utf-8", "ignore"))
+            if (adata.get("user", {}).get("emailAddress") or "").lower() == "hung264656@gmail.com":
+                return tok
+        except Exception:
+            continue
+    return None
+
+
 def try_videoplayback_stream(file_id, dest_path, force_refresh_cookies=False):
     """
     Cách 1: Lấy luồng `videoplayback` trực tiếp từ `get_video_info?docid=...&drive_originator_app=303`
     dành cho Video bị khóa nút Tải xuống (Chế độ Chỉ xem).
+    Ưu tiên xác thực bằng OAuth Bearer token của hung264656@gmail.com kết hợp cookie jar.
     """
     jar = get_chrome_cookie_jar(force_refresh=force_refresh_cookies)
     opener = build_opener(jar)
 
-    info_url = f"https://drive.google.com/get_video_info?docid={file_id}&drive_originator_app=303"
-    body = ""
-    for attempt in range(3):
-        try:
-            with opener.open(info_url, timeout=30) as resp:
-                body = resp.read().decode("utf-8", "ignore")
-            if body:
-                break
-        except Exception as exc:
-            if attempt == 2:
-                raise exc
-            time.sleep(2.0 * (attempt + 1))
+    fmt_stream_map = ""
+    last_reason = "Không tìm thấy fmt_stream_map"
 
-    qs = urllib.parse.parse_qs(body)
-    fmt_stream_map = (qs.get("fmt_stream_map") or [""])[0]
+    # Thử 1a: Dùng OAuth Bearer token của hung264656@gmail.com (vượt hoàn toàn giới hạn cookie trình duyệt)
+    oauth_tok = get_hung_oauth_token()
+    if oauth_tok:
+        oauth_jar = http.cookiejar.CookieJar()
+        oauth_opener = build_opener(oauth_jar)
+        oauth_opener.addheaders.append(("Authorization", f"Bearer {oauth_tok}"))
+        info_url = f"https://drive.google.com/get_video_info?docid={file_id}&drive_originator_app=303"
+        for attempt in range(3):
+            try:
+                with oauth_opener.open(info_url, timeout=30) as resp:
+                    body = resp.read().decode("utf-8", "ignore")
+                qs = urllib.parse.parse_qs(body)
+                fmt_stream_map = (qs.get("fmt_stream_map") or [""])[0]
+                if fmt_stream_map:
+                    opener = oauth_opener
+                    break
+                last_reason = (qs.get("reason") or [last_reason])[0]
+            except Exception:
+                time.sleep(1.0 * (attempt + 1))
+
+    # Thử 1b: Dùng cookie Chrome nếu OAuth chưa lấy được fmt_stream_map
     if not fmt_stream_map:
-        reason = (qs.get("reason") or ["Không tìm thấy fmt_stream_map"])[0]
-        raise RuntimeError(f"get_video_info không có fmt_stream_map: {reason}")
+        for authuser_suffix in ("&authuser=0", "", "&authuser=1", "&authuser=2", "&authuser=3"):
+            info_url = f"https://drive.google.com/get_video_info?docid={file_id}&drive_originator_app=303{authuser_suffix}"
+            body = ""
+            for attempt in range(3):
+                try:
+                    with opener.open(info_url, timeout=30) as resp:
+                        body = resp.read().decode("utf-8", "ignore")
+                    if body:
+                        break
+                except Exception as exc:
+                    if attempt == 2 and not authuser_suffix:
+                        raise exc
+                    time.sleep(1.5 * (attempt + 1))
+
+            qs = urllib.parse.parse_qs(body)
+            fmt_stream_map = (qs.get("fmt_stream_map") or [""])[0]
+            if fmt_stream_map:
+                break
+            last_reason = (qs.get("reason") or [last_reason])[0]
+
+    if not fmt_stream_map:
+        raise RuntimeError(f"get_video_info không có fmt_stream_map: {last_reason}")
 
     streams = {}
     for entry in fmt_stream_map.split(","):
