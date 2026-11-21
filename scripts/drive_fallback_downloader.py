@@ -95,10 +95,12 @@ def build_opener(jar):
 def download_stream_parallel(opener, url, dest_path, num_threads=12):
     """Tải luồng videoplayback bằng các đoạn Range 8MB song song để luôn nằm trong vùng burst tốc độ cao của Google CDN."""
     total_size = 0
+    resolved_url = url
     for probe_attempt in range(3):
         try:
             probe_req = urllib.request.Request(url, headers={"Range": "bytes=0-0"})
             with opener.open(probe_req, timeout=20) as resp:
+                resolved_url = resp.geturl() or url
                 content_range = resp.headers.get("Content-Range", "")
                 content_type = resp.headers.get("Content-Type", "")
                 if "text/html" in content_type.lower():
@@ -113,7 +115,7 @@ def download_stream_parallel(opener, url, dest_path, num_threads=12):
 
     if total_size <= 0:
         # Tải tuần tự nếu server không báo tổng dung lượng
-        with opener.open(urllib.request.Request(url), timeout=120) as resp, open(dest_path, "wb") as f:
+        with opener.open(urllib.request.Request(resolved_url), timeout=120) as resp, open(dest_path, "wb") as f:
             while True:
                 chunk = resp.read(1024 * 1024)
                 if not chunk:
@@ -138,7 +140,8 @@ def download_stream_parallel(opener, url, dest_path, num_threads=12):
         b_start, b_end = byte_range
         for attempt in range(5):
             try:
-                req = urllib.request.Request(url, headers={"Range": f"bytes={b_start}-{b_end}"})
+                target_u = resolved_url if attempt < 2 else url
+                req = urllib.request.Request(target_u, headers={"Range": f"bytes={b_start}-{b_end}"})
                 with opener.open(req, timeout=60) as r:
                     pos = b_start
                     with open(dest_path, "r+b") as out_f:

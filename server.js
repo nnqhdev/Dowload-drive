@@ -1020,17 +1020,19 @@ async function uploadLocalFileToDrive(localPath, fileName, parentFolderId, mimeT
         throw new Error('Không nhận được Resumable Upload Location từ Google Drive');
       }
 
+      const dynamicMaxTimeSec = Math.max(180, Math.min(7200, Math.ceil(fileSize / (150 * 1024)) + 120));
       const curlOut = await new Promise((resolve, reject) => {
         execFile(
           '/usr/bin/curl',
           [
             '-sS',
+            '--http1.1',
             '--speed-limit',
             '10240',
             '--speed-time',
             '45',
             '--max-time',
-            '7200',
+            String(dynamicMaxTimeSec),
             '-X',
             'PUT',
             '-H',
